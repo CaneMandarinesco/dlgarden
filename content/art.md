@@ -8,6 +8,7 @@
 * Romanticist - Yves Tumor
 * Misantropo a senso unico - Cripple Bastards
 * MURUBURZUM - Ozone Dehumanizer
+* Architects - Seeing Red
 
 # film che vi consiglio :)
 * eternal sunshine of the spotless mind (ci sta jim carrey, mio padre)

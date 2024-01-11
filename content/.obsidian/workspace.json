@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "48e4ab4f8b2a7bce",
+        "id": "83b10cf4f28e09f7",
         "type": "tabs",
         "children": [
           {
-            "id": "75115d1cfd1a650e",
+            "id": "2a0286ffd0402c93",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "art.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "art.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "art.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "art.md"
+              }
             }
           }
         ]
@@ -138,17 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "75115d1cfd1a650e",
+  "active": "2a0286ffd0402c93",
   "lastOpenFiles": [
+    "obsidian.md",
+    "index.md",
+    "diario.md",
+    "bio.md",
+    "lezioni e appunti/analisi 1.md",
     "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 24.md",
     "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 23 - Introduzione a C.md",
     "2024-01-11.md",
-    "bio.md",
-    "index.md",
-    "diario.md",
-    "lezioni e appunti/analisi 1.md",
     "lezioni e appunti/programmazione dei calcolatori.md",
-    "obsidian.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "art.md",
