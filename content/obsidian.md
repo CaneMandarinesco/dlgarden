@@ -11,3 +11,4 @@
 * usa i tag
 * espandi la tab a destra (cliccando expand tab in altro a destra)
 * tool per la ricerca: https://obsidian.rocks/obsidian-search-five-hidden-features/
+* altro?
