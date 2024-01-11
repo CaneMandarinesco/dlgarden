@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian.md",
+                "file": "lezioni e appunti/matematica discreta.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian.md",
+                "file": "lezioni e appunti/matematica discreta.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian.md",
+                "file": "lezioni e appunti/matematica discreta.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian.md"
+                "file": "lezioni e appunti/matematica discreta.md"
               }
             }
           }
@@ -148,18 +148,20 @@
   },
   "active": "2a0286ffd0402c93",
   "lastOpenFiles": [
-    "2024-01-11.md",
+    "().md",
+    "lezioni e appunti/matematica discreta.md",
     "diario.md",
-    "lezioni e appunti/analisi 1.md",
-    "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 35.md",
     "index.md",
-    "bio.md",
-    "obsidian.md",
-    "art.md",
-    "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 24.md",
-    "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 23 - Introduzione a C.md",
-    "lezioni e appunti/programmazione dei calcolatori.md",
     "Untitled.canvas",
+    "obsidian.md",
+    "lezioni e appunti/programmazione dei calcolatori.md",
+    "2024-01-11.md",
+    "bio.md",
+    "lezioni e appunti/analisi 1.md",
+    "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 24.md",
+    "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 35.md",
+    "art.md",
+    "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 23 - Introduzione a C.md",
     "Untitled 1.canvas",
     "lezioni e appunti/programmazione dei calcolatori",
     "lezioni e appunti",

@@ -15,3 +15,7 @@
 * **EndeavourOS** con Hyprland
 * **intel i5-8350U**, processore caruccio che non mi da problemi su arch
 * **16gb** ram / **256gb** ssd
+### desktop
+* **intel i5-7400**
+* nvidia geforce gtx **1050 ti**
+* **16gb**  ram / **256gb** ssd / **1tb** hdd

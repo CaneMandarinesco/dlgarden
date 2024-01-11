@@ -4,5 +4,5 @@
 # appunti
 - [[programmazione dei calcolatori]] (python/c, prof. G. Rossi)
 - [[analisi 1]] (prof. R. Tauraso)
+- [[matematica discreta]] (prof. F. Brenti) 
 - l~~ogica e reti logiche  (prof. F. Pasquale)~~
-- ~~matematica discreta (prof. F. Brenti)~~ 
