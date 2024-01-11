@@ -5,6 +5,7 @@ union item {
     float val_f;
     char *val_s;
 }
+
 typedef union item item;
 // dentro a item, la stessa regione di memoria e' condivisa tra val_i, val_f e val_s
 

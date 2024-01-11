@@ -11,8 +11,12 @@
             "id": "2a0286ffd0402c93",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 35.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 35.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 35.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 35.md"
+              }
             }
           }
         ]
@@ -140,12 +148,12 @@
   },
   "active": "2a0286ffd0402c93",
   "lastOpenFiles": [
-    "art.md",
-    "obsidian.md",
-    "index.md",
-    "diario.md",
-    "bio.md",
     "lezioni e appunti/analisi 1.md",
+    "index.md",
+    "bio.md",
+    "obsidian.md",
+    "art.md",
+    "diario.md",
     "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 24.md",
     "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 23 - Introduzione a C.md",
     "2024-01-11.md",
