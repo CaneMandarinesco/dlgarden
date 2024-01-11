@@ -11,12 +11,8 @@
             "id": "2a0286ffd0402c93",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "art.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "art.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "art.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "art.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -148,6 +140,7 @@
   },
   "active": "2a0286ffd0402c93",
   "lastOpenFiles": [
+    "art.md",
     "obsidian.md",
     "index.md",
     "diario.md",
@@ -159,7 +152,6 @@
     "lezioni e appunti/programmazione dei calcolatori.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
-    "art.md",
     "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 35.md",
     "lezioni e appunti/programmazione dei calcolatori",
     "lezioni e appunti",
