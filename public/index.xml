@@ -5,66 +5,6 @@
       <link>https://quartz.jzhao.xyz</link>
       <description>Last 10 notes on 🪴 Quartz 4.0</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
-      <item>
-    <title>analisi 1</title>
-    <link>https:/quartz.jzhao.xyz/lezioni-e-appunti/analisi-1</link>
-    <guid>https:/quartz.jzhao.xyz/lezioni-e-appunti/analisi-1</guid>
-    <description>materiale didattico limiti notevoli derivate primitive argomenti § proprieta dei numeri funzioni, grafici e operazioni sui grafici coefficiente binomiale e fattoriale maggiorante e minorante, massimo e minimo, estremo superiore e inferiore di un insieme assioma di completezza limite di una successione proprieta dei limiti limiti notevoli calcolo dei limiti intorni di un punto limiti di funzioni derivata, retta tangente regole di derivazione derivate di funzioni elementari punti di massimo e minimo derivata II: concavita e convessita di f punto di flesso punti di discontinuita/non derivabilita polinomio di taylor algebra o-piccoli metodo di esaustione-compressione def.</description>
-    <pubDate>Thu, 11 Jan 2024 20:03:37 GMT</pubDate>
-  </item><item>
-    <title>p.d.c. lez 23 - Introduzione a C</title>
-    <link>https:/quartz.jzhao.xyz/lezioni-e-appunti/programmazione-dei-calcolatori/p.d.c.-lez-23---Introduzione-a-C</link>
-    <guid>https:/quartz.jzhao.xyz/lezioni-e-appunti/programmazione-dei-calcolatori/p.d.c.-lez-23---Introduzione-a-C</guid>
-    <description>struttura del file § #include &lt;stdio.h&gt; // include la libreria standard, contiene le funzioni piu comuni float abs_val( float ); // prototipo di funzione: vengono definiti solo i tipi delle variabili float radice2( float x ); // non e&#039; un prototipo, e&#039; stato definito il nome del tipo float ma deve ancora essere implementata // ricorda: le funzioni prima di essere chiamate devono essere almeno definite! void main(){ // punto di entrata per l&#039;esecuzione del codice.</description>
-    <pubDate>Thu, 11 Jan 2024 20:03:37 GMT</pubDate>
-  </item><item>
-    <title>p.d.c. lez 24</title>
-    <link>https:/quartz.jzhao.xyz/lezioni-e-appunti/programmazione-dei-calcolatori/p.d.c.-lez-24</link>
-    <guid>https:/quartz.jzhao.xyz/lezioni-e-appunti/programmazione-dei-calcolatori/p.d.c.-lez-24</guid>
-    <description>struttura del file § #include &lt;stdio.h&gt; int somma(int [], int ); int *somme_parziali(int [], int); int N = 12; // variabile globale, qualsiasi funzione all&#039;interno di questo file puo&#039; usarla // invece una funzione definita dentro main(), non puo&#039; essere usata in somma int main(){ .</description>
-    <pubDate>Thu, 11 Jan 2024 20:03:37 GMT</pubDate>
-  </item><item>
-    <title>p.d.c. lez 35</title>
-    <link>https:/quartz.jzhao.xyz/lezioni-e-appunti/programmazione-dei-calcolatori/p.d.c.-lez-35</link>
-    <guid>https:/quartz.jzhao.xyz/lezioni-e-appunti/programmazione-dei-calcolatori/p.d.c.-lez-35</guid>
-    <description>struttura del file § union item { int val_i; float val_f; char *val_s; } typedef union item item; // dentro a item, la stessa regione di memoria e&#039; condivisa tra val_i, val_f e val_s struct object { char type; // &#039;I&#039; -&gt; Intero, &#039;F&#039; -&gt; Float, &#039;S&#039; -&gt; *char item u; } typedef struct object object; /* converti l&#039;oggetto al tipo giusto per rappresentarlo */ object parse(char*); /*controlla il tipo dell&#039;item dentro a object e stampa il valore */ void print(object); /* controlla se la stringa s contiene dei punti, in modo da capire se e&#039; un float */ int cercapunto(char* s); int main(int argc, char** argv){ /*.</description>
-    <pubDate>Thu, 11 Jan 2024 20:03:37 GMT</pubDate>
-  </item><item>
-    <title>programmazione dei calcolatori</title>
-    <link>https:/quartz.jzhao.xyz/lezioni-e-appunti/programmazione-dei-calcolatori</link>
-    <guid>https:/quartz.jzhao.xyz/lezioni-e-appunti/programmazione-dei-calcolatori</guid>
-    <description>materiale didattico argomenti per lezione § linguaggio C, main(), viariabili, printf(), assegnazione cicli while e for, if.</description>
-    <pubDate>Thu, 11 Jan 2024 20:03:37 GMT</pubDate>
-  </item><item>
-    <title>art</title>
-    <link>https:/quartz.jzhao.xyz/art</link>
-    <guid>https:/quartz.jzhao.xyz/art</guid>
-    <description>musica che vi consiglio (qvc) § Lovely Sewer - Yves Tumor THE DEATH OF PEACE OF MIND - Bad Omens Take Me Back To Eden - Sleep Token In Rainbows - Radiohead Ballon d’Or - Gem, Nayt Hearts / Wires - Deftones Romanticist - Yves Tumor Misantropo a senso unico - Cripple Bastards MURUBURZUM - Ozone Dehumanizer film che vi consiglio :) § eternal sunshine of the spotless mind (ci sta jim carrey, mio padre) the truman show edward mani di forbice il castello errante di howl fumetti che vi consiglio § bunanotte punpun chainsaw man .</description>
-    <pubDate>Thu, 11 Jan 2024 20:03:37 GMT</pubDate>
-  </item><item>
-    <title>obsidian</title>
-    <link>https:/quartz.jzhao.xyz/obsidian</link>
-    <guid>https:/quartz.jzhao.xyz/obsidian</guid>
-    <description> software per scrivere note pensato per visualizzare e gestire i collegamenti tra note tanti temi customizzabili! metodi per organizzare le note § MOC (Maps of content) PARA Zettelkasten cose utili § https://obsidian.</description>
-    <pubDate>Thu, 11 Jan 2024 20:03:37 GMT</pubDate>
-  </item><item>
-    <title>bio</title>
-    <link>https:/quartz.jzhao.xyz/bio</link>
-    <guid>https:/quartz.jzhao.xyz/bio</guid>
-    <description> D. L., studio informatica a tor vergata (rm). arch user (btw) nella vita oltre a fare l’universitario basic, sono un batterista, mi piace il metal. sono un fan di nayt.</description>
-    <pubDate>Thu, 11 Jan 2024 20:03:37 GMT</pubDate>
-  </item><item>
-    <title>diario</title>
-    <link>https:/quartz.jzhao.xyz/diario</link>
-    <guid>https:/quartz.jzhao.xyz/diario</guid>
-    <description>11/01/2023 § life is ok….</description>
-    <pubDate>Thu, 11 Jan 2024 20:03:37 GMT</pubDate>
-  </item><item>
-    <title>index</title>
-    <link>https:/quartz.jzhao.xyz/</link>
-    <guid>https:/quartz.jzhao.xyz/</guid>
-    <description> se vuoi sapere qualcosa su di me, ecco la mia bio il mio diario art appunti § programmazione dei calcolatori (python/c, prof. G. Rossi) analisi 1 (prof.</description>
-    <pubDate>Thu, 11 Jan 2024 20:03:37 GMT</pubDate>
-  </item>
+      
     </channel>
   </rss>
