@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "83b10cf4f28e09f7",
+        "id": "632078537ae61c0f",
         "type": "tabs",
         "children": [
           {
-            "id": "2a0286ffd0402c93",
+            "id": "259633f2fb42809e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lezioni e appunti/matematica discreta.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lezioni e appunti/matematica discreta.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lezioni e appunti/matematica discreta.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lezioni e appunti/matematica discreta.md"
+                "file": "index.md"
               }
             }
           }
@@ -133,8 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,23 +145,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a0286ffd0402c93",
+  "active": "259633f2fb42809e",
   "lastOpenFiles": [
-    "().md",
-    "lezioni e appunti/matematica discreta.md",
     "diario.md",
     "index.md",
-    "Untitled.canvas",
-    "obsidian.md",
-    "lezioni e appunti/programmazione dei calcolatori.md",
-    "2024-01-11.md",
-    "bio.md",
     "lezioni e appunti/analisi 1.md",
-    "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 24.md",
-    "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 35.md",
+    "obsidian.md",
+    "bio.md",
     "art.md",
+    "lezioni e appunti/programmazione dei calcolatori.md",
+    "lezioni e appunti/matematica discreta.md",
+    "soldi.md",
+    "ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/MIT6_042JF10_notes.pdf.md",
+    "ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings",
+    "ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010",
+    "ocw.mit.edu/courses/electrical-engineering-and-computer-science",
+    "ocw.mit.edu/courses",
+    "ocw.mit.edu",
+    "Untitled.canvas",
+    "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 24.md",
     "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 23 - Introduzione a C.md",
+    "2024-01-11.md",
     "Untitled 1.canvas",
+    "lezioni e appunti/programmazione dei calcolatori/p.d.c. lez 35.md",
     "lezioni e appunti/programmazione dei calcolatori",
     "lezioni e appunti",
     "materiale.md",
