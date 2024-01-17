@@ -11,7 +11,7 @@
 ## hardware
 ### laptop
 * **t480s** (ebay, per 190 eur)
-* ***endeavourOS** con Hyprland
+* **endeavourOS** con Hyprland
 * **intel i5-8350U**
 * **16gb** ram / **256gb** ssd
 ### desktop

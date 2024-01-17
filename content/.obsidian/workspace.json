@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "c049328a71c9c3ea",
@@ -149,14 +149,14 @@
   },
   "active": "259633f2fb42809e",
   "lastOpenFiles": [
-    "art.md",
-    "lezioni e appunti/analisi 1.md",
     "lezioni e appunti/matematica discreta.md",
     "lezioni e appunti/programmazione dei calcolatori.md",
+    "bio.md",
+    "art.md",
+    "lezioni e appunti/analisi 1.md",
     "index.md",
     "diario.md",
     "obsidian.md",
-    "bio.md",
     "soldi.md",
     "ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/MIT6_042JF10_notes.pdf.md",
     "ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings",
