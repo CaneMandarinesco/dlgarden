@@ -30,7 +30,7 @@
 * def. di primitiva
 * tecniche di integrazione
 * serie numeriche
-* numeri complessi
+* numeri complessi: definizione, operazioni, forma cartesiana e forma esponenziale, radici di numeri complessi
 * problema di cauchy
 
 # teoremi e dimostrazioni
@@ -47,6 +47,13 @@
 * teorema di lagrande (o del valor medio)
 * teorema di cauchy
 * teorema de l'hopital
+
+# tabella valori sin e cos
+| radianti | sin | cos |
+| ---- | ---- | ---- |
+| $\frac{\pi}{6}$ | $\frac{1}{2}$ | $\frac{\sqrt{3}}{2}$ |
+| $\frac{\pi}{4}$ | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{2}}{2}$ |
+| $\frac{\pi}{3}$ | $\frac{\sqrt{3}}{2}$ | $\frac{1}{2}$ |
 
 # limiti notevoli
 1. $\lim_{x\to\infty} (1+\frac{1}{x})^x = e$

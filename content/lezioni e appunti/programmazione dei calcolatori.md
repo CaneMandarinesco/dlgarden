@@ -1,4 +1,6 @@
 [materiale didattico](https://github.com/glucatv/Programmazione-dei-Calcolatori-aa23-24/)
+[slides costo computazionale uni roma](https://twiki.di.uniroma1.it/pub/Intro_algo/AD/DiarioDelleLezioni/03_Costo_computazionale2021.pdf)
+[slides costo computazionale uni bo](http://www-db.deis.unibo.it/courses/FIL-B/Lezioni/complessita.pdf)
 # argomenti per lezione
 23. linguaggio C, `main()`, viariabili, `printf()`, assegnazione
 24. cicli `while` e `for`, `if...else`, direttiva `include` e librerie
