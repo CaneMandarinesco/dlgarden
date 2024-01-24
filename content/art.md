@@ -10,11 +10,13 @@
 * MURUBURZUM - Ozone Dehumanizer
 * Architects - Seeing Red
 
-# film che vi consiglio :)
+# film/serie tv che vi consiglio :)
 * eternal sunshine of the spotless mind (ci sta jim carrey, mio padre)
 * the truman show
 * edward mani di forbice
 * il castello errante di howl
+* friends / himym
+* the office 
 
 
 # fumetti che vi consiglio
