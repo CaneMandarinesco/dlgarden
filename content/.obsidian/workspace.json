@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "art.md",
+                "file": "lezioni e appunti/programmazione dei calcolatori.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "art.md",
+                "file": "lezioni e appunti/programmazione dei calcolatori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "art.md",
+                "file": "lezioni e appunti/programmazione dei calcolatori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "art.md"
+                "file": "lezioni e appunti/programmazione dei calcolatori.md"
               }
             }
           }
@@ -148,10 +148,10 @@
   },
   "active": "2a0286ffd0402c93",
   "lastOpenFiles": [
+    "art.md",
     "bio.md",
     "diario.md",
     "index.md",
-    "art.md",
     "lezioni e appunti/analisi 1.md",
     "dotfiles.md",
     "Home.md",
