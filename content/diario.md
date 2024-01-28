@@ -1,2 +1,2 @@
-# 11/01/2023
-life is ok...
+# 23/01/2024
+* Esame scritto analisi 1: **Ritirato**
