@@ -1,7 +1,7 @@
 [materiale didattico](https://www.mat.uniroma2.it/~tauraso/analisi1inf2324.html)
 * [limiti notevoli](#limiti-notevoli)
 * [derivate](#derivate)
-* ~~primitive~~
+* [[serie numeriche]]
 
 # argomenti
 * proprieta dei numeri
@@ -73,13 +73,3 @@
 | $\arcsin(x)$ | $\frac{1}{\sqrt{1-x^2}}$ |  |
 | $\arccos(x)$ | $\frac{1}{\sqrt{1+x^2}}$ |  |
 | $\arctan(x)$ | $\frac{1}{1+x^2}$ |  |
-# primitive
-
-def: $\forall x, f(x) = F^`(x)$ 
-ossia la derivata di $F(x)$ e' uguale a $f(x)$
-
-| $f(x)$ | $F(x)$ |  |  |
-| ---- | ---- | ---- | ---- |
-| $x^a$ | $\frac{x^{a+1}}{a+1}$ |  |  |
-| $\frac{1}{x}$ | $\ln{\|x\|}$ |  |  |
-|  |  |  |  |

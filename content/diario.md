@@ -1,2 +1,2 @@
 # 23/01/2024
-* Esame scritto di Analisi 1: Ritirato
+* Esame scritto analisi 1: **Ritirato**
