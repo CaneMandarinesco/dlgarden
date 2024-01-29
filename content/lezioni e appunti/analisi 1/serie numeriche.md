@@ -1,3 +1,4 @@
+
 [materiale tauraso](https://www.mat.uniroma2.it/~tauraso/aa2324/an1-lezione27.pdf)
 [video](https://www.youtube.com/watch?v=dF_hyMKu_tA)
 definzione: 
@@ -59,6 +60,59 @@ $$
 
 questo e' un contro esempio per la condizione **necessaria** per la convergenza. in questo caso il fatto che $\frac{1}{k} \to 0$ non e' causa sufficiente per affermare che la serie diverga.
 **interpretazione geometrica**: area di un rettangolo
+
+nota che:
 $$
-S_{2^n}
+\sum_{n=1}^{\infty} \frac{1}{n} = +\infty \text{ e }\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}
 $$
+
+> la convergenza/divergenza delle serie e' determinata dalla loro velocità
+#### dim. che la serie di $\frac{1}{n}$ diverge
+$$
+S_{n} = 1+(\frac{1}{2}+\frac{1}{3})+(\frac{1}{4}+\frac{1}{5} + \frac{1}{6}+\frac{1}{7}) + \dots \geq T_{n} = 1 + \frac{1}{2}+\frac{1}{2}+ \dots
+$$
+quindi $S_{n} > T_{n}$ e $T_{n} = +\infty$ . Allora per **confronto** $S_{n}  = +\infty$
+
+### serie armonica generalizzata
+$$
+\sum_{n=1}^{\infty} \frac{1}{n^\alpha}
+$$
+* la successione converge se $\alpha \leq 1$
+* la successione diverge se $\alpha > 1$
+
+## criterio necessario per la convergenza
+se una successione converge -> il termine generale $a_{n}$ tende a 0
+$$
+\sum_{n=n_{0}}^{\infty}a_{n} \text{ converge} \to \lim_{ n \to \infty } a_{n} \text{ converge}
+$$
+quindi quando dobbiamo determinare la convergenza di una serie, il primo passo sara' studiare il limite del suo termine generale. se il limite **diverge** allora siamo sicuri che la successione **diverge**. lo stesso ragionamento non vale per la convergenza (implicazione)
+
+## criterio del confronto
+date due successioni $a_{n} \text{ e } b_{n}$ t.c: $0 \leq a_{n} \leq b_{n}$
+* se $a_{n}$ diverge allora $b_{n}$ diverge
+* se $b_{n}$ converge allora $a_{n}$ converge
+
+## criterio del confronto integrale
+sia $f(x)$ continua  e **decrescente** in $[1,+\infty]$ e $a_{n} = f(x)$ ->
+la serie di $a_{n}$ converge se e solo se converge $\int_{1}^{+\infty} f(x)\, dx$
+
+## criterio del confronto asintotico
+se $a_{n} \sim L * b_{n}$ (sono asintoticamente equivalenti) ->
+$a_{n}$ converge/diverge $\Leftrightarrow b_{n}$ converge/diverge 
+
+## criterio della radice e del rapporto
+sia $a_{n}$ una successione, converge/diverge 
+* se $\exists \lim_{ n \to \infty } \sqrt[n]{ a_{n} } = L$ (criterio della radice) 
+* oppure se $\exists \lim_{ n \to \infty } \frac{a_{n+1}}{a_{n}} = L$
+allora se:
+* $L>1$ allora la serie di $a_{n}$ diverge a $+\infty$
+* $L < 1$ allora la serie di $a_{n}$ converge
+
+## criterio di Leibniz
+se $a_{k}$ e' una serie a caratteri positivi e $a_{k} \to 0$ allora
+$$
+\sum_{n=k_{0}}^{\infty}(-1)^ka_{n}\text{ converge}
+$$
+
+# frattale di koch
+....
