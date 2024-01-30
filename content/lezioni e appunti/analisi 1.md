@@ -1,7 +1,10 @@
+### per esercitarsi consiglio i video di [Marcello Dario Cerroni](https://www.youtube.com/@MarcelloDarioCerroni) su youtube
 [materiale didattico](https://www.mat.uniroma2.it/~tauraso/analisi1inf2324.html)
 * [limiti notevoli](#limiti-notevoli)
 * [derivate](#derivate)
 * [[serie numeriche]]
+* [[limiti]]
+> gli esercizi e i vari appunti sono presi da video su youtube, siti e libri vari. possono contenere varie imprecisioni quindi, ovviamente non fate affidamento unicamente ai miei appunti.
 
 # argomenti
 * proprieta dei numeri
