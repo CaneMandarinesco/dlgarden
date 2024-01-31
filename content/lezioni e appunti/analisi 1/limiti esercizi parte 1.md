@@ -251,6 +251,7 @@ $$
 ### es 6
 $$
 \lim_{ x \to \infty } x lg\left( \frac{x^2+3}{x^2+2x+3} \right) = \infty * 0
+<<<<<<< HEAD:content/lezioni e appunti/analisi 1/limiti esercizi parte 1.md
 $$
 $$
 \lim_{ x \to \infty } lg \left( \frac{x^2+2x+3-2x}{x^2+2x+3} \right)^x  = lg\left( \frac{x^2+2x+3}{x^2+2x+3} - \frac{2x}{x^2+2x+3} \right)^x = lg\left( 1-\frac{2x}{x^2+2x+3} \right)^x = 

@@ -1,7 +1,7 @@
 
-[materiale tauraso](https://www.mat.uniroma2.it/~tauraso/aa2324/an1-lezione27.pdf)
-[video](https://www.youtube.com/watch?v=dF_hyMKu_tA)
-definzione: 
+* [materiale tauraso](https://www.mat.uniroma2.it/~tauraso/aa2324/an1-lezione27.pdf)
+* [video](https://www.youtube.com/watch?v=dF_hyMKu_tA)
+* definzione: 
 $$
 \sum_{k=k_0}^{\infty} a_{k} = \lim_{ n \to \infty } \sum_{k=k_{0}}^{n} a_{k} 
 $$
@@ -61,7 +61,7 @@ $$
 questo e' un contro esempio per la condizione **necessaria** per la convergenza. in questo caso il fatto che $\frac{1}{k} \to 0$ non e' causa sufficiente per affermare che la serie diverga.
 **interpretazione geometrica**: area di un rettangolo
 
-nota che:
+> nota che:
 $$
 \sum_{n=1}^{\infty} \frac{1}{n} = +\infty \text{ e }\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}
 $$
