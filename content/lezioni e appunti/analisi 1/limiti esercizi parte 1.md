@@ -252,4 +252,16 @@ $$
 $$
 \lim_{ x \to \infty } x lg\left( \frac{x^2+3}{x^2+2x+3} \right) = \infty * 0
 $$
-...
+$$
+\lim_{ x \to \infty } lg \left( \frac{x^2+2x+3-2x}{x^2+2x+3} \right)^x  = lg\left( \frac{x^2+2x+3}{x^2+2x+3} - \frac{2x}{x^2+2x+3} \right)^x = lg\left( 1-\frac{2x}{x^2+2x+3} \right)^x = 
+$$
+$$
+= lg\left( 1-\frac{1}{\frac{x^2+2x+3}{2x}} \right)^{x * [(x^2+2x+3)/2x]*[(2x)/x^2+2x+3]} = lg(e^{-2}) = -2
+
+$$
+
+oppure
+$$
+\lim_{ x \to \infty } lg\left( \frac{x^2+2x+3}{x+3} \right)^{-x} = \dots
+$$
+> NOTA: l'esponente alle parentisi si riferisce all'argomento, non al risultato del logaritmo

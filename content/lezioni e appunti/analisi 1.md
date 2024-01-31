@@ -3,7 +3,7 @@
 * [limiti notevoli](#limiti-notevoli)
 * [derivate](#derivate)
 * [[serie numeriche]]
-* [[limiti]]
+* [[limiti esercizi parte 1]]
 > gli esercizi e i vari appunti sono presi da video su youtube, siti e libri vari. possono contenere varie imprecisioni quindi, ovviamente non fate affidamento unicamente ai miei appunti.
 
 # argomenti
