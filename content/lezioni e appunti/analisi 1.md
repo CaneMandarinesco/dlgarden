@@ -1,10 +1,11 @@
 ### per esercitarsi consiglio i video di [Marcello Dario Cerroni](https://www.youtube.com/@MarcelloDarioCerroni) su youtube
-[materiale didattico](https://www.mat.uniroma2.it/~tauraso/analisi1inf2324.html)
+* [materiale didattico](https://www.mat.uniroma2.it/~tauraso/analisi1inf2324.html)
 * [limiti notevoli](#limiti-notevoli)
 * [derivate](#derivate)
 * [[serie numeriche]]
 * [[limiti]]
-> gli esercizi e i vari appunti sono presi da video su youtube, siti e libri vari. possono contenere varie imprecisioni quindi, ovviamente non fate affidamento unicamente ai miei appunti.
+* [[limiti taylor]]
+> gli esercizi e i vari appunti sono presi da video su youtube, siti e libri vari. gli appunti possono contenere varie imprecisioni quindi, ovviamente non fate affidamento unicamente ai miei appunti.
 
 # argomenti
 * proprieta dei numeri
@@ -64,15 +65,47 @@
 10. $\lim_{x\to0} \frac{1-\cos(x)}{x^2} = \frac{1}{2}$
 
 # derivate
-| $f(x)$ | $\frac{df}{dx}$ |  |
-| ---- | ---- | ---- |
-| $a$ | $0$ |  |
-| $ax$ | $a$ |  |
-| $x^a$ | $ax^{a-1}$ |  |
-| $\ln(x)$ | $\frac{1}{x}$ |  |
-| $\sin(x)$ | $\cos(x)$ |  |
-| $\cos(x)$ | $-\sin(x)$ |  |
-| $\tan(x)$ | $\frac{1}{\cos^2(x)}$ |  |
-| $\arcsin(x)$ | $\frac{1}{\sqrt{1-x^2}}$ |  |
-| $\arccos(x)$ | $\frac{1}{\sqrt{1+x^2}}$ |  |
-| $\arctan(x)$ | $\frac{1}{1+x^2}$ |  |
+| $f(x)$ | $\frac{df}{dx}$ |
+| ---- | ---- |
+| $a$ | $0$ |
+| $ax$ | $a$ |
+| $x^a$ | $ax^{a-1}$ |
+| $\ln(x)$ | $\frac{1}{x}$ |
+| $\sin(x)$ | $\cos(x)$ |
+| $\cos(x)$ | $-\sin(x)$ |
+| $\tan(x)$ | $\frac{1}{\cos^2(x)}$ |
+| $\arcsin(x)$ | $\frac{1}{\sqrt{1-x^2}}$ |
+| $\arccos(x)$ | $\frac{1}{\sqrt{1+x^2}}$ |
+| $\arctan(x)$ | $\frac{1}{1+x^2}$ |
+|  |  |
+|  |  |
+# sviluppi di taylor
+### esponenziale
+$$e^x = 1+x+\frac{1}{2}x^2 +\frac{2}{6}x^3 + \dots + o(x^n)$$
+### logaritmo (non ha il fattoriale)
+$$
+\log(1+x) = x - \frac{1}{2}x^2 + \frac{1}{3}x^3 + \dots + o(x^n)
+$$
+
+### potenza di un binomio (no segno alternato, derivate di $\alpha$)
+$$
+(1+x)^\alpha = 1 + \alpha x + \frac{\alpha(\alpha-1)}{2}x^2 +\frac{1}{6}\alpha(\alpha-1)(\alpha-2)x^3 + \dots + o(x^n)
+$$
+### sin
+$$
+\sin x = x-\frac{x^3}{6} + \frac{x^5}{5!}-\dots + o(x^n)
+$$
+
+### cos
+$$
+\cos x = 1-\frac{x^2}{2}+\frac{x^4}{24}-\frac{x^6}{6!} +\dots o(x^n)
+$$
+
+### tan (come sin, ma ha $\frac{2}{15}$)
+$$
+\tan x = x-\frac{x^3}{3} + \frac{2}{15} x^5
+$$
+questi sotto non dovrebbero servire
+### arcsin 
+### arccos
+### arctan 

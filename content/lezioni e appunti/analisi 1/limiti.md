@@ -252,4 +252,3 @@ $$
 $$
 \lim_{ x \to \infty } x lg\left( \frac{x^2+3}{x^2+2x+3} \right) = \infty * 0
 $$
-...
