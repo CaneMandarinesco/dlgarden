@@ -7,6 +7,8 @@
 * [[limiti taylor]]
 > gli esercizi e i vari appunti sono presi da video su youtube, siti e libri vari. possono contenere varie imprecisioni quindi, ovviamente non fate affidamento unicamente ai miei appunti.
 
+> ps. ho seguito poco le lezioni del Tauraso
+
 # argomenti
 * proprieta dei numeri
 * funzioni, grafici e operazioni sui grafici
