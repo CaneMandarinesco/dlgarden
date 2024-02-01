@@ -2,9 +2,15 @@
 * [materiale didattico](https://www.mat.uniroma2.it/~tauraso/analisi1inf2324.html)
 * [limiti notevoli](#limiti-notevoli)
 * [derivate](#derivate)
+
+## teoria
+* [[limiti di successioni e di funzioni]]
 * [[serie numeriche]]
+
+## esercizi
 * [[limiti esercizi parte 1]]
-* [[limiti taylor]]
+* [[limiti esercizi parte 2]]
+* [[limiti esercizi taylor]]
 > gli esercizi e i vari appunti sono presi da video su youtube, siti e libri vari. possono contenere varie imprecisioni quindi, ovviamente non fate affidamento unicamente ai miei appunti.
 
 > ps. ho seguito poco le lezioni del Tauraso

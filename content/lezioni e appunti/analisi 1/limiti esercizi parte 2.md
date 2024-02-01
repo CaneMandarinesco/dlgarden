@@ -20,7 +20,23 @@ $$
 $$
 =  \left( 1+\frac{1}{\frac{x^3-5x+6}{4x-7}} \right)^{x[\frac{x^3-5x+6}{4x-7}][\frac{4x-7}{x^3-5x+6}]} = e^{x[\frac{4x-7}{x^3-5x+6}]} = 1
 $$
-
+## esercizi generali
+### es 1
 $$
-
+\lim_{ x \to 0 } \frac{2\cos x + x^2-2}{x^4} = \frac{0}{0}
+$$
+con Hospital:
+$$
+= \lim_{ x \to 0 } \frac{-2\sin +2x}{4x^3} = \frac{2 -2 \cos x}{12x^2} = \frac{2}{2}\frac{1-\cos x}{6x^2} = \frac{1}{6} \frac{1-\cos x}{x^2} = \frac{1}{12}
+$$
+con Taylor:
+$$
+\cos x = 1 - \frac{x^2}{2} + \frac{1}{24}x^4 + o(x^2)
+$$
+$$
+2\cos x = 2 - x^2 + \frac{1}{12}x^4 o(x^4)
+$$ 
+allora:
+$$
+\lim_{ x \to 0 } \frac{2-x^2+\frac{1}{12} x^4 + x^2 -2}{x^4} = \frac{1}{12}
 $$

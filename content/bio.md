@@ -1,4 +1,4 @@
-* ***D. L.***, studio informatica a tor vergata (rm).
+* ***D.***, studio informatica a tor vergata (rm).
 * arch user (btw)
 * nella vita oltre a fare l'universitario basic, sono un batterista, mi piace il metal.
 * sono un fan di **nayt**.
@@ -6,7 +6,6 @@
 * ogni tanto esco con gli amici.
 
 ## link
-* instagram/threads: [davide___luci](https://www.instagram.com/davide___luci) 
 * github: [CaneMandarinesco](https://github.com/CaneMandarinesco)
 
 ## hardware
