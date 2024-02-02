@@ -24,6 +24,9 @@ $$
 \text{(2)  }\sum_{k=1}^{\infty} (-1)^k = \lim_{ n \to \infty } \sum_{k=0}^{n}(-1)^k = \lim_{ n \to \infty } S_{n} = \nexists
 $$
 ### serie telescopica
+
+^d04ed2
+
 $$
 S_{n} = \sum_{k=k_{0}}^{n} b_{n}
 $$

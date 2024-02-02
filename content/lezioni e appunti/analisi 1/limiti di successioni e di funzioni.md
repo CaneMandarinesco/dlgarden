@@ -100,7 +100,80 @@ per dimostrarlo bisogna far vedere 2 cose:
 1. stretta crescenza
 2. e' limitato superiormente
 
-### 1. stretta crescenza
+> [!note] DIM. 1. STRETTA CRESCENZA
+> vogliamo di mostrare questo:
+> $$
+\forall n \geq 1: \left( 1+\frac{1}{n+1} \right)^{n+1} > \left( 1+ \frac{1}{n} \right)^n
+> $$
+ > applico il [[teorema potenza di un binomio]] e sposto fuori dalla sommatoria l'elemento n+1 ed ho che:
+ > $$
+ > \left( 1+\frac{1}{n+1} \right)^n+1 = \sum_{k=0}^{n} \binom{n}{k}\frac{1}{(n+1)^k} + \frac{1}{(n+1)^{n+1}}
+ >$$ 
+> 
+ > nota inoltre che l'elemento n+1: $\frac{1}{(n+1)^{n+1}} \text{ che e' sempre } > 0$ 
+ > inoltre ho che: 
+ > $$
+ > \sum_{k=0}^{n}\binom{n}{k} \frac{1}{(n+1)^k} \geq \sum_{k=0}^{n}\binom{n}{k} \frac{1}{n^k} (1)
+ > $$
+ > infine: 
+ > $$
+ > \sum_{k=0}^{n}\binom{n}{k} \frac{1}{(n+1)^k} + \frac{1}{(n+1)^{n+1}} > \sum_{k=0}^{n}\binom{n}{k} \frac{1}{n^k}
+ > $$
+ > quindi e' crescente
+
+>[!note] DIM. 2. LIMITATA SUPERIORMENTE 
+> analizzando i primi termini della sommatoria abbiamo che: 
+> $$
+> \left( 1+\frac{1}{n} \right)^n = \sum_{k=0}^{n}\binom{n}{k} \frac{1}{n^k} = 1 + 1 + \sum_{k=2}^{n}\binom{n}{k} \frac{1}{n^k} 
+> $$
+> da qui si procede per confronto con la [[serie numeriche#^d04ed2|serie telescopica]]:
+> $$
+> 2 + \sum_{k=2}^{n}\binom{n}{k} \frac{1}{n^k} \leq 2 + \sum_{k=2}^{n}\left( \frac{1}{k-1} - \frac{1}{k} \right) \leq 2+1- \frac{1}{n} < 3 \text{ } (2)
+> $$
+
+ >[!note] (1) 
+ > ricordando che: 
+ > $$
+ > \binom{n}{k} = \frac{n!}{k!(n-k)!} \to \binom{n+1}{k} = \frac{(n+1)!}{k!(n-k)!}
+ > $$
+ > $$
+> \binom{n+1}{k} \frac{1}{(n+1)^k} = \frac{\bcancel{n+1}}{\bcancel{n+1}} \frac{n}{n+1} \dots \frac{n+1-k+1}{n+1} \frac{1}{k!}
+> $$
+> mentre:
+> $$\binom{n}{k} \frac{1}{n^k} = \frac{\bcancel{n}}{\bcancel{n}} \frac{n-1}{n} \dots \frac{n-k+1}{n} \frac{1}{k!}
+> $$
+ 
+ 
+
+> [!note] (2)
+> $$
+> \binom{n}{k} \frac{1}{n^k} \leq \frac{1}{k!} \leq \frac{1}{k(k-1)} = \frac{1}{k-1} - \frac{1}{k}
+> $$
+
+# limiti di funzioni
+## Retta estesa e intorni
 $$
-\forall n \geq 1 
+\bar{\mathbb{R}} = R \cup\{-\infty, +\infty\}
 $$
+un intorno: $I(x_{0},r)$ e' definito come
+* $(x_{0}-r,x_{0}+r)$ se $x_{o} \in \mathbb{\mathbb{R}}$
+* $(r, +\infty)$ se $x_{o} = +\infty$
+* $(-\infty,r)$ se $x_{0} = -\infty$
+
+$x_{0}$ e' un punto di accumulo in $D$ se:
+* $\forall r > 0, (I(x_{0}, r) \cap D - \{x_{0}\}) \neq \emptyset$
+ovvero se per ogni intorno centrato in $x_{0}$ e di ampiezza $r$ c'e' sempre un elemento in più rispetto a $x_{0}$ stesso
+
+esempi di punti di accumulo:
+
+si dice inoltre che il limite di f(x) per x che tende  a $x_{0}$ vale $l$ se:
+$$
+\forall \epsilon>0, \exists \delta: \forall x \in ((D \cup{} I(x_{0}, r) \text{\\}  x_{0} ) f(x) \in I(l,\epsilon) 
+$$
+ovvero: 
+
+## proprieta dei limiti di funzioni
+
+
+## funzioni continue
+se $x_{0}$ e' un punto di accumulazione e $\lim_{ x \to x_{0} } f(x) = f(x_{0})$ **allora** f e' continua in $x_{0}$
