@@ -100,26 +100,26 @@ per dimostrarlo bisogna far vedere 2 cose:
 1. stretta crescenza
 2. e' limitato superiormente
 
-> [!note] DIM. 1. STRETTA CRESCENZA
-> vogliamo di mostrare questo:
-> $$
+>[!note] DIM. 1. STRETTA CRESCENZA
+>vogliamo di mostrare questo:
+>$$
 \forall n \geq 1: \left( 1+\frac{1}{n+1} \right)^{n+1} > \left( 1+ \frac{1}{n} \right)^n
+>$$
+> applico il [[teorema potenza di un binomio]] e sposto fuori dalla sommatoria l'elemento n+1 ed ho che:
 > $$
- > applico il [[teorema potenza di un binomio]] e sposto fuori dalla sommatoria l'elemento n+1 ed ho che:
- > $$
- > \left( 1+\frac{1}{n+1} \right)^n+1 = \sum_{k=0}^{n} \binom{n}{k}\frac{1}{(n+1)^k} + \frac{1}{(n+1)^{n+1}}
- >$$ 
+> \left( 1+\frac{1}{n+1} \right)^n+1 = \sum_{k=0}^{n} \binom{n}{k}\frac{1}{(n+1)^k} + \frac{1}{(n+1)^{n+1}}
+>$$ 
 > 
- >- nota inoltre che l'elemento n+1: $\frac{1}{(n+1)^{n+1}} \text{ che e' sempre } > 0$ 
- > - inoltre ho che: 
- > $$
- > \sum_{k=0}^{n}\binom{n}{k} \frac{1}{(n+1)^k} \geq \sum_{k=0}^{n}\binom{n}{k} \frac{1}{n^k} (1)
- > $$
+>- nota inoltre che l'elemento n+1: $\frac{1}{(n+1)^{n+1}} \text{ che e' sempre } > 0$ 
+> - inoltre ho che: 
+> $$
+> \sum_{k=0}^{n}\binom{n}{k} \frac{1}{(n+1)^k} \geq \sum_{k=0}^{n}\binom{n}{k} \frac{1}{n^k} (1)
+> $$
  > infine: 
- > $$
- > \sum_{k=0}^{n}\binom{n}{k} \frac{1}{(n+1)^k} + \frac{1}{(n+1)^{n+1}} > \sum_{k=0}^{n}\binom{n}{k} \frac{1}{n^k}
- > $$
- > quindi e' crescente
+> $$
+> \sum_{k=0}^{n}\binom{n}{k} \frac{1}{(n+1)^k} + \frac{1}{(n+1)^{n+1}} > \sum_{k=0}^{n}\binom{n}{k} \frac{1}{n^k}
+> $$
+> quindi e' crescente
 
 >[!note] DIM. 2. LIMITATA SUPERIORMENTE 
 > analizzando i primi termini della sommatoria abbiamo che: 
