@@ -110,8 +110,8 @@ per dimostrarlo bisogna far vedere 2 cose:
  > \left( 1+\frac{1}{n+1} \right)^n+1 = \sum_{k=0}^{n} \binom{n}{k}\frac{1}{(n+1)^k} + \frac{1}{(n+1)^{n+1}}
  >$$ 
 > 
- > nota inoltre che l'elemento n+1: $\frac{1}{(n+1)^{n+1}} \text{ che e' sempre } > 0$ 
- > inoltre ho che: 
+ >- nota inoltre che l'elemento n+1: $\frac{1}{(n+1)^{n+1}} \text{ che e' sempre } > 0$ 
+ > - inoltre ho che: 
  > $$
  > \sum_{k=0}^{n}\binom{n}{k} \frac{1}{(n+1)^k} \geq \sum_{k=0}^{n}\binom{n}{k} \frac{1}{n^k} (1)
  > $$
