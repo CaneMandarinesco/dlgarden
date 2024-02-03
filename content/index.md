@@ -1,5 +1,5 @@
 >[!note] 🌼🌼
-> il sito e' in continuo work-in-progress, quindi ci potrebbero esser dei [typo](https://en.wikipedia.org/wiki/Typographical_error), link vuoti, pagine vuote, cose strane e non so che altro.
+> il sito e' in continuo work-in-progress, quindi ci potrebbero essere dei [typo](https://en.wikipedia.org/wiki/Typographical_error), link vuoti, pagine vuote, cose strane e non so che altro.
 
 - se vuoi sapere qualcosa su di me, ecco la mia [[bio]]
 - il mio [[diario]]

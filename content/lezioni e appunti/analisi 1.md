@@ -88,8 +88,6 @@
 | $\arcsin(x)$ | $\frac{1}{\sqrt{1-x^2}}$ |
 | $\arccos(x)$ | $\frac{1}{\sqrt{1+x^2}}$ |
 | $\arctan(x)$ | $\frac{1}{1+x^2}$ |
-|  |  |
-|  |  |
 # sviluppi di taylor
 ### esponenziale
 $$e^x = 1+x+\frac{1}{2}x^2 +\frac{2}{6}x^3 + \dots + o(x^n)$$
