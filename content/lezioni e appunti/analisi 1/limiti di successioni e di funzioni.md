@@ -4,7 +4,7 @@
 $$
 \lim_{  n \to \infty } a_n = 
 $$
-* $+\infty$ se $\forall M \in R \text{, } \exists N\geq n_{0}: \forall n > N\text{, }$ $a_{n} > M$$
+* $+\infty$ se $\forall M \in R \text{, } \exists N\geq n_{0}: \forall n > N\text{, }$ $a_{n} > M$
 	* **divergenza**
 	* ovvero: per ogni M (un numero grande), esiste almeno un $a_{n}$ più  grande di M
 * $-\infty$ se $\forall M \in R\text{, } \exists N\geq n_{0}: \forall n>N, a_{n} < M$
@@ -75,7 +75,7 @@ sia $a_{n}$ una successione limitata, e $b_{n}$ una successione infinitesima (ov
 
 ## 8. algebra dei limiti
 sono valide le seguenti operazioni: 
-* con $\lim_{ n \to \infty } a_{n} =l_{1} \text{ e } \lim_{n \to \infty } b_{n} = l_{2}$
+con $\lim_{ n \to \infty } a_{n} =l_{1} \text{ e } \lim_{n \to \infty } b_{n} = l_{2}$
 $$
 \lim_{ n \to \infty } \frac{a_{n}}{b_{n}} = \frac{l_{1}}{l_{2}}
 $$
@@ -100,20 +100,21 @@ per dimostrarlo bisogna far vedere 2 cose:
 1. stretta crescenza
 2. e' limitato superiormente
 
->[!note] DIM. 1. STRETTA CRESCENZA
+> [!note] DIM. 1. STRETTA CRESCENZA
 >vogliamo di mostrare questo:
 >$$
-\forall n \geq 1: \left( 1+\frac{1}{n+1} \right)^{n+1} > \left( 1+ \frac{1}{n} \right)^n
->$$
+> \forall n \geq 1: \left( 1+\frac{1}{n+1} \right)^{n+1} > \left( 1+ \frac{1}{n} \right)^n
+> $$
+>
 > applico il [[teorema potenza di un binomio]] e sposto fuori dalla sommatoria l'elemento n+1 ed ho che:
 > $$
-> \left( 1+\frac{1}{n+1} \right)^n+1 = \sum_{k=0}^{n} \binom{n}{k}\frac{1}{(n+1)^k} + \frac{1}{(n+1)^{n+1}}
+> \left( 1+\frac{1}{n+1} \right)^{n+1} = \sum_{k=0}^{n} \binom{n+1}{k}\frac{1}{(n+1)^k} + \frac{1}{(n+1)^{n+1}}
 >$$ 
 > 
 >- nota inoltre che l'elemento n+1: $\frac{1}{(n+1)^{n+1}} \text{ che e' sempre } > 0$ 
-> - inoltre ho che: 
+> - inoltre ho che facendo l'analisi del **termine generale**: 
 > $$
-> \sum_{k=0}^{n}\binom{n}{k} \frac{1}{(n+1)^k} \geq \sum_{k=0}^{n}\binom{n}{k} \frac{1}{n^k} (1)
+> \sum_{k=0}^{n}\binom{n+1}{k} \frac{1}{(n+1)^k} \geq \sum_{k=0}^{n}\binom{n}{k} \frac{1}{n^k} (1)
 > $$
  > infine: 
 > $$
@@ -142,6 +143,8 @@ per dimostrarlo bisogna far vedere 2 cose:
 > mentre:
 > $$\binom{n}{k} \frac{1}{n^k} = \frac{\bcancel{n}}{\bcancel{n}} \frac{n-1}{n} \dots \frac{n-k+1}{n} \frac{1}{k!}
 > $$
+> al numeratore abbiamo lo sviluppo del fattoriale: $(n)(n-1)(n-2)(\dots)(1)$
+> al denominatore abbiamo lo sviluppo di: $n^k$ ovvero: $n * n * n * \dots$ k-volte
  
  
 
@@ -149,9 +152,12 @@ per dimostrarlo bisogna far vedere 2 cose:
 > $$
 > \binom{n}{k} \frac{1}{n^k} \leq \frac{1}{k!} \leq \frac{1}{k(k-1)} = \frac{1}{k-1} - \frac{1}{k}
 > $$
+> perche' $\binom{n}{k} \frac{1}{n^k}$ non e' altro che: $\frac{1}{n^k} *$ vari termini < 1
+> quindi e' sicuramente $\leq \frac{1}{k!}$
+
 
 # limiti di funzioni
-## Retta estesa e intorni
+## Retta estesa e intorni e punto di accumulo, definizioni varie
 $$
 \bar{\mathbb{R}} = R \cup\{-\infty, +\infty\}
 $$
@@ -166,14 +172,54 @@ ovvero se per ogni intorno centrato in $x_{0}$ e di ampiezza $r$ c'e' sempre un 
 
 esempi di punti di accumulo:
 
-si dice inoltre che il limite di f(x) per x che tende  a $x_{0}$ vale $l$ se:
+> [!note] DEF. LIMITE
+> si dice inoltre che il limite di f(x) per x che tende  a $x_{0}$ vale $l$ se:
+>$$
+>\forall \epsilon>0, \exists \delta: \forall x \in ((D \cup{} I(x_{0}, \delta) \text{\\}  x_{0} ) f(x) \in I(l,\epsilon) 
+>$$
+
+
+> [!warning] INESATTEZZA
+> sugli appunti del tauraso sta scritto cosi: $\forall \epsilon>0, \exists \delta: \forall x \in ((D \cup{} I(x_{0}, r) \text{\\}  x_{0} ) f(x) \in I(l,\epsilon)$ 
+> dove suppungo che r sia stata scambiata erroneamente con epsilon
+> dunque di seguito riporto una forma alternativa per dire la stessa cosa
+
+forma alternativa della definizione (si può trovare su youmath): 
 $$
-\forall \epsilon>0, \exists \delta: \forall x \in ((D \cup{} I(x_{0}, r) \text{\\}  x_{0} ) f(x) \in I(l,\epsilon) 
+\forall \epsilon, \exists\delta: \forall x \in D: 0<|x-x_{0}|<\delta \to |f(x)-l|<\epsilon
 $$
-ovvero: 
+>[!note] TEO. PONTE
+> $\lim_{ x \to x_{0} }f(x) = l$ **se e solo se** esiste una successione $x_{n}$ che tende a $x_{0}$ tale che: $\lim_{ n \to \infty } f(x_{n}) = l$.
+> nota: quindi tutti i teoremi applicabili ai **limiti di successioni** sono applicabili ai **limiti di funzioni**
 
-## proprieta dei limiti di funzioni
+## proprieta' dei limiti di funzioni (non ci sono dimostrazioni!)
+rispetto ai limiti di successioni in generale queste proprietà valgono dentro un **intorno** in $D\backslash\{x_{0}\}$ e sono facilmente riconducibili ai limiti di successione
+### 1. unicita
+ovvero: l'operazione del limite su una **funzione esiste ed e' unico**
 
+### 2. limitatezza
+se $\lim_{ x \to x_{0} } f(x) = l \in \mathbb{R}$ allora esiste un intorno $D \cap{} I(x_{0},r) \backslash \{x_{0}\}: f(x) \text{ e' limitata}$  
+ovvero: f e' **limitata** in un certo **intorno** di $x_{0}$
 
-## funzioni continue
-se $x_{0}$ e' un punto di accumulazione e $\lim_{ x \to x_{0} } f(x) = f(x_{0})$ **allora** f e' continua in $x_{0}$
+### 3. tipo permanenza del segno
+se $\lim_{ x \to x_{0} } f(x_{0}) = l > 0$ allora: $\exists r>0: \forall x \in (I(x_{0}, r)) \to f(x) > 0$
+ovvero se  $f(x_{0}) \to l > 0$ allora esiste un intorno in cui $f(x)$ e' **positiva**
+
+### 4. confronto
+se $\lim_{ x \to x_{0} } f(x) = l_{1}$ e $\lim_{ x \to x_{0} }f(x)=l_{2}$ e $l_{1} \leq l_{2}$ allora esiste il solito intorno in $x_{0}$ t.c. $f(x) \leq g(x)$
+
+### 5. carabinieri
+stessa cosa dei limite di successione ma se esiste l'intorno per cui vale la proprietà.
+
+### 6. funzione limitata per funzione infinitesima
+come per i limiti di successione il limite **vale 0**
+
+### 7. algebra dei limiti
+come per i limiti di successione
+
+### 8. limite destro e sinistro
+se esistono limite destro e sinistro in $x_{0}$ **allora** esiste il limite in $x_{0}$
+
+### 9. funzione composta
+se $\lim_{ x \to x_{0}} f(x) = l$ e $\lim_{ x \to l } g(x) = L$ allora esiste un intorno nel **dominio di f(x)** t.c $f(x) \neq l$ -> **allora** $\lim_{ x \to x_{0} } g(f(x)) = L$
+

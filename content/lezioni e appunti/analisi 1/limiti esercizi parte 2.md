@@ -20,23 +20,27 @@ $$
 $$
 =  \left( 1+\frac{1}{\frac{x^3-5x+6}{4x-7}} \right)^{x[\frac{x^3-5x+6}{4x-7}][\frac{4x-7}{x^3-5x+6}]} = e^{x[\frac{4x-7}{x^3-5x+6}]} = 1
 $$
-## esercizi generali
-### es 1
+## analisi 1 prof. Samilli. Sapienza
+### es 1: riscrivere x come $\frac{1}{\frac{1}{x}}$ 
 $$
-\lim_{ x \to 0 } \frac{2\cos x + x^2-2}{x^4} = \frac{0}{0}
+\lim_{ x \to 0^+ } (1+|\sin x|)^{1/x} = 1^{+\infty} 
 $$
-con Hospital:
+le forme: $1^{+\infty}$ si risolvono con le proprietà dell'esponenziale:
 $$
-= \lim_{ x \to 0 } \frac{-2\sin +2x}{4x^3} = \frac{2 -2 \cos x}{12x^2} = \frac{2}{2}\frac{1-\cos x}{6x^2} = \frac{1}{6} \frac{1-\cos x}{x^2} = \frac{1}{12}
+= \left( 1 + \frac{1}{\frac{1}{|\sin x}|} \right) ^ { \frac{1}{|\sin x|} * \frac{|\sin x|}{x}} = e^1 = e
 $$
-con Taylor:
+### es 2
 $$
-\cos x = 1 - \frac{x^2}{2} + \frac{1}{24}x^4 + o(x^2)
+\lim_{ x \to 0^+ } \frac{\ln(x+x^2)}{\ln(x)} = \frac{\infty}{\infty}
 $$
 $$
-2\cos x = 2 - x^2 + \frac{1}{12}x^4 o(x^4)
-$$ 
-allora:
+= \lim_{ x \to 0^+ } \frac{\ln x + \ln(1+x)}{\ln x} = 1 + \frac{\ln(1+x)}{\ln x} = 1+\frac{0}{\infty} = 1
 $$
-\lim_{ x \to 0 } \frac{2-x^2+\frac{1}{12} x^4 + x^2 -2}{x^4} = \frac{1}{12}
+ricordando che: $\frac{0}{\infty} = 0 \frac{\,1}{\infty} = 0$
+inoltre questo significa che $\ln(1+x)$ e' asintotico a $\ln x$.
+
+### es 3
 $$
+\lim_{ x \to 0 } \frac{x(\pi^x-e^x)}{\cos(x)-1}
+$$
+...

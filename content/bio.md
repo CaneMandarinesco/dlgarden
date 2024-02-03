@@ -1,12 +1,13 @@
 * ***D.***, studio informatica a tor vergata (rm).
 * arch user (btw)
 * nella vita oltre a fare l'universitario basic, sono un batterista, mi piace il metal.
-* sono un fan di **nayt**.
-* ogni tanto leggo manga/guardo film/gioco.
-* ogni tanto esco con gli amici.
+* ogni tanto leggo manga/guardo film/gioco
 
 ## link
 * github: [CaneMandarinesco](https://github.com/CaneMandarinesco)
+
+## software
+* scrittura e organizzazione note: [obsidian](https://obsidian.md)
 
 ## hardware
 ### laptop

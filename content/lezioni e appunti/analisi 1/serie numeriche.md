@@ -1,14 +1,14 @@
 
 * [materiale tauraso](https://www.mat.uniroma2.it/~tauraso/aa2324/an1-lezione27.pdf)
 * [video](https://www.youtube.com/watch?v=dF_hyMKu_tA)
-* definzione: 
+* definizione: 
 $$
 \sum_{k=k_0}^{\infty} a_{k} = \lim_{ n \to \infty } \sum_{k=k_{0}}^{n} a_{k} 
 $$
 dove: 
 * $a_k$ e' il termine generico
 * $\sum_{k=k_{0}}^{n} a_{k}$ e' la somma parziale
-il risultato puo:
+il risultato può:
 * convergere
 * divergere a $\pm \infty$
 * essere indeterminato 

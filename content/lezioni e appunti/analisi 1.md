@@ -2,27 +2,30 @@
 * [materiale didattico](https://www.mat.uniroma2.it/~tauraso/analisi1inf2324.html)
 * [limiti notevoli](#limiti-notevoli)
 * [derivate](#derivate)
-
 ## teoria
+* [[maggiorante, minorante, ecc...]]
 * [[limiti di successioni e di funzioni]]
+* [[proprieta' delle funzioni continue]]
+* [[sin(x) su x]]
 * [[serie numeriche]]
 
 ## esercizi
 * [[limiti esercizi parte 1]]
 * [[limiti esercizi parte 2]]
 * [[limiti esercizi taylor]]
-> gli esercizi e i vari appunti sono presi da video su youtube, siti e libri vari. possono contenere varie imprecisioni quindi, ovviamente non fate affidamento unicamente ai miei appunti.
+* [[esercizi integrali]]
+> gli esercizi e i vari appunti sono presi da video su youtube, siti e libri vari. **possono contenere imprecisioni e errori** quindi, ovviamente non fate affidamento unicamente ai miei appunti.
 
-> ps. ho seguito poco le lezioni del Tauraso
+> p.s. ho seguito poco (per nulla) le lezioni del Tauraso
 
 # argomenti
-* proprieta dei numeri
+* proprietà dei numeri
 * funzioni, grafici e operazioni sui grafici
 * coefficiente binomiale e fattoriale
 * maggiorante e minorante, massimo e minimo, estremo superiore e inferiore di un insieme
 * assioma di completezza
 * limite di una successione
-* proprieta dei limiti
+* proprietà dei limiti
 * limiti notevoli
 * calcolo dei limiti
 * intorni di un punto
@@ -31,7 +34,7 @@
 * regole di derivazione
 * derivate di funzioni elementari
 * punti di massimo e minimo
-* derivata II: concavita e convessita di f
+* derivata II: concavità e convessità di f
 * punto di flesso
 * punti di discontinuita/non derivabilita
 * polinomio di taylor
@@ -63,7 +66,7 @@
 # limiti notevoli
 1. $\lim_{x\to\infty} (1+\frac{1}{x})^x = e$
 2. $\lim_{x\to\infty} (1+\frac{k}{x})^x = e^k$
-3. $\lim_{x\to0} (1+x)^\frac{1}{x} = e$
+3. $\lim_{x\to0} (1+kx)^\frac{1}{x} = e^k$
 4. $\lim_{x\to0} \frac{\ln(1+x)}{x} = 1$
 5. la **4** deriva da questa:   $\lim_{x\to0} \frac{\log_a(1+x)}{x} = \frac{1}{ln(a)}$
 6. $\lim_{x\to0} \frac{e^x+1}{x} = 1$
