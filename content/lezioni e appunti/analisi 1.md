@@ -15,6 +15,7 @@
 * [[limiti esercizi parte 2]]
 * [[limiti esercizi taylor]]
 * [[esercizi integrali]]
+* [[serie esercizi]]
 > gli esercizi e i vari appunti sono presi da video su youtube, siti e libri vari. **possono contenere imprecisioni e errori** quindi, ovviamente non fate affidamento unicamente ai miei appunti.
 
 > p.s. ho seguito poco (per nulla) le lezioni del Tauraso
