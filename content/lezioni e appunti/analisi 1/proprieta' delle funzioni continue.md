@@ -29,7 +29,8 @@ se f e' continua in un intervallo con segni discorsi (che quindi interseca la re
 > - $f(a_{n}) \leq 0$
 > - $f(b_{n}) \geq 0$
 > l'unica soluzione possibile per entrambe e' che: $f(x_{0}) = 0$
-
 ## teorema dei valori intermedi
 se $f(x)$ e' continua in $[a,b]$ e $y_{0} \in [f(a),(b)]$ allora $\exists x_{0} \in (a,b): f(x_{0}) = y_{0}$ 
 ovvero f(x) assume tutti i valori in $[a,b]$
+
+> ma perche' sugli appunti c'e' scritto 1a parte. ma non c'e' una seconda?
