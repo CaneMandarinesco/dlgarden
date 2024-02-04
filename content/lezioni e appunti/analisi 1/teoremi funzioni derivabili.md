@@ -23,7 +23,7 @@ sia $f(x)$ una funzione continua in $(a,b)$ e sia $x_{0}$ un punto di **massimo 
 
 ## teorema di Bolzano-Weierstrass
 se $\{a_{n}\}_{n}$ limitata allora $\exists a_{n_{k}}$  convergente.
-ovvero se esiste una successione limitata -> esiste una sua sotto-successione convergente
+ovvero se esiste una successione limitata -> esiste una sua **sotto-successione convergente**
 
 ### teorema di Weierstrass
 * [dimostrazione simile a quella del tauraso](https://www.youmath.it/forum/analisi-1/61639-dimostrazione-del-teorema-di-weierstrass.html)
@@ -39,5 +39,12 @@ ovvero se f e' continua in $[a,b]$ allora esistono un $x_{min}$ (punto di **mini
 > consideriamo $M = sup \{f(x_{n}), \forall x \in [a,b]\}$ (valore massimo di $f(x)$ in $[a,b]$)
 > per dimostrare che esiste un **massimo assoluto**, bisogna far vedere che $M$ non puo essere $+\infty$.
 >
-> per $M = +\infty$, vuol dire  che in un qualsiasi intorno di $+\infty$, $f(x_{n})$ e' compresa in $(n, +\infty)$ e quindi $f(x_{n}) > n$. dato che noi stiamo studiando $f(x_{n})$ in $[a,b]$, $x_{n}$ in $[a,b]$ e limitata e per **Bolzano-Weierestrass** esiste un $x_{n_{k}}$ che **converge**
+> per $M = +\infty$, vuol dire  che in un qualsiasi intorno di $+\infty$, $f(x_{n})$ e' compresa in $(n, +\infty)$ e quindi $f(x_{n}) > n$ (perche' $f(x_{n}) = n$ perche' $x_{n}: f(x_{n})=n$). dato che noi stiamo studiando $f(x_{n})$ in $[a,b]$, $x_{n}$ in $[a,b]$ e limitata e per **Bolzano-Weierestrass** esiste un $x_{n_{k}}$ che **converge**
+> se esiste il limite $x_{n}$ allora $\exists x_{n_{k}}$ e le altre sue sotto successioni devono tendere a $+\infty$ ma abbiamo appena dimostrato che $x_{n_{k}}$ converge. **assurdo**
+> 
+> invece per $M \in \mathbb{R}$ abbiamo che $f(x) \leq M$ e applicando al definizione di **limite** **convergente** ($|l-a_{n}| < \epsilon$) abbiamo che:
+> - $M-\epsilon < f(x_{n}) < M$ dove $\epsilon=\frac{1}{M}>0$
+> 
+> quindi possiamo costruire una successione $x_{n}$, che e' limitata in $[a,b]$. quindi per **Bolzano-Weierstrass** esiste una sotto successione $x_{n_{k}}$ **convergente** a $x_{0}$.
+> dato che $f(x)$ e' continua in $[a,b]$ allora -> $\lim_{ k \to +\infty } f(x_{n_{k}}) = f(x_{0}) = M$
 > 
