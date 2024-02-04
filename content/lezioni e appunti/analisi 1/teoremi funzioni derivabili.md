@@ -41,7 +41,3 @@ ovvero se f e' continua in $[a,b]$ allora esistono un $x_{min}$ (punto di **mini
 >
 > per $M = +\infty$, vuol dire  che in un qualsiasi intorno di $+\infty$, $f(x_{n})$ e' compresa in $(n, +\infty)$ e quindi $f(x_{n}) > n$. dato che noi stiamo studiando $f(x_{n})$ in $[a,b]$, $x_{n}$ in $[a,b]$ e limitata e per **Bolzano-Weierestrass** esiste un $x_{n_{k}}$ che **converge**
 > 
-
-
-
-
