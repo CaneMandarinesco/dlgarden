@@ -7,6 +7,7 @@
 * [[limiti di successioni e di funzioni]]
 * [[proprieta' delle funzioni continue]]
 * [[sin(x) su x]]
+* [[teoremi funzioni derivabili]]
 * [[serie numeriche]]
 
 ## esercizi
