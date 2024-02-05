@@ -5,10 +5,6 @@
 
 ## link
 * github: [CaneMandarinesco](https://github.com/CaneMandarinesco)
-
-## software
-* scrittura e organizzazione note: [obsidian](https://obsidian.md)
-
 ## hardware
 ### laptop
 * **T480s** (comprato su ebay a 190 eur.)

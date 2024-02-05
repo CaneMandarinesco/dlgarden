@@ -188,6 +188,8 @@ forma alternativa della definizione (si può trovare su youmath):
 $$
 \forall \epsilon, \exists\delta: \forall x \in D: 0<|x-x_{0}|<\delta \to |f(x)-l|<\epsilon
 $$
+ovvero: per ogni $\epsilon$ che e' **maggiore** della distanza tra $f(x) \text{ e } l$, esiste un $\delta$ che **maggiore** della distanza tra $x \text{ e } x_{0}$
+
 >[!note] TEO. PONTE
 > $\lim_{ x \to x_{0} }f(x) = l$ **se e solo se** esiste una successione $x_{n}$ che tende a $x_{0}$ tale che: $\lim_{ n \to \infty } f(x_{n}) = l$.
 > nota: quindi tutti i teoremi applicabili ai **limiti di successioni** sono applicabili ai **limiti di funzioni**

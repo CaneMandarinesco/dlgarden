@@ -8,6 +8,8 @@
 * [[proprieta' delle funzioni continue]]
 * [[sin(x) su x]]
 * [[teoremi funzioni derivabili]]
+* [[definizione di integrale]]
+* [[primitive e teoremi sugli integrali]]
 * [[serie numeriche]]
 
 ## esercizi

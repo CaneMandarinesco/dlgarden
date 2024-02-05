@@ -1,7 +1,8 @@
 ## es 1
 $$
 \sum_{n=2}^{\infty} \frac{n}{e^n}
-$$il termine generale della serie e' infinitesimo.  
+$$
+il termine generale della serie e' infinitesimo.  
 posso applicare il **criterio della radice**:
 $$
 \lim_{ n \to \infty } \sqrt[n]{| \frac{n}{e^n}|} = \lim_{ n \to \infty } \frac{\sqrt[n]{ n}}{e} = \frac{n^{1/n}}{e} = \frac{e^{\frac{1}{n} \log n}}{e} = \frac{1}{e} < 1 \text{ quindi converge}
@@ -39,4 +40,15 @@ $$
 $$
 svolgendo con i limiti notevoli mi viene $\frac{1}{n^2}$, quindi 0.
 
-pero' confronto asintotico: $\sum_{n=1}^{\infty} \frac{1}{n^2}$ converge
+per confronto asintotico con: $\sum_{n=1}^{\infty} \frac{1}{n^2}$ , la serie data converge
+
+## es 4 
+$$
+\sum_{n=1}^{\infty} \sqrt{ n }\, lg \frac{2n^2+3}{2n^2+2}
+$$
+$$
+= \lim_{ n \to \infty } \sqrt{ n }\log\left( \frac{n^2}{n^2} \frac{2+\frac{3}{n^2}}{2+\frac{2}{n^2}}\right) = n^{\frac{1}{2}}\left[ \log\left( 2+\frac{3}{n^2} \right) - \log \left( 2+\frac{2}{n^2} \right) \right] 
+$$
+$$
+= \lim_{ n \to \infty }\log \left(2 \left(1 + \frac{3}{2n^2}  \right)^{n/2}\right) - \log \left( 2 \left( 1+\frac{1}{n^2} \right) \right)  = \lim_{ n \to \infty } 2e^{3} - 1
+$$
