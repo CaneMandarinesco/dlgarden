@@ -1,4 +1,8 @@
-## integrali immediati
+$$
+\int g(f(x))\,f^I(x)\, dx = G(f(x)) + c
+$$
+ovvero: l'integrale di una funzione $g(f(x))$ moltiplicata per la derivata di $f(x)$ e' uguale alla primitiva di $g(x)$
+
 ### es 1 (funzione composta con derivata)
 $$
 \int \sin^5x \cos x \, dx 
@@ -109,4 +113,111 @@ $$
 e trattando $\cos^2x$ come la nostra f da derivare abbiamo che:
 $$
 -\frac{1}{2}\int -2\frac{\sin x \cos x}{1+\cos^2x} \, dx = -lg|1+\cos^2x|+c
+$$
+
+### es 11
+$$
+\int  \frac{\log(x)}{x} \, dx 
+$$
+vedendo $\log(x)$ come $\log(x)^1$
+allora $g(f(x)) = \log(x)^1$: 
+$$
+ = \frac{\log(x)^2}{2} +c
+$$
+
+### es 12
+$$
+\int \frac{e^x}{\sqrt{ 1-e^{2x} }} \, dx  
+$$
+
+$$
+\int \frac{e^x}{\sqrt{ 1-(e^{x})^2 }} \, dx = \arcsin(e^x) + c
+$$
+ricordando che: $\frac{x}{dx} \arcsin(x) = \frac{1}{\sqrt{ 1-x^2 }}$ con $x=e^x$
+
+### es 13
+$$
+\int x\sqrt{ 6-x^2 } \, dx  
+$$
+$$
+\frac{1}{2}\int 2x(6-x^2)^{1/2}  \, dx  = \frac{1}{2} \frac{(6-x^2)^{3/2}}{\frac{3}{2}}
+$$
+$$
+\frac{1}{3}\sqrt{ (6-x^2)^3 } + c
+$$
+
+### es 14
+$$
+\int x(x^2+7)^5 \, dx 
+$$
+$$
+\frac{1}{2}\int 2x(x^2+7)^5 \, dx = \frac{1}{2} \frac{(x^2+7)^6}{6} + c
+$$
+### es 15
+$$
+\int \frac{e^{\arctan(x)}}{1+x^2} \, dx = e^{\arctan(x)} + c
+$$
+### es 16
+$$
+\int (2x-9)^7 \, dx 
+$$
+
+$$
+\frac{1}{2}\int 2(2x-9)^7  \, dx = \frac{1}{2} \frac{(2x-9)^8}{8} + c
+$$
+
+### es 17
+$$
+\int  \frac{\cos(\log x)}{x} \, dx 
+$$
+
+$$
+ = \sin(\log(x)) + c
+$$
+### es 18
+$$
+\int  \frac{dx}{1+e^{-x}} 
+$$
+$$
+\int  \frac{1}{1+\frac{1}{e^x}} \, dx = \int  \frac{1}{\frac{e^x+1}{e^x}} \, dx =\int  \frac{e^x}{e^x+1} \, dx = \log(e^x+1)+c 
+$$
+dato che: $\frac{d}{dx}\log(e^x+1) = \frac{1}{e^x+1} \frac{d}{dx}e^x = \frac{e^x}{e^x+1}$ 
+
+### es 19
+$$
+\int  \frac{e^\sqrt{ x }}{\sqrt{ x }} \, dx = $$
+
+$$
+2 \int e^\sqrt{ x } \frac{1}{2\sqrt{ x }} \, dx = 2e^\sqrt{ x } +c
+$$
+### es 20
+$$
+\int  \frac{\sin x \cos x}{\sqrt{ 1+\cos^2x}} \, dx 
+$$
+$$
+ = -\frac{1}{2}\int  -2\sin x \cos x (1+\cos^2x)^{1/2} \, dx = -\frac{1}{2} \frac{(1+\cos^2x)^{-1/2\,+1}}{-\frac{1}{2} + 1}
+$$
+
+$$
+ = -\sqrt{ 1+\cos^2x$ } + c
+$$
+in quanto: $\frac{d}{dx} \cos^2x = -2\sin(x)\cos(x)$
+
+### es 21
+$$
+\int \frac{1}{x\sqrt{ \log(x) }} \, dx 
+$$
+
+$$
+2\int   \, dx \frac{1}{2\sqrt{\log(x) }} \frac{1}{x} \, dx = \sqrt{ \log(x) }
+$$
+
+### es 22
+
+$$
+\int  \frac{x^2}{1+x^6} \, dx 
+$$
+
+$$
+= \frac{1}{3}\int  \frac{1}{1+(x^{3})^2} 3x^2 \, dx = \frac{1}{3}\arctan(x^3)
 $$

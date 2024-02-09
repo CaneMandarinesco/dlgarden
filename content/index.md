@@ -5,6 +5,7 @@
 - il mio [[diario]]
 - [[art]]
 - [[config]]
+- [[tutorial: come fare un sito come questo]]
 # appunti
 - [[programmazione dei calcolatori]] (python/c, prof. G. Rossi)
 - [[analisi 1]] (prof. R. Tauraso)
