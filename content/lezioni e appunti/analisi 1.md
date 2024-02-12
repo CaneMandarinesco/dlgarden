@@ -6,23 +6,29 @@
 * [[maggiorante, minorante, ecc...]]
 * [[limiti di successioni e di funzioni]]
 * [[proprieta' delle funzioni continue]]
+* [[asintoti, flesso, discontinuita]]
 * [[sin(x) su x]]
 * [[teoremi funzioni derivabili]]
 * [[definizione di integrale]]
 * [[primitive e teoremi sugli integrali]]
+* [[integrali impropri]]
 * [[serie numeriche]]
+* [[numeri complessi]]
+* [[problema di cauchy e calcolo diff. in piu variabili]]
 
 ## esercizi
 * [[limiti esercizi parte 1]]
 * [[limiti esercizi parte 2]]
 * [[limiti esercizi taylor]]
 * [[integrali immediati esercizi]]
-* [[integrali per decomposizione]]
-* [[integrali fratti]]
+* [[integrali per decomposizione esercizi]]
+* [[integrali  raz. fratti esercizi]]
+* [[integrali esercizi generali]]
+* [[integrali impropri esercizi]]
 * [[serie esercizi]]
 > gli esercizi e i vari appunti sono presi da video su youtube, siti e libri vari. **possono contenere imprecisioni e errori** quindi, ovviamente non fate affidamento unicamente a questi appunti.
 
-> p.s. ho seguito poco (per nulla) le lezioni del Tauraso
+> p.s. ho seguito poco (per nulla) le lezioni del tauraso
 
 # argomenti
 * proprietà dei numeri

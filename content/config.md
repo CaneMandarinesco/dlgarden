@@ -16,8 +16,8 @@
 * network manager: [connman](https://wiki.archlinux.org/title/ConnMan) 
 * gui network manager: **cmst**
 * audio: **pamixer**
-* luminosita dello schermo: **birghtness-ctl** 
-	* puo' essere sostituito da **wl-gammarelay**
+* luminosità dello schermo: **birghtness-ctl** 
+	* può essere sostituito da **wl-gammarelay**
 * scrittura e organizzazione note: [obsidian](https://obsidian.md)
 * editor di testo: **vim**/**vscode**
 * terminale: [foot](https://wiki.archlinux.org/title/Foot)

@@ -112,10 +112,17 @@ allora se:
 * $L < 1$ allora la serie di $a_{n}$ converge
 
 ## criterio di Leibniz
-se $a_{k}$ e' una serie a caratteri positivi e $a_{k} \to 0$ allora
+* se $\lim_{ n \to \infty } a_{n} = 0$
+* e $a_{n}$ **monotona non crescente** 
+allora: 
 $$
 \sum_{n=k_{0}}^{\infty}(-1)^ka_{n}\text{ converge}
 $$
 
+> [!note] OSS.
+> i criteri valgono solo per le serie a termini positivi!
+
+>[!note] OSS.
+>se una serie e' a termini negativi basta **trasformare** la serie data in una serie a termini positivi e mettere il meno fuori!
 # frattale di koch
 ....
