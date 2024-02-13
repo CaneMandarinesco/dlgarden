@@ -22,8 +22,7 @@ se f e' continua in un intervallo con segni discorsi (che quindi interseca la re
 > ora, studiamo cosa succede ad $a_{n} \text{ e } b_{n}$ quando $n\to \infty$.
 > possiamo esprimere l'intera ricorsione come: $\lim_{ n \to \infty } b_{n} - a_{n} = \lim_{ n \to \infty }\frac{b-a}{2^n} = 0$
 > sappiamo inoltre che $b_{n} \to B$ e $a_{n} \to A$ quindi $a_{n}-b_{n} \to B - A$ e dato che il limite studiato poco fa tende a 0, necessaria mente anche questo tende a 0 e quindi abbiamo che $B=A$.  
-> quindi esiste un valore comune $x_{0} \text{ t.c. } b_{n} = B = A = a_{n} = x_{0}$
-> dato che il limite vale 0, vuol dire che c'e' un valore che non possiamo trovare con la nostra ricorsione 
+> quindi esiste un valore comune $x_{0} \text{ t.c. per un certo n allora } b_{n} = B = A = a_{n} = x_{0}$
 > 
 > quindi per concludere: esiste un valore comune $x_{0} \text{ t.c. } f(x_{0}) = 0$ ed essendo che:
 > - $f(a_{n}) \leq 0$
@@ -33,4 +32,4 @@ se f e' continua in un intervallo con segni discorsi (che quindi interseca la re
 se $f(x)$ e' continua in $[a,b]$ e $y_{0} \in [f(a),(b)]$ allora $\exists x_{0} \in (a,b): f(x_{0}) = y_{0}$ 
 ovvero f(x) assume tutti i valori in $[a,b]$
 
-> ma perche' sugli appunti c'e' scritto 1a parte. ma non c'e' una seconda?
+> ma perche' sugli appunti c'e' scritto 1a parte. e non c'e' una seconda?

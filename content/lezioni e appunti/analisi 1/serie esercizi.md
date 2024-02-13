@@ -42,14 +42,39 @@ svolgendo con i limiti notevoli mi viene $\frac{1}{n^2}$, quindi 0.
 
 per confronto asintotico con: $\sum_{n=1}^{\infty} \frac{1}{n^2}$ , la serie data converge
 
+<<<<<<< HEAD
 ### es 4 
+=======
+## es 4
+$$
+\sum_{n=1}^{\infty} \sqrt[3]{n+1} - \sqrt[3]{ n } 
+$$
+$$
+$$
+$$
+\lim_{ n \to \infty } \sqrt[3]{n+1} - \sqrt[3]{ n }= \sqrt[3]{ n\left( 1+ \frac{1}{n} \right) } = \sqrt[3]{ n }\left( \left( 1+\frac{1}{n} \right)^{ \frac{n}{3} \frac{1}{n} } -1 \right) = \sqrt[3]{ n }(e^{1/3n} -1 ) = \sqrt[3]{ n }\frac{(e^{1/3n}-1)}{3n}3n
+$$
+$$
+= 3n^{1/3 - 1} = \frac{1}{3}n^{-2/3} = \frac{1}{3} \frac{1}{n^{2/3}} \to 0
+$$
+converge a 0, e quindi per confronto asintotico con : 
+$$
+\sum_{n=1}^{\infty} \frac{1}{n^{2/3}} 
+$$
+e' una serie armonica con esponente $\leq 1$ quindi diverge
+## es 5
+>>>>>>> 757f20a (local pre merge 2)
 $$
 \sum_{n=1}^{\infty} \sqrt{ n }\, lg \frac{2n^2+3}{2n^2+2}
 $$
+e' a termini positivi? si
+studio il limite:
 $$
-= \lim_{ n \to \infty } \sqrt{ n }\log\left( \frac{n^2}{n^2} \frac{2+\frac{3}{n^2}}{2+\frac{2}{n^2}}\right) = n^{\frac{1}{2}}\left[ \log\left( 2+\frac{3}{n^2} \right) - \log \left( 2+\frac{2}{n^2} \right) \right] 
+\lim_{ n \to \infty } \sqrt{ n }lg \left( \frac{2n^2+3}{2n^2+2} \right) = \frac{\lg\left( \frac{2n^2 \left( 1+\frac{3}{2n^2} \right)}{2n^2\left( 1+\frac{2}{2n^2} \right)} \right)}{\frac{1}{\sqrt{ n }}} = \frac{0}{0}
 $$
+potrei continuare con Hospital oppure provo a sviluppare il logaritmo:
 $$
+<<<<<<< HEAD
 = \lim_{ n \to \infty }\log \left(2 \left(1 + \frac{3}{2n^2}  \right)^{n/2}\right) - \log \left( 2 \left( 1+\frac{1}{n^2} \right) \right)  = \lim_{ n \to \infty } 2e^{3} - 1
 $$
 
@@ -311,3 +336,19 @@ $$
 dove $e^{-1/2} < 1$ quindi per il criterio della radice, la serie data converge.
 
 ### 
+=======
+\sqrt{ n }lg \left( \frac{2n^2+3}{2n^2+2} \right) = \frac{\log(2n^2+3) - \log(2n^2+2)}{ \frac{1}{\sqrt{ n }}} = \frac{\log(2) + \log(n^2 ) + \frac{3}{2n^2} + o\left( \frac{1}{n^2} \right) - \log(2) - \log(n^2) - \frac{1}{n^2} + o\left( \frac{1}{n^2} \right)}{\frac{1}{\sqrt{ n }}}
+$$
+
+$$
+\lim_{ n \to \infty } \frac{\frac{1}{2n^2} + o\left( \frac{1}{n^2} \right)}{\frac{1}{\sqrt{ n }}} = \frac{n^{1/2}}{n^2} = 0
+$$
+
+criterio equivalenza asintotica: 
+$$
+\sum_{n=1}^{\infty} \frac{1}{n^{2-1/2}} = \frac{1}{n^{3/2}}
+$$
+
+dove 3/2 > 1 quindi converge
+
+>>>>>>> 757f20a (local pre merge 2)

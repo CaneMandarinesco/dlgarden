@@ -1,6 +1,8 @@
+## teoremi e definizioni utili
 $$
 f(x) = o[g(x)] \text{ allora } \lim_{ x \to 0 } \frac{f(x)}{g(x)} = 0
 $$
+
 ### es 1
 $$
 \lim_{ x \to 0 } \frac{x-\sin x}{x \log(\cos x)} = \frac{0}{0}
