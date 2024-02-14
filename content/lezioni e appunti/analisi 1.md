@@ -1,7 +1,16 @@
 ### per esercitarsi consiglio i video di [Marcello Dario Cerroni](https://www.youtube.com/@MarcelloDarioCerroni) su youtube
+
 * [materiale didattico](https://www.mat.uniroma2.it/~tauraso/analisi1inf2324.html)
 * [limiti notevoli](#limiti-notevoli)
 * [derivate](#derivate)
+## come studiare analisi 1? la mia esperienza.
+seguite le lezioni, prendete appunti, e quando tornate a casa dovete **almeno** rileggere gli appunti, se addirittura volete il vostro bel 30 e lode mettetevi a fare gli esercizi.  io non ho fatto nulla di tutto cio.
+una volta che inizia la sessione cominciate a studiare come matti.  
+la tecnica giusta per me e' stata: studiare la teoria (il minimo che basta), fare gli esercizi, e se si hanno dubbi sulla teoria si ritorna indietro al teoria e si ricontinua.  
+per imparare limiti notevoli, derivate, sviluppi di taylor ecc... e' inutile stare a ripeterli finche non si memorizzano, a meno che non abbiate una tecnica mnemonica che vi aiuti.  
+io piuttosto ho fatto esercizi su esercizi, e dopo un po di tempo ho cominciato a memorizzare tutte le formule. 
+gli argomenti piu' semplici del corso a mio parere sono gli ultimi due: il problema di Cauchy e le equazioni in due variabili in quanto bisogna solo imparare formule da applicare in modo meccanico, non c'e' nulla da capire.  
+gestite bene il vostro tempo mentre studiate e soprattutto: studiate in biblioteca.  
 ## teoria
 * [[maggiorante, minorante, ecc...]]
 * [[limiti di successioni e di funzioni]]
@@ -28,7 +37,7 @@
 * [[serie esercizi]]
 > gli esercizi e i vari appunti sono presi da video su youtube, siti e libri vari. **possono contenere imprecisioni e errori** quindi, ovviamente non fate affidamento unicamente a questi appunti.
 
-> p.s. ho seguito poco (per nulla) le lezioni del tauraso
+> p.s. ho seguito poco (per nulla) le lezioni del tauraso, e se seguivo non capivo nulla
 
 # argomenti
 * proprietà dei numeri
@@ -88,19 +97,19 @@
 10. $\lim_{x\to0} \frac{1-\cos(x)}{x^2} = \frac{1}{2}$
 
 # derivate
-| $f(x)$ | $\frac{df}{dx}$ |
-| ---- | ---- |
-| $a$ | $0$ |
-| $ax$ | $a$ |
-| $x^a$ | $ax^{a-1}$ |
-| $\ln(x)$ | $\frac{1}{x}$ |
-| $\sin(x)$ | $\cos(x)$ |
-| $\cos(x)$ | $-\sin(x)$ |
-| $\tan(x)$ | $\frac{1}{\cos^2(x)}$ |
-| $\arcsin(x)$ | $\frac{1}{\sqrt{1-x^2}}$ |
-| $\arccos(x)$ | $\frac{1}{\sqrt{1+x^2}}$ |
-| $\arctan(x)$ | $\frac{1}{1+x^2}$ |
-# sviluppi di taylor
+| $f(x)$ | $\frac{df}{dx}$ |  |
+| ---- | ---- | ---- |
+| $a$ | $0$ |  |
+| $ax$ | $a$ |  |
+| $x^a$ | $ax^{a-1}$ |  |
+| $\ln(x)$ | $\frac{1}{x}$ |  |
+| $\sin(x)$ | $\cos(x)$ |  |
+| $\cos(x)$ | $-\sin(x)$ |  |
+| $\tan(x)$ | $\frac{1}{\cos^2(x)}$ |  |
+| $\arcsin(x)$ | $\frac{1}{\sqrt{1-x^2}}$ |  |
+| $\arccos(x)$ | $-\frac{1}{\sqrt{1-x^2}}$ |  |
+| $\arctan(x)$ | $\frac{1}{1+x^2}$ |  |
+# sviluppi di Taylor
 ### esponenziale
 $$e^x = 1+x+\frac{1}{2}x^2 +\frac{2}{6}x^3 + \dots + o(x^n)$$
 ### logaritmo (non ha il fattoriale)
@@ -122,11 +131,7 @@ $$
 \cos x = 1-\frac{x^2}{2}+\frac{x^4}{24}-\frac{x^6}{6!} +\dots o(x^n)
 $$
 
-### tan (come sin, ma ha $\frac{2}{15}$)
+### tan (come sin, ma ha $\frac{2}{15}$ e $3$ senza fattoriale)
 $$
 \tan x = x-\frac{x^3}{3} + \frac{2}{15} x^5
 $$
-questi sotto non dovrebbero servire
-### arcsin 
-### arccos
-### arctan 
