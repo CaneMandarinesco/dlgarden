@@ -12,7 +12,7 @@ cosa useremo:
 > oppure guarda questo video: https://www.youtube.com/watch?v=6s6DT1yN4dw&t=227s
 
 ## conoscenze pregresse
-nulla di particolare, ma sarebbe comodo sapere:
+nulla di particolare, ma ti farebbe comodo sapere:
 * come scrivere testo in [markdown](https://www.markdownguide.org/) (nulla di complicato!)
 * come funziona git (può essere abbastanza complicato)
 ## installare il software
@@ -24,7 +24,7 @@ sudo pacman -S npm nodejs
 ```
 per installare `npm` e `nodejs`.  
 
-> **npm**: software per gestire i pacchetti javascript, ci permette di installare quartz
+> **npm**: software per gestire i pacchetti javascript, ci permette di usare quartz
 > **nodejs**: esegue codice javascript
 
 ## per iniziare.
@@ -40,42 +40,11 @@ npx quartz create
 * `npm i` e `npm quartz create` per inizializzare il progetto
 
 ## come scrivo il mio sito web?
-io uso [obsidian](https://obsidian.md/), e' un software per scrivere testo in formato [markdown](https://www.markdownguide.org/). il testo 
-### esempio:
+io uso [obsidian](https://obsidian.md/), e' un software per scrivere testo in formato [markdown](https://www.markdownguide.org/).
+markdown e' un **markup language**, ossia che (come html) si occupa di formattare e dare una struttura a un documento, quindi permette di inserire: liste, citazioni, link, titoli, sottotitoli, ecc..
+obsidian, non e' solo un software per scrivere, infatti e' costruito in modo tale da comportarsi come un "secondo cervello".
+con obsidian puoi avere una panoramica di tutte le tue note e dei collegamenti tra queste grazie alla **graph view**:
+![[Pasted image 20240214121422.png]]
 
-```markdown
-# titolo 1
-## titolo 2
-questa e' una lista:
-* 1
-* 2
-* 3
-
-questa e' una lista numerata:
-1. uno
-2. due
-3. tre
-
-### titolo 3
-
-```
-
----
-# titolo 1
-## titolo 2
-questa e' una lista:
-* 1
-* 2
-* 3
-
-questa e' una lista numerata:
-1. uno
-2. due
-3. tre
-
-### titolo 3
-
----
-
-
+## scrivere la pagina index
 

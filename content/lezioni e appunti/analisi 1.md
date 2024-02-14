@@ -29,7 +29,6 @@
 =======
 * [[limiti teoria e esercizi taylor]]
 * [[esercizi integrali]]
->>>>>>> 757f20a (local pre merge 2)
 * [[serie esercizi]]
 > gli esercizi e i vari appunti sono presi da video su youtube, siti e libri vari. **possono contenere imprecisioni e errori** quindi, ovviamente non fate affidamento unicamente a questi appunti.
 
