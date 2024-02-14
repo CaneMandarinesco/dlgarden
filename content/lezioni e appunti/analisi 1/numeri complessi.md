@@ -58,37 +58,4 @@ per risolvere quindi una equazione di questo tipo bisogna portare $w$ (o entramb
 > [!warning] portare termini fuori dalla radice
 > nelle operazioni coi complessi sara' facile incontrare varie radici da semplificare, quando si porta fuori un termine del tipo $x^2$ dalla radice, questo diventa: $|x|$!!!
 
-### es 1
-$$
-|z| + iz\mathrm{Re}(z) = z^2
-$$
-
-$$
-\sqrt{ x^2+y^2 } + i(x+iy)x = z^2 \to \sqrt{ x^2+y^2} + ix^2-yx = z^2
-$$
-$$
-\sqrt{ x^2+y^2 }+ ix^2 -yx - (x+iy)(x+iy) = 0 \to
-$$
-$$
-\sqrt{ x^2+y^2 } +ix^2-yx -x^2 -2ixy - y^2 = 0
-$$
-$$
-\sqrt{ x^2+y^2 } + -yx -x^2 - y^2 + ix^2 - 2ixy = 0
-$$
-quindi separando parte reale e immaginaria:
-$$
-\sqrt{ x^2+y^2 }-yx-x^2-y^2= 0 \; (1)
-$$
-$$
-x^2-2xy = 0 \to x(x-2y) = 0 \; (2)
-$$
-dalla (2):
-* $x_{0} = 0$ e  $0-2y = 0$ quindi $y_{0} = 0$
-* $x_{1} = 2y$ 
-
-dalla (1):
-* ponendo $x_{1} = 2y$ nella (1) ho: $\sqrt{ 4y^2+y^2} - 2y^2 - 4y^2 - y^2 = 0$ -> $\sqrt{ 5y^2 } -5y^2$= 0 -> $-5y^2 + \sqrt{ 5 }y = 0$
-* risolvendo l'eq associata ho: $\frac{-\sqrt{ 5 } \pm \sqrt{ 25}}{-10}$
-* $y_{1} = \frac{-\sqrt{ 5 }+5}{10}$
-* 
 
