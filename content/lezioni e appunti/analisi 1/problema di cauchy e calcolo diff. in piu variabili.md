@@ -155,3 +155,23 @@ $$
 > - nel calcolo di $f_{x}$, $y$ e' una costante
 > - nel calcolo di $f_{y}$, $x$ e' una costante
 
+**punto di sella**:
+$$
+f(x_{1},y_{1}) \frac{>}{<} f(x_{0},y_{0})
+$$
+
+**matrice hessiana**:
+$$
+H_{f}(x_{0},y_{0}) =\left[\begin{array}{cc}
+f(x_{0},y_{0})_{x x} & f_{xy}(x_{0},y_{0}) \\
+f(x_{0},y_{0})_{yx} & f_{yy}(x_{0},y_{0})
+\end{array}\right]
+$$
+**determinate**:
+$$
+\det(H_{f}) = f_{x x} f_{y y} - f_{x y}f_{y x}
+$$
+* **massimo** relativo: $\det (H_{f}) > 0 \text{ e } f_{x x} > 0$ 
+* **minimo** relativo: $\det(H_{f}) > 0 \text{ e } f_{x x}<0$
+* **punto** di sella: $\det(H_{f}) < 0$
+

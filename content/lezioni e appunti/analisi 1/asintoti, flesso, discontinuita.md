@@ -41,4 +41,4 @@ ovvero limite destro e sinistro sono diversi e $f(x)$ puo' coincidere con uno de
 $L_{1}$ e $L_{2}$ si riferiscono a limite destro e sinistro della derivata.
 * angoloso: $L_{1} \neq L_{2}$ e almeno uno dei due e' **finito**
 * cuspide:  $L_{1} \neq L_{2}$ e entrambi **non finiti**
-* flesso a tangente verticale: $L_{1} = L_{2}$ e entrambi non finiti
+* flesso a tangente verticale: $L_{1} = L_{2}$ e entrambi **non finiti**
