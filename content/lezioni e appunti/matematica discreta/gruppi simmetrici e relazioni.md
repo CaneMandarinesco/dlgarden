@@ -1,0 +1,118 @@
+#esempi_e_controesempi
+
+# esempi e controesempi
+* esempio: non dimostra
+* controesempio: dimostra che un affermazione non e' sempre vera
+### es.
+$P_{1}$ =*"ogni primo e' dispari"*
+- *"3 e' primo ed e' dispari"*, e' un **esempio**
+- *"2 e' primo ed e' pari"*, e' un controesempio e dimostra che $P_{1}$ non e' sempre vera, quindi e' **falsa**
+
+---
+> $[n] = \{1,2,3,\dots ,n\}$ 
+
+# 1.3 gruppi simmetrici
+
+> [!note] DEF.
+> **gruppo simmetrico**:
+> $$S_{n} = \{  f: [n] \to [n]: \text{ biunivoca }\}$$
+
+ovvero sia $X = |n|$, allora $S_{n}$ e' un insieme composto da **tutte** le biezioni da $X$ a $X$.  
+in $S_{n}$, $n$ indica il numero di elementi di $X$
+
+
+> [!note] DEF.
+ sia $f \in S_{n}$, allora scriviamo: $f = a_{1} a_{2}  \dots a_{n}$  (tutto attaccato, senza virgole o punti) per dire che:
+ $$ f(1)=a_{1}, f(2)=a_{2},\dots,f(n) = a_{n}$$
+ > notazione alternativa e piu' figa:
+ > $$f \in S_{n}, f = \left(\begin{array}{}
+> 1 & 2 & 3 & 4 \\
+> f(1) & f(2) & f(3) & f(4)
+\end{array} \right)
+ $$
+
+es: $S_{3} = \{ 123,132,213,231,312,321 \}$ 
+dove:
+* $123$ vuol dire che $f(1)=1, f(2)=2, f(3)=3$
+* $213$ vuol dire che $f(1) = 2, f(2) = 1, f(3) = 3$\
+* e cosi via 
+
+>[!note] OSS.
+> **composizione**:
+> siano $f,g \in S_{n}$, $f=a_{1}\dots a_{n}$ e $g=b_{1}\dots b_{n}$ allora: $$ f \circ g = a_{b_{1}} a_{n_{2}} \dots a_{b_{n}}$$
+
+es.
+$f=7153426$ e $g=6712534$, allora:
+$$
+f \circ g = 2671453
+$$
+
+>[!note] OSS.
+>$f^{-1} = b_{1}\dots b_{n}$ dove $b_{i}$ e' la posizione di i in $a_{1}\dots a_{n}$
+ ricordando che: $f^{-1}(b) = a$ e $f(a) = b$
+
+es.
+$n=7, f=5132647$ allora $f^{-1} = 2436157$
+
+> [!note] OSS.
+> considerando l'esempio sopra, più semplicemente data $f$, per ricavare $f^{-1}$ il procedimento e' il seguente:
+> - comincia subito a costruire $f^{-1} =$
+> - il 1o elemento di $f^{-1}$ ha indice 1, quindi bisogna inserire il numero dell'indice in $f$, in cui si trova 1, ovvero 2
+> - il 2o elemento di $f^{-1}$ ha indice 2, quindi come prima, 2 in $f$ si trova all'indice 4, quindi inserisco 4
+> - ecc... fino ad n
+
+>[!note] DEF. 
+> gli elementi di $S_{n}$ si dicono **permutazioni**
+
+> [!note] DEF.
+> siano $A,B$ insiemi, $f: A\to B$ e siano $X \subseteq A$ e $Y \subseteq B$
+> l'**immagine** di $X$ mediante $f$ e' $$f(x) = \{ f(a): a \in X \}$$
+> la **controimmagine** di $Y$ mediante $f$ e' $$f^{-1}(Y) = {a \in A: f(a) \in y}$$
+
+es. 
+siano $A=[3]$ e $B=[2]$ e $f: A\to B$ tale che: $f(1)=2, f(2)=1, f(3)=2$. allora con $Y = {2}$ abbiamo che: $f^{-1}(Y) = \{ 1,3 \}$, ovvero ritorna l'insieme contente gli indici di 2.
+
+### prop 1.3.3: 
+siano $A,B$ insiemi, $f:A\to B$, $X,Y \subseteq B$. allora:  
+1. $f^{-1} (X \cap Y) = f^{-1}(X) \cap f^{-1}(Y)$
+2. $f^{-1} (X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$
+
+> [!note] DIM. 1.
+> sia $a \in f^{-1}(X \cap Y) \to$
+
+per 2. e' simile
+
+# 1.4 relazioni
+
+>[!note] DEF.
+> una ***relazione*** su $A$ e' un **sottoinsieme**  $R \subseteq A\times A$.
+> e si scrive: $$aRb$$
+> ovvero: $a$ e' in relazione con $b$ e significa che $(a,b)\in R$ e che $a,b \in A$
+
+### proprieta'
+* $R$ e' **riflessiva** se: $a \in A$ -> $aRa$ (allora per def. $(a,a) \in R$)
+* $R$ e' **simmetrica** se: $aRb$ e' equivalente a $bRa$, quindi $\forall a,b\in A$
+* $R$ e' **transitiva** se: $aRb$ e $bRc$ allora $aRc$ (a in relazione con b, b in relazione con c, allora a e' in relazione con c)
+
+>[!note] DEF.
+>$R$ si dice relazione di **equivalenza** se valgono tutte e 3 le proprieta'
+
+es.
+$A = [5]$, $R = \{(1,1),(2,2)(4,4),(5,5),(1,2),(2,3),(1,3),(3,2)\}$ 
+> nota: $R \subseteq A \times A$
+
+* non e' **riflessiva**: perche' $(3,3) \not\in R$, quindi con $a=3$ non vale: $aRa$
+* non e' **simmetrica**: perche' $(1,2) \in R$ ma $(2,1) \not\in R$
+
+quindi $R$ non puo' essere di equivalenza su $A$ (**ricorda** che una relazione di equivalenza e' definita in un insieme)
+
+---
+
+> [!note] DEF.
+> sia $R$ una relazione di equivalenza su $A$. sia $a \in A$.
+> la ***classe di equivalenza di*** a e':
+> $$[a] = \{ b\in A: aRb \}$$
+
+
+### prop 1.4.1
+$R$ relazione di equivalenza su $A$. siano $a,b \in A$. allora $[a]=[b]$ o $[a] \cap[b]= \emptyset$

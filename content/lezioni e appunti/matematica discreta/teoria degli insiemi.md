@@ -37,12 +37,12 @@ $$
 >
 
 
-### insieme universo
+### insieme universo, paradosso di russel
 sia: $\mathbb{A} = \{ A: A\not\in A \}$, possiamo affermare che: $\mathbb{A} \in \mathbb{A}$?
 abbiamo che per definizione di A :
 * se $\mathbb{A} \in \mathbb{A} \to  \mathbb{A} \not\in \mathbb{A}$
 * se $\mathbb{A} \not\in \mathbb{A} \to \mathbb{A} \in \mathbb{A}$
-questo paradosso se consideriamo $\mathbb{A}$ come sottoinsieme di $U$ (universo)
+questo paradosso si risolve se consideriamo $\mathbb{A}$ come sottoinsieme di $U$ (universo)
 
 >[!note] DEF.
 > il **complementare** di $A$ e' $A'$
