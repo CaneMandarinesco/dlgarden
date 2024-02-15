@@ -1,0 +1,3 @@
+- [ ] [monitor portatile](https://www.amazon.it/Monitor-portatile-monitor-ARZOPA-1920x1080/dp/B092KKLH93/?_encoding=UTF8&pd_rd_w=7KtbF&content-id=amzn1.sym.413fd914-2e7b-4b35-a254-88a121a5f45c%3Aamzn1.symc.afd86303-4a72-4e34-8f6b-19828329e602&pf_rd_p=413fd914-2e7b-4b35-a254-88a121a5f45c&pf_rd_r=M17B5SCSAWWEMH3TFHT2&pd_rd_wg=faQTc&pd_rd_r=36cf0fec-4d9a-40c8-ae6e-dbe52cdc8f66&ref_=pd_gw_ci_mcx_mr_hp_atf_m)
+- [ ] [tastiera meccanica wireles](https://www.keychron.com/collections/low-profile-keyboard-collection/products/keychron-k1-wireless-mechanical-keyboard)
+- [ ] batteria nuova per il thinkpad

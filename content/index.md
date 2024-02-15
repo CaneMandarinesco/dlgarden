@@ -6,6 +6,7 @@
 - [[art]]
 - [[config]]
 - [[come fare un sito come questo]]
+- [[cose da comprare]]
 # appunti
 * [[analisi 1]] (prof. R. Tauraso)
 - [[matematica discreta]] (prof. F. Brenti) 
