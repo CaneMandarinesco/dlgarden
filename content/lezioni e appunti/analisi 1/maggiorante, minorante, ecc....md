@@ -17,7 +17,5 @@ inoltre se:
 ## proprieta di sup e inf
 * $inf(A) = -\infty$ -> $\forall m \in R$, $\exists a \in A$$ tale che $a < m$
 * $inf(a) = m$ -> $\forall l>0$, $\exists a \in A$ tale che $a<m+l$
-	* ovvero: ogni numero più grande di m non e **minorante**
+	* ovvero: ogni numero più grande di m non e' **minorante**
 * similmente valgono le proprietà sopra per $sup$
-## esempi
-#todo

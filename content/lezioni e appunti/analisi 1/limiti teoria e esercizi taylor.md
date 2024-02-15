@@ -45,7 +45,7 @@ sostituendo:
 $$
 \lim_{ x \to 0 } \frac{1-x^2+\frac{x^4}{4}-1+x^2}{x^4} = \frac{\frac{x^4}{4}}{x^4} = \frac{1}{4}
 $$
-c'e' un **errore nascosto**!  nello sviluppo di taylor se mi fermo a t ($1+\alpha t$$), tralascio il termine $x^4$ che compare nel $t^2$ in $1+\alpha t+\alpha(\alpha-1)t^2$ dove $t=(-4x^2+x^4)$ e $t^2 = 16x^4 + o(x^4)$. Se nello sviluppo di taylor mi arresto al 4 grado, mi devo assicurare che ci siano tutti gli $x^4$ che potrebbero comparire allo sviluppo successivo!
+c'e' un **errore nascosto**!  nello sviluppo di taylor se mi fermo a t ($1+\alpha t$), tralascio il termine $x^4$ che compare nel $t^2$ in $1+\alpha t+\alpha(\alpha-1)t^2$ dove $t=(-4x^2+x^4)$ e $t^2 = 16x^4 + o(x^4)$. Se nello sviluppo di taylor mi arresto al 4 grado, mi devo assicurare che ci siano tutti gli $x^4$ che potrebbero comparire allo sviluppo successivo!
 
 quindi:
 $$

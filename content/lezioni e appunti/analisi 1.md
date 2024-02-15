@@ -1,4 +1,5 @@
 ### per esercitarsi consiglio i video di [Marcello Dario Cerroni](https://www.youtube.com/@MarcelloDarioCerroni) su youtube
+
 * [materiale didattico](https://www.mat.uniroma2.it/~tauraso/analisi1inf2324.html)
 * [limiti notevoli](#limiti-notevoli)
 * [derivate](#derivate)

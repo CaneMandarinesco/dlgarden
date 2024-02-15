@@ -23,7 +23,7 @@ verificata la convergenza applico il criterio della radice:
 $$
 \lim_{ n \to \infty } \sqrt[n]{ \left( \frac{n}{2}\log \left( \frac{n+1}{n} \right) \right)^n } = \frac{n}{2}\log \left( \frac{n+1}{n} \right) = \frac{1}{2} < 1 \text{ quindi converge }
 $$
-oppure posso usare il confronto asintotico avendo svolto in precedenza il limite so che:
+oppure posso usare il confronto asintotico avendo, svolto in precedenza il limite so che:
 $$
 \left( \frac{n}{2} \log\left( \frac{n+1}{n} \right)\right)^n \sim \frac{1}{2^n}
 $$

@@ -7,7 +7,7 @@
 * super + R: apri launcher app
 * super + S: screenshot
 
-# Software
+# software
 * compositor: [Hyprland](https://hyprland.org/)
 * barra: [Waybar](https://github.com/Alexays/Waybar)
 * launcher: **rofi**

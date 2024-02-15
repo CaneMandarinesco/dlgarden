@@ -145,12 +145,9 @@ $$
 $$
  > razionalizzando  si ritorna all'integrale di partenza
 
-## trigonometrici
+## trigonometrici (non e' utile saperli)
 $\sin(2x) = 2\sin x\cos x$
 $\cos(2x) = \cos^2x - \sin^2x$
-da cui derivano:
-* $\cos(2x) = 1-2\sin^2x$
-* $\sin(??)= 2\cos^2x-1$
 ### es 13
 $$
 \int  \cos^2x \, dx 
