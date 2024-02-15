@@ -6,12 +6,14 @@
 ## come studiare analisi 1? la mia esperienza.
 seguite le lezioni, prendete appunti, e quando tornate a casa dovete **almeno** rileggere gli appunti, se addirittura volete il vostro bel 30 e lode mettetevi a fare gli esercizi.  io non ho fatto nulla di tutto cio.
 una volta che inizia la sessione cominciate a studiare come matti.  
-la tecnica giusta per me e' stata: studiare la teoria (il minimo che basta), fare gli esercizi, e se si hanno dubbi sulla teoria si ritorna indietro al teoria e si ricontinua.  
+la tecnica giusta per me e' stata: studiare la teoria (il minimo che basta), fare gli esercizi, e se si hanno dubbi sulla teoria si ritorna indietro alla teoria e si ricomincia.  
 per imparare limiti notevoli, derivate, sviluppi di taylor ecc... e' inutile stare a ripeterli finche non si memorizzano, a meno che non abbiate una tecnica mnemonica che vi aiuti.  
 io piuttosto ho fatto esercizi su esercizi, e dopo un po di tempo ho cominciato a memorizzare tutte le formule. 
 gli argomenti piu' semplici del corso a mio parere sono gli ultimi due: il problema di Cauchy e le equazioni in due variabili in quanto bisogna solo imparare formule da applicare in modo meccanico, non c'e' nulla da capire.  
 gestite bene il vostro tempo mentre studiate e soprattutto: studiate in biblioteca.  
 ## teoria
+* [[insiemi, funzioni]]
+* [[induzione, disuguaglianze bernoulli, potenza binomio]]
 * [[maggiorante, minorante, ecc...]]
 * [[limiti di successioni e di funzioni]]
 * [[proprieta' delle funzioni continue]]
@@ -22,6 +24,7 @@ gestite bene il vostro tempo mentre studiate e soprattutto: studiate in bibliote
 * [[primitive e teoremi sugli integrali]]
 * [[integrali impropri]]
 * [[serie numeriche]]
+* [[frattale di koch]]
 * [[numeri complessi]]
 * [[problema di cauchy e calcolo diff. in piu variabili]]
 
@@ -49,6 +52,7 @@ gestite bene il vostro tempo mentre studiate e soprattutto: studiate in bibliote
 * proprietà dei limiti
 * limiti notevoli
 * calcolo dei limiti
+* bonus: radice di Antani ($\sqrt{ A }$) e' un numero naturale
 * intorni di un punto
 * limiti di funzioni
 * derivata, retta tangente
@@ -97,18 +101,18 @@ gestite bene il vostro tempo mentre studiate e soprattutto: studiate in bibliote
 10. $\lim_{x\to0} \frac{1-\cos(x)}{x^2} = \frac{1}{2}$
 
 # derivate
-| $f(x)$ | $\frac{df}{dx}$ |  |
-| ---- | ---- | ---- |
-| $a$ | $0$ |  |
-| $ax$ | $a$ |  |
-| $x^a$ | $ax^{a-1}$ |  |
-| $\ln(x)$ | $\frac{1}{x}$ |  |
-| $\sin(x)$ | $\cos(x)$ |  |
-| $\cos(x)$ | $-\sin(x)$ |  |
-| $\tan(x)$ | $\frac{1}{\cos^2(x)}$ |  |
-| $\arcsin(x)$ | $\frac{1}{\sqrt{1-x^2}}$ |  |
-| $\arccos(x)$ | $-\frac{1}{\sqrt{1-x^2}}$ |  |
-| $\arctan(x)$ | $\frac{1}{1+x^2}$ |  |
+| $f(x)$ | $\frac{df}{dx}$ |
+| ---- | ---- |
+| $a$ | $0$ |
+| $ax$ | $a$ |
+| $x^a$ | $ax^{a-1}$ |
+| $\ln(x)$ | $\frac{1}{x}$ |
+| $\sin(x)$ | $\cos(x)$ |
+| $\cos(x)$ | $-\sin(x)$ |
+| $\tan(x)$ | $\frac{1}{\cos^2(x)}$ |
+| $\arcsin(x)$ | $\frac{1}{\sqrt{1-x^2}}$ |
+| $\arccos(x)$ | $-\frac{1}{\sqrt{1-x^2}}$ |
+| $\arctan(x)$ | $\frac{1}{1+x^2}$ |
 # sviluppi di Taylor
 ### esponenziale
 $$e^x = 1+x+\frac{1}{2}x^2 +\frac{2}{6}x^3 + \dots + o(x^n)$$

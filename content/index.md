@@ -7,9 +7,9 @@
 - [[config]]
 - [[come fare un sito come questo]]
 # appunti
-- [[programmazione dei calcolatori]] (python/c, prof. G. Rossi)
-- [[analisi 1]] (prof. R. Tauraso)
+* [[analisi 1]] (prof. R. Tauraso)
 - [[matematica discreta]] (prof. F. Brenti) 
+- [[programmazione dei calcolatori]] (python/c, prof. G. Rossi)
 - l~~ogica e reti logiche  (prof. F. Pasquale)~~
 
 ## link vari
