@@ -19,7 +19,7 @@ gestite bene il vostro tempo mentre studiate e soprattutto: studiate in bibliote
 * [[proprieta' delle funzioni continue]]
 * [[asintoti, flesso, discontinuita]]
 * [[sin(x) su x]]
-* [[teoremi funzioni derivabili]]
+* [[teoremi funzioni derivabili (fermat, lagrange, weierstrass)]]
 * [[definizione di integrale]]
 * [[primitive e teoremi sugli integrali]]
 * [[integrali impropri]]

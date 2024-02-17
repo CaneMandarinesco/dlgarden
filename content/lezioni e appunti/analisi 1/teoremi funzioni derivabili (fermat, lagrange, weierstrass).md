@@ -18,6 +18,7 @@ sia $f(x)$ una funzione continua in $(a,b)$ e sia $x_{0}$ un punto di **massimo 
 > applicando la permanenza del segno sappiamo che :
 > - $f^I_{+}(x) \leq 0$ 
 > - $f^I_{-}(x) \geq 0$ 
+> 
 > hanno un'unica soluzione comune ovvero: $f^I(x_{0}) = 0$
 > 
 
@@ -39,12 +40,46 @@ ovvero se f e' continua in $[a,b]$ allora esistono un $x_{min}$ (punto di **mini
 > consideriamo $M = sup \{f(x_{n}), \forall x \in [a,b]\}$ (valore massimo di $f(x)$ in $[a,b]$)
 > per dimostrare che esiste un **massimo assoluto**, bisogna far vedere che $M$ non puo essere $+\infty$.
 >
-> per $M = +\infty$, vuol dire  che in un qualsiasi intorno di $+\infty$, $f(x_{n})$ e' compresa in $(n, +\infty)$ e quindi $f(x_{n}) > n$ (perche' $f(x_{n}) = n$ perche' $x_{n}: f(x_{n})=n$). dato che noi stiamo studiando $f(x_{n})$ in $[a,b]$, $x_{n}$ in $[a,b]$ e limitata e per **Bolzano-Weierestrass** esiste un $x_{n_{k}}$ che **converge**
+> per $M = +\infty$, vuol dire  che in un qualsiasi intorno di $+\infty$, $f(x_{n})$ e' compresa in $(n, +\infty)$(def. di limite di f) e quindi $f(x_{n}) > n$. dato che noi stiamo studiando $f(x_{n})$ in $[a,b]$, $x_{n}$ in $[a,b]$ e limitata e per **Bolzano-Weierestrass** esiste un $x_{n_{k}}$ che **converge**
 > se esiste il limite $x_{n}$ allora $\exists x_{n_{k}}$ e le altre sue sotto successioni devono tendere a $+\infty$ ma abbiamo appena dimostrato che $x_{n_{k}}$ converge. **assurdo**
 > 
-> invece per $M \in \mathbb{R}$ abbiamo che $f(x) \leq M$ e applicando al definizione di **limite** **convergente** ($|l-a_{n}| < \epsilon$) abbiamo che:
-> - $M-\epsilon < f(x_{n}) < M$ dove $\epsilon=\frac{1}{M}>0$
+> invece per $M \in \mathbb{R}$ abbiamo che $f(x) \leq M$ e applicando la definizione di **limite superiore** abbiamo che:
+> - $M-\epsilon < f(x_{n}) \leq M$ dove $\epsilon=\frac{1}{M}>0$
 > 
 > quindi possiamo costruire una successione $x_{n}$, che e' limitata in $[a,b]$. quindi per **Bolzano-Weierstrass** esiste una sotto successione $x_{n_{k}}$ **convergente** a $x_{0}$.
 > dato che $f(x)$ e' continua in $[a,b]$ allora -> $\lim_{ k \to +\infty } f(x_{n_{k}}) = f(x_{0}) = M$
-> 
+
+## lagrange (o valor medio)
+la retta che passa per $(a,b) = f'(c)$ dove la retta che passa per $(a,b)$ ha coeff. angolare: $\frac{f(b)-f(a)}{b-a}$
+![[Pasted image 20240216182402.png]]
+
+per la dimostrazione abbiamo bisogno di una funzione $h(x)$ ausiliaria
+
+$$
+h(x) = f(x)- \left( \frac{f(b)-f(a)}{b-a}(x-a)+f(a) \right)
+$$
+che e' continua in $[a,b]$, inoltre:
+* $h(a) = f(a) - f(a) = 0$
+* $h(b) =  f(b) - (f(b) - f(a) + f(a)) = 0$
+
+per weierstrass in $[a,b]$, abbiamo un massimo e un minimo assoluto, e abbiamo due casi:
+* $x_{min}$ e $x_{max}$ coincidono con $\{ a,b \}$, quindi essendo $h(x_{min}) = h(x_{max})$ allora $h$ e' costante in $[a,b]$ e di conseguenza la derivata e' 0
+* almeno uno tra $x_{min}$ e $x_{max}$ e' in $(a,b)$, quindi per fermat: $h'(x_{max}) = 0$ o $h'(x_{min}) = 0$
+
+ora se:
+$0 = h'(c)$, allora $f'(c) - \frac{f(b)-f(a)}{b-a} = 0$, quindi: $\frac{f(b)-f(a)}{b-a} = f'(c)$
+
+## criterio di monotonia
+1. $f$ e' **crescente** in I se e solo se $\forall x \in I \; f'(x)\geq 0$
+2. viceversa se decrescente
+
+va dimostrata in due sensi (dato che abbiamo se e solo se):
+(->) se $x \in I$, il segno del rapporto incrementale e' sempre $\geq 0$ e per permanenza del segno:
+$$
+f'(x) = \lim_{ h \to 0 } \frac{f(x+h)-f(x)}{h}
+ \geq 0$$
+(<-) $x_{1}, x_{2} \in I$ con $x_{1}<x_{2}$, dato che e' crescente per ipotesi, dobbiamo verificare che $f(x_{1}) \leq f(x_{2})$. per teorema del valor medio in $[x_{1},x_{2}]$ abbiamo che: $\exists c \in (x_{1},x_{2}):$
+$$
+\frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}} = f'(c)\geq 0
+$$
+dunque: $f(x_{2}) \geq f(x_{1})$

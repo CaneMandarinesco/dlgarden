@@ -40,7 +40,7 @@ allora:
 > studiamo il rapporto incrementale di $I(x)$
 > sia $x \in [a,b]$ e sia $h \neq 0$  t.c. $x+h\in[a,b]$, allora abbiamo che:
 > $$
-> \frac{I(x+h)-I(x)}{x} = \frac{1}{h}\left( \left( \int _{a}^{x+h}f(t) \, dt  \right)-\int _{a}^xf(t) \, dt  \right) = 
+> \frac{I(x+h)-I(x)}{h} = \frac{1}{h}\left( \left( \int _{a}^{x+h}f(t) \, dt  \right)-\int _{a}^xf(t) \, dt  \right) = 
 > $$
 > $$
 > \frac{1}{h}\int_{x}^{x+h}f(t) \, dt 

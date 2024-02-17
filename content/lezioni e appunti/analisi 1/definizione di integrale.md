@@ -15,7 +15,8 @@ e' l'interpretazione **moderna** (ovvero usando la notazione dei limiti) che pos
 
 ## formule per: $s_{N} \text{ e } S_{N}$ e comportamento per $N\to \infty$
 facendo riferimento a questa immagine:
-![[Pasted image 20240205100512.png]]
+
+
 guardando il triangolo rosso vediamo che:
 $$
 s_{N} = N \, \frac{1}{2} \, R^2 \, \sin(\alpha_{N}) = \left( \frac{\sin\left( \frac{2\pi}{N} \right)}{\frac{2\pi}{N}} \right)\pi R^2 \to \pi R^2
@@ -44,7 +45,7 @@ Adattiamo il metodo per il calcolo dell'area del grafico di una funzione
 $$
 T = \{(x,y): x \in [a,b], y \in [0, f(x)] \lor{}[f(x),0] \}
 $$
-* $[0,f(x)] \text{ se }f(x) \geq 0$ 
+* $[0,f(x)] \text{ se }f(x) \geq 0$ lavagna con pennare
 * $[f(x), 0] \text{ se } f(x)\leq 0$
 e $f(x)$ e' limitata in $[a,b]$
 con questa definizione di $f(x)$ mettiamo in evidenza il fatto che in alcuni punti $f(x)$ puo' essere positiva o negativa, nel calcolo dell'area dobbiamo fare attenzione al segno:

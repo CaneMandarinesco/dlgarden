@@ -34,15 +34,18 @@ in $S_{n}$, $n$ indica il numero di elementi di $X$
 es: $S_{3} = \{ 123,132,213,231,312,321 \}$ 
 dove:
 * $123$ vuol dire che $f(1)=1, f(2)=2, f(3)=3$
-* $213$ vuol dire che $f(1) = 2, f(2) = 1, f(3) = 3$\
+* $213$ vuol dire che $f(1) = 2, f(2) = 1, f(3) = 3$
 * e cosi via 
 
 >[!note] OSS.
 > **composizione**:
-> siano $f,g \in S_{n}$, $f=a_{1}\dots a_{n}$ e $g=b_{1}\dots b_{n}$ allora: $$ f \circ g = a_{b_{1}} a_{n_{2}} \dots a_{b_{n}}$$
+> siano $f,g \in S_{n}$, $f=a_{1}\dots a_{n}$ e $g=b_{1}\dots b_{n}$ allora: $$ 
+> f \circ g = a_{b_{1}} a_{n_{2}} \dots a_{b_{n}} 
+> $$
 
 es.
 $f=7153426$ e $g=6712534$, allora:
+
 $$
 f \circ g = 2671453
 $$
@@ -83,11 +86,14 @@ siano $A,B$ insiemi, $f:A\to B$, $X,Y \subseteq B$. allora:
 per 2. e' simile
 
 # 1.4 relazioni
+> cap. 7 libro
 
 >[!note] DEF.
 > una ***relazione*** su $A$ e' un **sottoinsieme**  $R \subseteq A\times A$.
 > e si scrive: $$aRb$$
 > ovvero: $a$ e' in relazione con $b$ e significa che $(a,b)\in R$ e che $a,b \in A$
+
+e' simile a una funzione, infatti per definizione anche una funzione e' una relazione. la loro differenza e' che una relazione potrebbe associare piu' elementi di $B$ ad $A$
 
 ### proprieta'
 * $R$ e' **riflessiva** se: $a \in A$ -> $aRa$ (allora per def. $(a,a) \in R$)
@@ -112,7 +118,40 @@ quindi $R$ non puo' essere di equivalenza su $A$ (**ricorda** che una relazione 
 > sia $R$ una relazione di equivalenza su $A$. sia $a \in A$.
 > la ***classe di equivalenza di*** a e':
 > $$[a] = \{ b\in A: aRb \}$$
+> quindi con questa notazione indichiamo tutte le $(a,b) \text{ t.c } \in A$, ovvero tutte le $a$ in relazione con $b$
 
 
 ### prop 1.4.1
-$R$ relazione di equivalenza su $A$. siano $a,b \in A$. allora $[a]=[b]$ o $[a] \cap[b]= \emptyset$
+$R$ relazione di **equivalenza** su $A$. siano $a,b \in A$. allora $[a]=[b]$ o $[a] \cap[b]= \emptyset$.
+>[!note] DIM.
+> supponiamo che $[a] \cap[b] \neq \emptyset$ e sia $c \in [a] \cap [b]$. Allora $cRa$ e $cRb$ e dato che e' **simmetrica** (essendo R di equivalenza) abbiamo che: $aRc$ e $cRb$
+> e essendo transitiva: $aRb$, ora sia $x \in [a]$, allora $xRa$, ma essendo transitiva abbiamo che $xRb$ e quindi $x\in[b]$. **viceversa** abbiamo che:
+> sia $y \in [b]$ -> $yRb$ -> $yRa$ -> $y \in [a]$
+
+# partizioni
+
+>[!note] DEF.
+>una **partizione** di un insieme finito $A$, e' una collezione di sottoinsiemi $A_{1},A_{2},\dots,A_{n}$ la cui unione e' $A$, e i loro sottoinsiemi sono chiamati **blocchi**
+
+per esempio, una possibile partizione di $A = {a,b,c,d,e}$ e':
+$$
+A_{1} = \{ a,c \}, \;\;\; A_{2}=\{ b,e \}, \;\;\; A_{3} =\{d \}
+$$
+* un blocco non può' essere vuoto
+### es. 
+$$
+A = [8]
+$$
+allora possiamo dire che:
+$$
+\Omega= \{ \{ 1,3 \}, \{ 4 \}, \{ 2,5,7 \}, \{ 6,8 \} \}
+$$
+### coroll. 1.4.2
+sia $R$ una relazione di equivalenza su $A$. Allora le classi di equivalenza di $R$ sono una partizione di $A$
+
+> [!note] DIM.
+> sia $a \in A$ allora $[a]\neq \emptyset$ (dato che $a \in [a]$)
+> boh...
+
+
+

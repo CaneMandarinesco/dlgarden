@@ -5,8 +5,8 @@
 * $M \in \mathbb{R}$ si dice **massimo** di A se $M$ e' tale che: $\forall a \in A \, a \leq M$ e **soprattutto** $M \in A$
 * $m \in \mathbb{R}$ si dice **minimo** di A se $m$ e' tale che: $\forall a \in A \, a \geq m$ e **soprattutto** $m \in A$
 ---
-* A si dice **limitato superiormente** se $\forall x \in A$, $f(x)\leq M$ con $M \in \mathbb{R}$
-* A si dice **limitato inferiormente** se $\forall x \in A$, $f(x) \geq m$ con $m \in \mathbb{R}$
+* A si dice **limitato superiormente** se $\exists M: \forall a \in A$, $a\leq M$ con $M \in \mathbb{R}$
+* A si dice **limitato inferiormente** se $\exists m: \forall a \in A$, $a \geq m$ con $m \in \mathbb{R}$
 * A si dice **limitato** se valgono entrambe
 ## assioma di completezza 
 * se A e' **limitato superiormente** ammette almeno un **maggiorante** che coincide con $sup\{\forall x \in A\}$

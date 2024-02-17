@@ -4,6 +4,8 @@
 * [[teoria degli insiemi]]
 * [[funzioni]]
 * [[gruppi simmetrici e relazioni]]
+* [[dimostrazioni e es]]
+* [[3.2 principio del buon ordinamento]]
 
 ## esercizi su teams
 * [[esercizi esame]]

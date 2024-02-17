@@ -1,3 +1,4 @@
+
 # insiemi numerici
 * numeri naturali: $\mathbb{N} = \{ 0,1,2,3,4,\dots \}$
 * numeri interi: $\mathbb{Z} = \{0,1,-1,2,-2\}$

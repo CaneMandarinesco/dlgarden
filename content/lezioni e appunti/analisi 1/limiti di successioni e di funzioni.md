@@ -1,5 +1,6 @@
 > [!info] DEF.
 >  Una successione reale: $\{a_{n}\}_{n\geq n_{0}}$ e' una funzione che per ogni $n \in N: n \geq n_{0}$ esiste un corrispettivo **reale**: $a_{n}$
+>  dove $a_{n}$ e' il termine generale
 # limite di una successione
 $$
 \lim_{  n \to \infty } a_n = 
@@ -170,7 +171,6 @@ $x_{0}$ e' un punto di accumulo in $D$ se:
 * $\forall r > 0, (I(x_{0}, r) \cap D - \{x_{0}\}) \neq \emptyset$
 ovvero se per ogni intorno centrato in $x_{0}$ e di ampiezza $r$ c'e' sempre un elemento in più rispetto a $x_{0}$ stesso
 
-esempi di punti di accumulo:
 
 > [!note] DEF. LIMITE
 > si dice inoltre che il limite di f(x) per x che tende  a $x_{0}$ vale $l$ se:
