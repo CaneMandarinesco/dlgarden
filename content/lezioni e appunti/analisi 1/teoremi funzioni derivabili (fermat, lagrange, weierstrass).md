@@ -25,8 +25,8 @@ sia $f(x)$ una funzione continua in $(a,b)$ e sia $x_{0}$ un punto di **massimo 
 ## teorema di Bolzano-Weierstrass
 se $\{a_{n}\}_{n}$ limitata allora $\exists a_{n_{k}}$  convergente.
 ovvero se esiste una successione limitata -> esiste una sua **sotto-successione convergente**
-
-### teorema di Weierstrass
+lagrange
+## teorema di Weierstrass
 * [dimostrazione simile a quella del tauraso](https://www.youmath.it/forum/analisi-1/61639-dimostrazione-del-teorema-di-weierstrass.html)
 se $f(x)$ e' continua in $[a,b]$ (***COMPATTO***) allora $\exists x_{min} \in [a,b]$ e $\exists x_{max} \in [a,b]$ t.c $\forall x \in [a,b]: f(x_{min}) \leq f(x) \leq f(x_{max})$
 ovvero se f e' continua in $[a,b]$ allora esistono un $x_{min}$ (punto di **minimo** in $[a,b]$) e un $x_{max}$ (punto di **massimo** in $[a,b]$) tali che $f(x)$ in $[a,b]$ e' **compresa** tra $f(x_{min})$ e $f(x_{max})$ (ossia $f(x_{min})$ e' **minimo assoluto** in $[a,b]$  e $f(x_{max})$ e' **massimo assoluto** in $[a,b]$
@@ -34,7 +34,7 @@ ovvero se f e' continua in $[a,b]$ allora esistono un $x_{min}$ (punto di **mini
 > OSS. $x_{min} \text{ e } x_{max}$ sono i termini n-esimi di una successione $x_{n}$
 
 >[!note] OSS.
-> quindi per il [[proprieta' delle funzioni continue#teorema dei valori intermedi|teorema dei valori intermedi]] $f(x)$ e per il teorema di Weierstrass  $f(x)$ assume **tutti i valori** in $[a,b]$ ed ha anche un **massimo** e un **minimo** **assoluto** in $[a,b]$
+> quindi per il [[teoremi delle funzioni continue#teorema dei valori intermedi|teorema dei valori intermedi]] $f(x)$ e per il teorema di Weierstrass  $f(x)$ assume **tutti i valori** in $[a,b]$ ed ha anche un **massimo** e un **minimo** **assoluto** in $[a,b]$
 
 >[!note] DIM.
 > consideriamo $M = sup \{f(x_{n}), \forall x \in [a,b]\}$ (valore massimo di $f(x)$ in $[a,b]$)
@@ -48,38 +48,70 @@ ovvero se f e' continua in $[a,b]$ allora esistono un $x_{min}$ (punto di **mini
 > 
 > quindi possiamo costruire una successione $x_{n}$, che e' limitata in $[a,b]$. quindi per **Bolzano-Weierstrass** esiste una sotto successione $x_{n_{k}}$ **convergente** a $x_{0}$.
 > dato che $f(x)$ e' continua in $[a,b]$ allora -> $\lim_{ k \to +\infty } f(x_{n_{k}}) = f(x_{0}) = M$
-
-## lagrange (o valor medio)
-la retta che passa per $(a,b) = f'(c)$ dove la retta che passa per $(a,b)$ ha coeff. angolare: $\frac{f(b)-f(a)}{b-a}$
-![[Pasted image 20240216182402.png]]
-
-per la dimostrazione abbiamo bisogno di una funzione $h(x)$ ausiliaria
-
+## teorema di lagrange
+il teorema afferma che se $f(x)$ e' continua in $[a,b]$ allora $\exists c: f(c) = \frac{f(b)-f(a)}{b-a}$, ovvero il coefficiente angolare della retta secante che passa per $b$ e $a$.
+### DIM.
+considero la **funzione ausiliaria:**
 $$
-h(x) = f(x)- \left( \frac{f(b)-f(a)}{b-a}(x-a)+f(a) \right)
+h(x) = f(x) - \left( \frac{f(b)-f(a)}{b-a}(x-a) + f(a) \right)
 $$
-che e' continua in $[a,b]$, inoltre:
+tenendo presente che:
 * $h(a) = f(a) - f(a) = 0$
-* $h(b) =  f(b) - (f(b) - f(a) + f(a)) = 0$
+* $h(b) = f(b) - (f(b) - f(a) + f(a)) = 0$
 
-per weierstrass in $[a,b]$, abbiamo un massimo e un minimo assoluto, e abbiamo due casi:
-* $x_{min}$ e $x_{max}$ coincidono con $\{ a,b \}$, quindi essendo $h(x_{min}) = h(x_{max})$ allora $h$ e' costante in $[a,b]$ e di conseguenza la derivata e' 0
-* almeno uno tra $x_{min}$ e $x_{max}$ e' in $(a,b)$, quindi per fermat: $h'(x_{max}) = 0$ o $h'(x_{min}) = 0$
+ora dato che $h$ e' continua in $[a,b]$: assume tutti i valori tra $a$ e $b$ ed ammette un **minimo**: $x_{min}$ e un **massimo**: $x_{max}$ assoluto. possiamo distinguere ora due casi:
+* $x_{min} \text{ e } x_{max} \in \{ a,b \}$ quindi $h$ e' costante in $[a,b]$ e la sua derivata vale sempre $0$
+* uno tra $x_{min} \text{ e } x_{max}$ e' in $[a,b]$ quindi, per **fermat**: $\exists c: h'(x) = 0$
 
-ora se:
-$0 = h'(c)$, allora $f'(c) - \frac{f(b)-f(a)}{b-a} = 0$, quindi: $\frac{f(b)-f(a)}{b-a} = f'(c)$
-
-## criterio di monotonia
-1. $f$ e' **crescente** in I se e solo se $\forall x \in I \; f'(x)\geq 0$
-2. viceversa se decrescente
-
-va dimostrata in due sensi (dato che abbiamo se e solo se):
-(->) se $x \in I$, il segno del rapporto incrementale e' sempre $\geq 0$ e per permanenza del segno:
+in entrambi i casi esiste almeno un punto $c$ in cui $h'(c) = 0$, e quindi:
 $$
-f'(x) = \lim_{ h \to 0 } \frac{f(x+h)-f(x)}{h}
- \geq 0$$
-(<-) $x_{1}, x_{2} \in I$ con $x_{1}<x_{2}$, dato che e' crescente per ipotesi, dobbiamo verificare che $f(x_{1}) \leq f(x_{2})$. per teorema del valor medio in $[x_{1},x_{2}]$ abbiamo che: $\exists c \in (x_{1},x_{2}):$
+0 = h'(c) = f'(c) - \frac{f(b)-f(a)}{b-a}
 $$
-\frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}} = f'(c)\geq 0
+quindi risolvendo l'equazione si ha che:
 $$
-dunque: $f(x_{2}) \geq f(x_{1})$
+f'(c) = \frac{f(b)-f(a)}{b-a}
+$$
+
+## Criterio di monotonia
+se $f$ e' continua e derivabile in $(a,b)$ allora $\forall x \in D$:
+* $f'(x)\geq 0$ se e solo se $f(x)$ e' crescente in $(a,b)$
+* viceversa
+
+### dim. $f'(x)\geq 0 \text{ allora } f(x) \text{ e' crescente }$
+studiamo cosa succede alla derivata destra e sinistra:
+* $f_{-}'(x) = \frac{f(x+h)-f(x)}{h}$ dove: $N \leq 0$ dato che $f$ e' crescente ($h<0$), e $D < 0$, quindi e' $\geq 0$
+* $f'_{+}(x) = \frac{f(x+h)-f(x)}{h}$ dove: $N \geq 0$ e $D \geq 0$ (per lo stesso ragionamento di prima). quindi e' $\geq 0$
+
+quindi $f'(x)\geq 0$ implica che $f(x)$ sia crescente
+
+
+### dim. $f(x) \text{ e' crescente , allora } f'(x) \geq 0$
+prendiamo in considerazione: $x_{0}, x_{1}: x_{0}<x_{1}$, per definizione di funzione crescente abbiamo che: $f(x_{0}) \leq f(x_{1})$.
+applicando il teorema del valor medio, abbiamo che: $\exists c: f'(c) = \frac{f(x_{1})-f(x_{0})}{x_{1}-x_{0}}$ dove $f'(c) \geq 0$ perche' essendo $f(x)$ crescente per ipotesi, allora $\frac{f(x_{1})-f(x_{0})}{x_{1}-x_{0}}$ 
+
+quindi se $f(x)$ e' crescente allora $f'(x)\geq 0$
+
+## Teorema di cauchy (simile a lagrange)
+se $\forall x \in (a,b), g'(x) \neq 0$  (condizione fondamentale del teorema), allora:
+$$
+\exists c \in (a,b): \frac{f(b)-f(a)}{g(b)-g(a)} = \frac{f'(c)}{g'(c)} 
+$$
+
+## Teorema de l'hopital
+siano $f$ e $g$ tali che:
+* $\lim_{ x \to x_{0}^+ }f(x) = \lim_{ x \to x_{0}^+ } g(x) = 0$ oppure $\lim_{ x \to x_{0}^+ } f(x) = \pm \infty$ e $\lim_{ x \to x_{0}^+ } g(x) = \pm \infty$
+* $\forall x \in (x_{0}, x_{0}+r) g'(x)\neq 0$
+* $\exists \lim_{ x \to x_{0}^+ } \frac{f(x)}{g(x)} = L$
+Allora $\exists \lim_{ x \to x_{0}^+ } \frac{f(x)}{g(x)} = L$
+
+### dim.  per limiti tendenti a 0
+poniamo che $f(x_{0}) = g(x_{0})=0$, estendendone quindi il dominio di queste due funzioni, cosi sono continue in $[x_{0}, x_{0}+r)$
+consideriamo una successione $\{ x_{n} \}_{n}$ in $(x_{0}, x_{0}+r)$ tale che $x_{n} \to x_{0}^+$ allora $\forall n \in N^+$ per Cauchy:
+$$
+\exists c_{n} \in (x_{0},x_{n}): \frac{f(x_{n})}{g(x_{n})} = \frac{f(x_{n})-f(x_{0})}{g(x_{n}) - g(x_{0})} = \frac{f'(c_{n})}{g'(c_{n})}
+$$
+dato che $x_{0} < c_{n} < x_{n}$, per doppio confronto si ha che: $c_{n} \to x_{o}^+$ (dato che $x_{n} \to x_{0}^+$)e:
+$$
+\frac{f(x_{n})}{g(x_{n})} = \frac{f'(c_{n})}{g'(c_{n})} \to L
+$$
+e per teorema ponte cio' vale anche per i limiti di funzioni

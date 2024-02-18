@@ -57,3 +57,40 @@ allora:
 >[!note] OSS.
 >  dal teorema fondamentale del calcolo segue il problema del calcolo dell'**integrale definito**
 
+## teorema confronto per integrali impropri
+### OSS. integrale di $f \geq 0$ e' $\geq 0$
+se $f(x)\geq 0$
+sia $F(x) = \int _{a}^x f(t) \, dt$, se considero una suddivisione di $[a,b]$ = $a \leq x_{1} < x_{2} < b$ allora posso dire che:
+$$
+F(x_{2})-F(x_{1}) = \int _{a}^{x_{2}}f(x) \, dx - \int _{a}^{x_{1}} f(x) \, dx = \int  _{x_{1}}^{x_{2}} f(x)\, dx   
+$$
+quindi ho che $F(x_{2})\geq F(x_{1})$ e che (dato che $f(x)\geq 0$): $F(x_{2}) - F(x_{1}) \geq 0$
+quindi se considero il limite della funzione integrale:
+$$
+\lim_{ x \to b^- } \int _{a}^x f(x) \, dx \geq 0  
+$$
+quindi puo': **convergere** o **divergere** a $\infty$
+
+quindi l'integrale di una funzione positiva e' sempre $\geq 0$ e puo divergere
+
+### teorema
+sia $0\leq f(x)\leq g(x)$, allora:
+* $\int_{a}^b f(x) \, dx$ converge allora converge $\int _{a}^bg(x) \, dx$
+* $\int _{a}^b g(x) \, dx$ diverge allora diverge $\int _{a}^b f(x) \, dx$
+
+#### dim.
+siano:  
+$$
+F(x) = \int _{0}^x f(t)\, dt \;\; \text{ e } \;\; G(x) = \int _{0}^x g(t) \, dt
+$$
+con $a\leq x<b$:
+$$
+G(x)-F(x) = \int _{a}^x g(t)-f(t)\, dt \geq 0 
+$$
+> vale per l'osservazione precedente, quindi $\int g(t) \, dt \geq \int  f(t) \, dt$
+
+considero i limiti per $x\to b$ e ho che:
+$$
+\lim_{ x \to b^- }  \int _{a}^x g(t)  \, dt \geq \lim_{ x \to b^- }  \int_{a}^x f(t) \, dt 
+$$
+da qui segue l'ipotesi

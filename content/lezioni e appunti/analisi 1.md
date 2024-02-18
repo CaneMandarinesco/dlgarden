@@ -16,10 +16,11 @@ gestite bene il vostro tempo mentre studiate e soprattutto: studiate in bibliote
 * [[induzione, disuguaglianze bernoulli, potenza binomio]]
 * [[maggiorante, minorante, ecc...]]
 * [[limiti di successioni e di funzioni]]
-* [[proprieta' delle funzioni continue]]
+* [[teoremi delle funzioni continue]]
 * [[asintoti, flesso, discontinuita]]
 * [[sin(x) su x]]
-* [[teoremi funzioni derivabili (fermat, lagrange, weierstrass)]]
+* [[teoremi funzioni derivabili (fermat, lagrange, weierstrass)
+* [[taylor con resto di  peano]]
 * [[definizione di integrale]]
 * [[primitive e teoremi sugli integrali]]
 * [[integrali impropri]]
@@ -73,20 +74,28 @@ gestite bene il vostro tempo mentre studiate e soprattutto: studiate in bibliote
 * numeri complessi
 * problema di cauchy
 
-# teoremi e dimostrazioni
-* $\sqrt(2)$ non e' reale
-* disuguaglianza di bernoulli
-* potenza di un binomio
-* dimostrazioni proprieta' dei limiti
-* teorema degli zeri
-* $\lim_{x\to0} \frac{\sin(x)}{x} = 1$
-* teorema dei valori intermedi
-* teorema di fermat sui punti stazionari
-* teorema di bolzano-weierstrass
-* teorema di weierstrass
-* teorema di lagrande (o del valor medio)
-* teorema di cauchy
-* teorema de l'hopital
+# dimostrazioni
+* [x] $\sqrt(2)$ non e' reale
+* [x] disuguaglianza di bernoulli
+* [x] potenza di un binomio
+* [x] dimostrazioni proprieta' dei limiti
+* [x] teorema degli zeri
+* [x] $\lim_{x\to0} \frac{\sin(x)}{x} = 1$
+* [x] teorema dei valori intermedi
+* [x] teorema di fermat sui punti stazionari
+* [x] teorema di bolzano-weierstrass
+* [x] teorema di weierstrass
+* [x] teorema di lagrange (o del valor medio)
+* [ ] teorema di cauchy
+* [ ] teorema de l'hopital
+* [x] criterio di monotonia
+* [x] taylor con resto di peano
+* [x] media integrale
+* [x] teorema fondamentale calcolo integrale
+* [x] teorema confronto integrali impropri
+* [x] condizione necessaria per convergenza
+* [x] criterio del confronto integrale
+* [x] criterio di leibniz
 
 # limiti notevoli
 1. $\lim_{x\to\infty} (1+\frac{1}{x})^x = e$

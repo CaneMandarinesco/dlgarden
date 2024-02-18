@@ -90,6 +90,13 @@ $$
 $$
 quindi quando dobbiamo determinare la convergenza di una serie, il primo passo sara' studiare il limite del suo termine generale. se il limite **diverge** allora siamo sicuri che la successione **diverge**. lo stesso ragionamento non vale per la convergenza (implicazione)
 
+### dim.
+direttamente dall'ipotesi, abbiamo che $\sum_{n=n_{0}}^\infty a_{n}$ converge, e per esempio:
+$$
+\sum_{k=0}^n a_{n} - \sum_{k=0}^{n-1} a_{n} = a_{n}
+$$
+ora le due serie convergono entrambe a $L$ (dato che essendo entrambe estratte dalla stesa serie, allora hanno stesso limite) quindi $L-L=0$ e quindi anche $a_{n} \to 0$
+
 ## criterio del confronto
 date due successioni $a_{n} \text{ e } b_{n}$ t.c: $0 \leq a_{n} \leq b_{n}$
 * se $a_{n}$ diverge allora $b_{n}$ diverge
@@ -118,6 +125,21 @@ allora:
 $$
 \sum_{n=k_{0}}^{\infty}(-1)^ka_{n}\text{ converge}
 $$
+### dim.
+considero la **somma** parziale $S_{n} = \sum_{k=0}^n (-1)^k a_{k}$ e vediamo se tende a $L \in R$:
+![[Pasted image 20240217222535.png]]
+ad intuito sembrerebbe che gli indici pari decrescano e che quelli dispari crescano, infatti:
+* $S_{2n+2} = S_{2n} + (-a_{2n+1} + a_{2n+2}) \leq S_{2n}$
+* $S_{2n+1} = S_{2n-1} + (a_{2n} - a_{2n+1}) \geq S_{2n-1}$
+inoltre questi valori sono limitati in $[S_{1},S_{0}]$.
+
+considero le serie: $S_{2n}$ e $S_{2n-1}$ che tendono rispettivamente a $L_{0} \text{ e } L_{1}$
+ho infine che: $$
+L_{0} - L_{1} = \lim_{ n \to \infty } (S_{2n} - S_{2n-1}) = \lim_{ n \to \infty }  a_{2n} = 0
+$$
+quindi: $L_{0} = L_{1} = L$
+
+---
 
 > [!note] OSS.
 > i criteri valgono solo per le serie a termini positivi!
