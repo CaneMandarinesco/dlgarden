@@ -43,59 +43,28 @@ gestite bene il vostro tempo mentre studiate e soprattutto: studiate in bibliote
 
 > p.s. ho seguito poco (per nulla) le lezioni del tauraso, e se seguivo non capivo nulla
 
-# argomenti
-* proprietà dei numeri
-* funzioni, grafici e operazioni sui grafici
-* coefficiente binomiale e fattoriale
-* maggiorante e minorante, massimo e minimo, estremo superiore e inferiore di un insieme
-* assioma di completezza
-* limite di una successione
-* proprietà dei limiti
-* limiti notevoli
-* calcolo dei limiti
-* bonus: radice di Antani ($\sqrt{ A }$) e' un numero naturale
-* intorni di un punto
-* limiti di funzioni
-* derivata, retta tangente
-* regole di derivazione
-* derivate di funzioni elementari
-* punti di massimo e minimo
-* derivata II: concavità e convessità di f
-* punto di flesso
-* punti di discontinuita/non derivabilita
-* polinomio di taylor
-* algebra o-piccoli
-* metodo di esaustione-compressione
-* def. di integrale: riemann-darboux
-* proprieta funzioni integrabili
-* def. di primitiva
-* tecniche di integrazione
-* serie numeriche
-* numeri complessi
-* problema di cauchy
-
 # dimostrazioni
-* [x] $\sqrt(2)$ non e' reale
-* [x] disuguaglianza di bernoulli
-* [x] potenza di un binomio
-* [x] dimostrazioni proprieta' dei limiti
-* [x] teorema degli zeri
-* [x] $\lim_{x\to0} \frac{\sin(x)}{x} = 1$
-* [x] teorema dei valori intermedi
-* [x] teorema di fermat sui punti stazionari
-* [x] teorema di bolzano-weierstrass
-* [x] teorema di weierstrass
-* [x] teorema di lagrange (o del valor medio)
-* [ ] teorema di cauchy
-* [ ] teorema de l'hopital
-* [x] criterio di monotonia
-* [x] taylor con resto di peano
-* [x] media integrale
-* [x] teorema fondamentale calcolo integrale
-* [x] teorema confronto integrali impropri
-* [x] condizione necessaria per convergenza
-* [x] criterio del confronto integrale
-* [x] criterio di leibniz
+* $\sqrt(2)$ non e' reale
+* disuguaglianza di bernoulli
+* potenza di un binomio
+* dimostrazioni proprieta' dei limiti
+* teorema degli zeri
+* $\lim_{x\to0} \frac{\sin(x)}{x} = 1$
+* teorema dei valori intermedi
+* teorema di fermat sui punti stazionari
+* teorema di bolzano-weierstrass
+* teorema di weierstrass
+* teorema di lagrange (o del valor medio)
+* teorema di cauchy
+* teorema de l'hopital
+* criterio di monotonia
+* taylor con resto di peano
+* media integrale
+* teorema fondamentale calcolo integrale
+* teorema confronto integrali impropri
+* condizione necessaria per convergenza
+* criterio del confronto integrale
+* criterio di leibniz
 
 # limiti notevoli
 1. $\lim_{x\to\infty} (1+\frac{1}{x})^x = e$

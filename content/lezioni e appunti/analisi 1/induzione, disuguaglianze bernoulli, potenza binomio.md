@@ -83,10 +83,12 @@ $$
 ad occhio ci si accorge che le quantità' a sinistra e a destra differisco solo per $nx^2$, quindi si può concludere che la disuguaglianza e' vera e che la disuguaglianza di bernoulli e' stata dimostrata.
 
 # coefficiente e fattoriale, binomio di newton
-$$n! =  \left \{ \begin{array}{x}
+$$
+n! =  \left \{ \begin{array}{x}
 1 \text{ se  n=0} \\ \\
 n(n-1)(n-2)\dots 1 \text{ se } n\geq 1
-\end{array}\right \}$$
+\end{array}\right \}
+$$
 serve per introdurre il coefficiente binomiale:
 $$
 \binom{n}{k} = \frac{n!}{k!(n-k)!} = \frac{n(n-1)(n-1)\dots (n-k+1)}{k!}
@@ -101,6 +103,7 @@ ha una rappresentazione grafica:
 2. $\binom{n}{k-1} + \binom{n}{k} = \frac{n!}{(k-1)!(n-k-1)!} + \frac{n!}{k!(n-k)} = \frac{n!}{k!(n-k+1)!}(k+(n-k+1)) = \binom{n+1}{k}$
 
 # binomio di newton
+
 $$
 \forall a,b \in \mathbb R, \forall n \in \mathbb N^+ (a+b)^n = \sum_{k=0}^n \binom{n}{k} a^kb^{n-k}
 $$
