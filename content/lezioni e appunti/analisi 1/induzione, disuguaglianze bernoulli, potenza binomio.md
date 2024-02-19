@@ -2,7 +2,7 @@
 
 se:
 * $P(n_{0})$ e' vera
-* $\forall n \geq n_{0}$ allora $P(n) \to Pn(n+1)$
+* $\forall n \geq n_{0}$, $P(n) \to Pn(n+1)$
 allora $P(n)$ e' vera $\forall n \geq n_{0}$
 
 ### es 1
@@ -62,25 +62,25 @@ si procede dunque cosi:
 $$
 (1+x)^{n+1} = (1+x)^n (1+x)^1
 $$
-> nota: conviene sempre se possibile separare $n+1$
+> nota: conviene sempre se possibile separare il termine $n+1$
 
 ma $(1+x)^n$ sappiamo per **ipotesi** essere $\geq 1+nx$ quindi moltiplicando entrambi i membri dell'**ipotesi** per $(1+x)$ abbiamo che:
 
 $$
 (1+x)^{n+1} = (1+x)^n (1+x)^1 \geq (1+nx)(1+x)
 $$
-dato che per **ipotesi** e' $(1+x)^{n} \geq (1+nx)$, dato che abbiamo moltiplicato i due membri per la stessa quantità ($(1+x)$), l'uguaglianza e' sempre vera.
+dato che per **ipotesi** e' $(1+x)^{n} \geq (1+nx)$, e dato che abbiamo **moltiplicato i due membri per la stessa quantità** ($(1+x)$), l'uguaglianza e' sempre vera.
 ora per dimostrare per induzione basta far vedere che:
 $$
 (1) \;\;\;\; (1+nx)(1+x) \geq 1 + (n+1)x
 $$
 dove: $1+(n+1)x$ viene da: $(1+x)^{n+1} \geq 1+(n+1)x$
 
-abbiamo quindi sviluppando che la $(1)$ equivale a:
+abbiamo quindi, sviluppando, che la $(1)$ equivale a:
 $$
 1+x+nx+nx^2 \geq 1+x+nx
 $$
-ad occhio ci si accorge che le quantità' a sinistra e a destra differisco solo per $nx^2$, quindi si può concludere che la disuguaglianza e vera e che la disuguaglianza di bernoulli e' stata dimostrata.
+ad occhio ci si accorge che le quantità' a sinistra e a destra differisco solo per $nx^2$, quindi si può concludere che la disuguaglianza e' vera e che la disuguaglianza di bernoulli e' stata dimostrata.
 
 # coefficiente e fattoriale, binomio di newton
 $$n! =  \left \{ \begin{array}{x}
@@ -121,7 +121,7 @@ $$
 $$
 > ponete attenzione a: $a^{k+1}$ e $b^{n+1-k}$
 
-in una dimostrazione conviene sempre fare in modo che i termini siano il più possibile simili tra loro quindi modificando i parametri della sommatoria a sinistra ho che:
+in una dimostrazione conviene sempre fare in modo che i termini siano il più possibile simili tra loro, quindi modificando i parametri della sommatoria a sinistra ho che:
 
 $$
 = \sum_{k=1}^{n+1} \binom{n}{k-1} a^k b^{n+1-k} +\sum_{k=0}^n \binom{n}{k} a^k b^{n+1-k}

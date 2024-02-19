@@ -59,15 +59,3 @@ $$
 * suriettiva
 * biettiva
 * $f$ e' invertibile se e solo se e' **biettiva**: $f^{-1}: B \to A$
-
-## funzioni elementari
-* retta: $f(x) = mx+q$
-
-* valore assoluto: $f(x) = |x|$
-e' una funzione pari, dato che: $f(x)= y = f(-x)$, ovvero $x$ opposte hanno lo stesso valore sull'asse delle $y$
-![[Pasted image 20240215155833.png]]
-
-* potenza intera: $f(x) = x^n$ dove $n$ e' costante
-
-#todo 
-

@@ -2,6 +2,26 @@
 * $x_{0}$ si dice  punto di massimo **assoluto** in A se: $\forall x \in A: \, f(x)\leq f(x_{0})$ ossia $f(x_{0}) = max \{f(x):x \in A\}$
 * $x_{0}$ si dice punto di massimo **relativo** in A se: $\exists r > 0: \forall x \in [I(x_{0},r) \cap{} A$] -> $f(x) \leq f(x_{0})$
 * similmente per minimo **assoluto**/**relativo**
+
+## definizione di derivata 
+f e' derivabile in $x_{0}$ se:
+$$
+\exists \lim_{ x \to \infty } \frac{f(x_{0}+h)-f(x_{0})}{h} = f'(x_{0}) = \frac{df}{dx}(x_{0})
+$$
+dove, la notazione $f'(x_{0})$ (alternativamente $\frac{df}{dx}(x_{0})$) indica la derivata in un punto $x_{0}$
+da questa definizione deriva il significato geometrico della derivata:
+* retta tangente: $y = f'(x_{0})(x-x_{0}) + f(x_{0})$, ovvero la retta che interseca in **un solo punto il grafico** della funzione in $x_{0}$
+* retta secante: $y=\frac{f(x_{0}+h) - f(x_{0})}{h}(x-x_{0}) + f(x_{0})$, ovvero la retta che interseca il grafico in **due punti** della funzione $x_{0}$
+
+> [!note] OSS.
+> se $f$ e' continua in $x_{0}$ avremo che per $x\to x_{0}$:
+> $$
+> f(x) = f(x_{0}) + \left( \frac{f(x)-f(x_{0})}{x-x_{0}}(x-x_{0}) \right) \to f(x_{0})
+> $$
+
+> [!warning] IMPORTANTE: derivata del modulo di x
+> per derivare il modulo di x, e' opportuno come per lo studio di funzione, dividere la funzione in due parti in modo da eliminare il modulo
+
 ## teorema di fermat
 sia $f(x)$ una funzione continua in $(a,b)$ e sia $x_{0}$ un punto di **massimo o minimo  relativo** (o anche assoluto), se f e' derivabile in $x_{0}$ allora $f^I(x_{0}) = 0$ ossia $x_{0}$ e' un **punto stazionario**
 
@@ -14,7 +34,7 @@ sia $f(x)$ una funzione continua in $(a,b)$ e sia $x_{0}$ un punto di **massimo 
 > - per $h\to 0^+$:  $\frac{\leq 0}{+} \text{ ovvero } \leq 0$
 > - per $h\to 0^-$: $\frac{\geq 0}{-} \text{ ovvero } \geq 0$
 > 
-> dato che $f(x)$ e'derivabile in $f(x_{0})$ applichiamo la [[limiti di successioni e di funzioni#3. tipo permanenza del segno|permanenza del segno]] sulla derivata destra e sinistra(???)
+> dato che $f(x)$ e'derivabile in $f(x_{0})$ applichiamo la [[limiti di successioni e di funzioni, nepero, teo. ponte#3. tipo permanenza del segno|permanenza del segno]] sulla derivata destra e sinistra(???)
 > applicando la permanenza del segno sappiamo che :
 > - $f^I_{+}(x) \leq 0$ 
 > - $f^I_{-}(x) \geq 0$ 
@@ -115,3 +135,9 @@ $$
 \frac{f(x_{n})}{g(x_{n})} = \frac{f'(c_{n})}{g'(c_{n})} \to L
 $$
 e per teorema ponte cio' vale anche per i limiti di funzioni
+
+> [!warning] non abusare di de l'hopital!
+> non affidarti solo a de l'hopital per risolvere i limiti, usa sempre i limiti notevoli.
+> 
+
+

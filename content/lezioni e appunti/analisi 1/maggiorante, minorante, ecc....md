@@ -14,7 +14,7 @@
 inoltre se:
 * $sup(A) = +\infty$ allora non e' limitata superiormente
 * $inf(A) = -\infty$ allora non e' limitata inferiormente
-## proprieta di sup e inf
+## proprietà di sup e inf
 * $inf(A) = -\infty$ -> $\forall m \in R$, $\exists a \in A$$ tale che $a < m$
 * $inf(a) = m$ -> $\forall l>0$, $\exists a \in A$ tale che $a<m+l$
 	* ovvero: ogni numero più grande di m non e' **minorante**

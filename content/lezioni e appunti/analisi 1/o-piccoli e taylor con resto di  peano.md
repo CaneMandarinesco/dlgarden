@@ -1,3 +1,18 @@
+## o-piccolo
+se:
+$$
+\lim_{ x \to x_{0} } f(x) = \lim_{ x \to x_{0} }  = 0
+$$
+e: $$
+\lim_{ x \to x_{0} } \frac{f(x)}{g(x)} = 0 
+$$
+allora diremmo che $g(x)$ e' un o-piccolo di $f(x)$ per $x\to x_{0}$, scritto:
+$$
+f(x) = o(g(x))
+$$
+
+# taylor con resto di peano
+
 considerando $f(x)$ in un intorno, con $r>0$ di  $I(x_{0},r)$ possiamo dire che 
 $$
 f(x) = T_{n,x_{0}}(x) + o((x-x_{0})^n)

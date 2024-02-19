@@ -132,8 +132,7 @@ siano $f, g$ due funzioni tali $\forall x \in [a,b) \to 0\leq f(x) \leq g(x)$
 * se $f(x)$ **diverge** allora $g(x)$ **diverge**
 * se $g(x)$ **converge** allora $f(x)$ **converge**
 
-> [!note] DIM.
-> #todo
+dim: [[primitive e teoremi sugli integrali#teorema confronto per integrali impropri]]
 
 da questo teorema ricaviamo che:
 $$
