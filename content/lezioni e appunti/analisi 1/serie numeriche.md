@@ -134,7 +134,8 @@ ad intuito sembrerebbe che gli indici pari decrescano e che quelli dispari cresc
 inoltre questi valori sono limitati in $[S_{1},S_{0}]$.
 
 considero le serie: $S_{2n}$ e $S_{2n-1}$ che tendono rispettivamente a $L_{0} \text{ e } L_{1}$
-ho infine che: $$
+ho infine che: 
+$$
 L_{0} - L_{1} = \lim_{ n \to \infty } (S_{2n} - S_{2n-1}) = \lim_{ n \to \infty }  a_{2n} = 0
 $$
 quindi: $L_{0} = L_{1} = L$

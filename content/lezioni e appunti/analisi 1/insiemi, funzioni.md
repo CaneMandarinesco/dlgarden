@@ -50,7 +50,8 @@ $$
 f: A\to B
 $$
 associa ad ogni $x \in A$ un elemento $f(x) \in B$.
-il grafico di $f$ e' rappresentato dall'insieme: $$
+il grafico di $f$ e' rappresentato dall'insieme: 
+$$
 \{ (x,f(x)): x \in A \}
 $$
 > ovvero un insieme di **coppie ordinate** ($\subseteq R \times R$)

@@ -3,7 +3,8 @@ se:
 $$
 \lim_{ x \to x_{0} } f(x) = \lim_{ x \to x_{0} }  = 0
 $$
-e: $$
+e: 
+$$
 \lim_{ x \to x_{0} } \frac{f(x)}{g(x)} = 0 
 $$
 allora diremmo che $g(x)$ e' un o-piccolo di $f(x)$ per $x\to x_{0}$, scritto:
