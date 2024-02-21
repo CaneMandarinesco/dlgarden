@@ -1,4 +1,8 @@
-
+### 20/02/2024 - Esame orale analisi 1
+* Esisto: **22/30**
+* Il prof T. e' un professore che all'orale aiuta moltissimo, insomma, bisogna impegnarsi per essere bocciati. In linea di massima chiede un esercizio e un teorema. L'importante e' non fare scena muta.
+* Quanto ho studiato: 3/4 ore al giorno per 3/4 giorni per imparare i teoremi. (meta' dei teoremi li avevo già studiati in precedenza)
+* Soddisfazione: poca
 ### 13/02/2024 - Esame scritto analisi 1
 * ~~bocciato (????)~~
 * Esito: **20/30**
@@ -12,7 +16,7 @@
 * Soddisfazione: troppo soddisfatto.
 ### 23/01/2024 - Esame scritto analisi 1
 * **Ritirato**
-
+* Consiglio: non ritiratevi all'esame con il prof. T.! può essere che passate con **votazione quasi sufficiente**.
 ### 13/07/2023 - Maturità
 * 75/100 - Liceo Musicale
 
