@@ -1,11 +1,12 @@
 [pdf libro](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/MIT6_042JF10_notes.pdf)
-
+[video youtube degli indiani che spiegano bene](https://www.youtube.com/@nesoacademy)
 ## teoria 
 * [[teoria degli insiemi]]
 * [[funzioni]]
 * [[gruppi simmetrici e relazioni]]
 * [[numeri complessi e primi, principio buon ordinamento]]
 * [[algoritmo euclideo e identità di bezout]]
+* [[equazioni diofantee, classi di resto funzione di eulero]]
 
 ## esercizi su teams
 * [[esercizi esame]]

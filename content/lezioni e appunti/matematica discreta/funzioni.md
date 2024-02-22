@@ -8,7 +8,7 @@ siano $A,B$ due insiemi, una **applicazione** da A in B e' una legge che associa
 >se $\forall b \in B$ esiste $a \in A$ tale che: $f(a) = b$
 
 > [!note] INIETTIVA
-> se $\forall x, y  \in A $ allora se $x\neq y$ allora $f(x) \neq f(y)$]
+> se $\forall x, y  \in A$ allora se $x\neq y$ allora $f(x) \neq f(y)$]
 
 > [!note] BIUNIVOCA
 > se valgono sia la **suriettiva** e **iniettiva**

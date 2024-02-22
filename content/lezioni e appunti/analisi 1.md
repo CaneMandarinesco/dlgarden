@@ -3,14 +3,6 @@
 * [materiale didattico](https://www.mat.uniroma2.it/~tauraso/analisi1inf2324.html)
 * [limiti notevoli](#limiti-notevoli)
 * [derivate](#derivate)
-## come studiare analisi 1? la mia esperienza.
-seguite le lezioni, prendete appunti, e quando tornate a casa dovete **almeno** rileggere gli appunti, se addirittura volete il vostro bel 30 e lode mettetevi a fare gli esercizi.  io non ho fatto nulla di tutto cio.
-una volta che inizia la sessione cominciate a studiare come matti.  
-la tecnica giusta per me e' stata: studiare la teoria (il minimo che basta), fare gli esercizi, e se si hanno dubbi sulla teoria si ritorna indietro alla teoria e si ricomincia.  
-per imparare limiti notevoli, derivate, sviluppi di taylor ecc... e' inutile stare a ripeterli finche non si memorizzano, a meno che non abbiate una tecnica mnemonica che vi aiuti.  
-io piuttosto ho fatto esercizi su esercizi, e dopo un po di tempo ho cominciato a memorizzare tutte le formule. 
-gli argomenti piu' semplici del corso a mio parere sono gli ultimi due: il problema di Cauchy e le equazioni in due variabili in quanto bisogna solo imparare formule da applicare in modo meccanico, non c'e' nulla da capire.  
-gestite bene il vostro tempo mentre studiate e soprattutto: studiate in biblioteca.  
 ## teoria
 * [[insiemi, funzioni]]
 * [[induzione, disuguaglianze bernoulli, potenza binomio]]

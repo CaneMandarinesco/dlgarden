@@ -1,4 +1,4 @@
-sintassi: 
+ sintassi: 
 $$
 A = \{1,3,5\}
 $$

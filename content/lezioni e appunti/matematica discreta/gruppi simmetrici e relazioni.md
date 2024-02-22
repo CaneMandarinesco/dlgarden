@@ -81,7 +81,8 @@ siano $A,B$ insiemi, $f:A\to B$, $X,Y \subseteq B$. allora:
 2. $f^{-1} (X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$
 
 > [!note] DIM. 1.
-> sia $a \in f^{-1}(X \cap Y) \to$
+> 	sia $a \in f^{-1}(X \cap Y) \to f(x) \in X \cap Y \to f(a) \in X \text{ e } f(a) \in Y$ quindi: $a \in f(X)^{-1} \text{ e } a \in f(Y)^{-1}$
+> viceversa si procede similmente
 
 per 2. e' simile
 
@@ -127,6 +128,8 @@ $R$ relazione di **equivalenza** su $A$. siano $a,b \in A$. allora $[a]=[b]$ o $
 > supponiamo che $[a] \cap[b] \neq \emptyset$ e sia $c \in [a] \cap [b]$. Allora $cRa$ e $cRb$ e dato che e' **simmetrica** (essendo R di equivalenza) abbiamo che: $aRc$ e $cRb$
 > e essendo transitiva: $aRb$, ora sia $x \in [a]$, allora $xRa$, ma essendo transitiva abbiamo che $xRb$ e quindi $x\in[b]$. **viceversa** abbiamo che:
 > sia $y \in [b]$ -> $yRb$ -> $yRa$ -> $y \in [a]$
+
+
 
 # partizioni
 

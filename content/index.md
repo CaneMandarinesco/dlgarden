@@ -5,12 +5,11 @@
 - il mio [[diario]]
 - [[art]]
 - [[config]]
-- [[come fare un sito come questo]]
-- [[cose da comprare]]
+- ~~[[come fare un sito come questo]]~~
 # appunti
 * [[analisi 1]] (prof. R. Tauraso)
 - [[matematica discreta]] (prof. F. Brenti) 
-- [[programmazione dei calcolatori]] (python/c, prof. G. Rossi)
+- ~~[[programmazione dei calcolatori]]~~ (python/c, prof. G. Rossi)
 - l~~ogica e reti logiche  (prof. F. Pasquale)~~
 
 ## link vari
