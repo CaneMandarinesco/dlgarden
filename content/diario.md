@@ -1,3 +1,7 @@
+### 26/02/2024 - Esame scritto Matematica Discreta
+* Esisto: **???**
+* Quanto ho studiato: poco più di una settimana per 5/6 ore al giorno, mi sono concentrato a fare solo esercizi.
+
 ### 20/02/2024 - Esame orale analisi 1
 * Esisto: **22/30**
 * Il prof T. e' un professore che all'orale aiuta moltissimo, insomma, bisogna impegnarsi per essere bocciati. In linea di massima chiede un esercizio e un teorema. L'importante e' non fare scena muta.

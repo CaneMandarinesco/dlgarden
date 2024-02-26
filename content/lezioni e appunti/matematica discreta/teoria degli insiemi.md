@@ -56,16 +56,16 @@ A \cap (B\cup C) = (A \cap B) \cup (A \cap C)
 $$
 possiamo dimostrarla con la tavola di verità:
 
-| A | B | C | $B \cup C$ | $A \cap B$ | $A \cap C$ | $A \cap (B \cup C)$ | $(A \cap B) \cup (A \cap C)$ |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| 1 | 1 | 0 | 1 | 1 | 0 | 1 | 1 |
-| 1 | 0 | 1 | 1 | 0 | 1 | 1 | 1 |
-| 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 0 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
-| 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
-| 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
-| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| A   | B   | C   | $B \cup C$ | $A \cap B$ | $A \cap C$ | $A \cap (B \cup C)$ | $(A \cap B) \cup (A \cap C)$ |
+| --- | --- | --- | ---------- | ---------- | ---------- | ------------------- | ---------------------------- |
+| 1   | 1   | 1   | 1          | 1          | 1          | 1                   | 1                            |
+| 1   | 1   | 0   | 1          | 1          | 0          | 1                   | 1                            |
+| 1   | 0   | 1   | 1          | 0          | 1          | 1                   | 1                            |
+| 1   | 0   | 0   | 0          | 0          | 0          | 0                   | 0                            |
+| 0   | 1   | 1   | 1          | 0          | 0          | 0                   | 0                            |
+| 0   | 1   | 0   | 1          | 0          | 0          | 0                   | 0                            |
+| 0   | 0   | 1   | 1          | 0          | 0          | 0                   | 0                            |
+| 0   | 0   | 0   | 0          | 0          | 0          | 0                   | 0                            |
 > similmente a come si fa in logica, scriviamo una tabella con tutte le combinazioni dei valori che possono assumere A, B e C. 
 
 abbiamo che la colonna di $A \cap (B \cup C)$ e' uguale a quella di $(A \cap B) \cup (A \cap C)$ 

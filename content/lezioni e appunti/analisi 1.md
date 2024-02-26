@@ -1,8 +1,9 @@
-### per esercitarsi consiglio i video di [Marcello Dario Cerroni](https://www.youtube.com/@MarcelloDarioCerroni) su youtube
-
 * [materiale didattico](https://www.mat.uniroma2.it/~tauraso/analisi1inf2324.html)
 * [limiti notevoli](#limiti-notevoli)
 * [derivate](#derivate)
+
+> [!warning] importante!
+> per esercitarsi consiglio di guardare i video di [marcello dario cerroni](https://www.youtube.com/@MarcelloDarioCerroni). ha una playlist di centinaia di video sulla risoluzioni di limiti, integrali e serie.
 ## teoria
 * [[insiemi, funzioni]]
 * [[induzione, disuguaglianze bernoulli, potenza binomio]]
@@ -31,7 +32,7 @@
 * [[integrali impropri esercizi]]
 * [[limiti teoria e esercizi taylor]]
 * [[serie esercizi]]
-> gli esercizi e i vari appunti sono presi da video su youtube, siti e libri vari. **possono contenere imprecisioni e errori** quindi, ovviamente non fate affidamento unicamente a questi appunti.
+> gli esercizi e i vari appunti sono presi da video su youtube, siti e libri vari. **possono contenere imprecisioni e errori**
 
 > p.s. ho seguito poco (per nulla) le lezioni del tauraso, e se seguivo non capivo nulla
 
