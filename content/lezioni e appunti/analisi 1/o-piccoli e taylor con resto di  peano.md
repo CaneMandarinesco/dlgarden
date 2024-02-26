@@ -19,7 +19,8 @@ $$
 f(x) = T_{n,x_{0}}(x) + o((x-x_{0})^n)
 $$
 ovvero che esiste un'approssimazione di $f$ nel punto $x_{0}$.
-ricordando che: $$
+ricordando che: 
+$$
 T_{n,x_{0}} = \sum_{k=0}^n \frac{f^{(k)}(x_{0})}{k!}(x-x_{0})^n
 $$
 procediamo con la dimostrazione.
@@ -28,6 +29,7 @@ dalla definizione di o-piccolo, dobbiamo dimostrare che $f(x)-T_{n,x_{0}}(x)$ co
 $$
 \frac{f(x)-T_{n,x_{0}}(x)}{(x-x_{0})^n} = \frac{f\left( h+x_{0} \right) - \sum_{k=0}^n \frac{f^{(k)}(x_{0})}{k!}h^k}{h^n} = \frac{f(h+x_{0}) - \sum_{k=0}^{n-1} \frac{f^{(k)}(x_{0})}{k!}h^k}{h^n} + \frac{f^{(n)}}{n!}
 $$
+
 > $h=x-x_{0}$
 
 se svolgiamo il limite per $h\to 0$ otteniamo una forma indeterminata quindi possiamo applicare **de Hospital**, analizzando cosa succede termine per termine:

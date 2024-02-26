@@ -19,9 +19,9 @@ siano $a,b,n \in \mathbb P$ tali che $(a,b)|n$ allora tutte le soluzioni di:
 $$
 a \cdot x + b \cdot y = n
 $$
-sono della forma:
+sono della forma:  
 $$
-\{\begin{array}{a}
+\begin{array}{a}
 x = x_{0} - \left( \frac{b}{d} \right)t  \\
 y = y_{0} + \left( \frac{a}{d} \right)t
 \end{array}

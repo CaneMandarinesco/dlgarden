@@ -1,8 +1,10 @@
 ### es. 1
 $$
-\int_{e}^{e^\sqrt{ 3 }} \frac{\arctan(\log x)}{x\log^2(x)} \, dx 
+\int_{e}^{e^\sqrt{ 3 }} \frac{\arctan(\log x)}{x\log^2(x)} \, dx
 $$
+
 con $t = \log(x)$ e $dt = \frac{dx}{x}$
+
 $$
 \int _{e}^{e^\sqrt{ 3 }} \frac{\arctan(\log x)}{(\log x)^2} \frac{1}{x} \, dx  = \int _{1}^\sqrt{ 3 } \frac{\,\arctan(t)}{t^2} dt = \int  _{1}^{\sqrt{ 3 }} \frac{1}{t^2} \arctan(t) \, dx 
 $$
@@ -29,7 +31,7 @@ da cui ricaviamo il sistema costituito da:
 
 sostituendo nella (1), ho che: $1+B = 0$ e quindi $B = -1$
 quindi la soluzione e: $A = 1, B = -1, C = 0$
-sostituendo abbiamo: 
+sostituendo abbiamo:  
 $$
 \int_{ 1}^\sqrt{ 3 } \frac{1}{t} + -\frac{t}{t^2+1} \, dt  =
 $$

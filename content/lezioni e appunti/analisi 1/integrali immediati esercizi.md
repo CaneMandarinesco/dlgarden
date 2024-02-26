@@ -185,7 +185,8 @@ dato che: $\frac{d}{dx}\log(e^x+1) = \frac{1}{e^x+1} \frac{d}{dx}e^x = \frac{e^x
 
 ### es 19
 $$
-\int  \frac{e^\sqrt{ x }}{\sqrt{ x }} \, dx = $$
+\int  \frac{e^\sqrt{ x }}{\sqrt{ x }} \, dx = 
+$$
 
 $$
 2 \int e^\sqrt{ x } \frac{1}{2\sqrt{ x }} \, dx = 2e^\sqrt{ x } +c

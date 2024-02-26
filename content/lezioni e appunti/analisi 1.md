@@ -3,7 +3,7 @@
 * [derivate](#derivate)
 
 > [!warning] importante!
-> per esercitarsi consiglio di guardare i video di [marcello dario cerroni](https://www.youtube.com/@MarcelloDarioCerroni). ha una playlist di centinaia di video sulla risoluzioni di limiti, integrali e serie.
+> per esercitarsi consiglio di guardare i video di [marcello dario cerroni](https://www.youtube.com/@MarcelloDarioCerroni). ha una playlist di centinaia di video sulla risoluzione di limiti, integrali e serie.
 ## teoria
 * [[insiemi, funzioni]]
 * [[induzione, disuguaglianze bernoulli, potenza binomio]]
