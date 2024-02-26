@@ -24,14 +24,6 @@ in $S_{n}$, $n$ indica il numero di elementi di $X$
 >$$
 >f(1)=a_{1}, f(2)=a_{2},\dots,f(n) = a_{n}
 >$$
- > notazione alternativa e piu' figa:
- > $$
- >f \in S_{n}, f = \left(\begin{array}{}
-> 1 & 2 & 3 & 4 \\
-> f(1) & f(2) & f(3) & f(4)
-\end{array} \right)
- $$
-
 
 es: $S_{3} = \{ 123,132,213,231,312,321 \}$ 
 dove:

@@ -3,7 +3,7 @@
 
 ### come funziona
 * $B$ sceglie due numeri primi: $p,q \in \mathbb P, p\neq q$ e calcola $n=p \cdot q$,quindi $B$ decide **il numero da usare per cifrare**
-* quindi: $\exists e \in \mathbb P: MCD(e,(p-1)\cdot(q-1))$  #chiedere
+* quindi: $\exists e \in \mathbb P: MCD(e,(p-1)\cdot(q-1))$ 
 * $B$ calcola l'inversa moltiplicativa $[d]_{(p-1)(q-1)}$ di $[e]_{(p-1)(q-1)}$ che esiste ed e' **unica**
 * $B$ pubblica $n,e$ e tiene segreti $p,q \text{ e } d$
 
