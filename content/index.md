@@ -6,7 +6,9 @@
 - [[art]]
 - [[config]]
 - ~~[[come fare un sito come questo]]~~
+- [[modding router TIM]]
 # appunti
+* [[architettura medievale]]
 * [[analisi 1]] (prof. R. Tauraso)
 - [[matematica discreta]] (prof. F. Brenti) 
 - ~~[[programmazione dei calcolatori]]~~ (python/c, prof. G. Rossi)

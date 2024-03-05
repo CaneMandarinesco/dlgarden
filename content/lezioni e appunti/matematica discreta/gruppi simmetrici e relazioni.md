@@ -16,8 +16,9 @@ $P_{1}$ =*"ogni primo e' dispari"*
 > $$S_{n} = \{  f: [n] \to [n]: \text{ biunivoca }\}$$
 
 ovvero sia $X = |n|$, allora $S_{n}$ e' un insieme composto da **tutte** le biezioni da $X$ a $X$.  
-in $S_{n}$, $n$ indica il numero di elementi di $X$
+in $S_{n}$, $n$ indica il numero di elementi di $X$.
 
+> le permutazioni (ovvero tutte le funzioni possibili in $S_{n}$) in un insieme di $3$ elementi sono $6$
 
 > [!note] DEF.
  sia $f \in S_{n}$, allora scriviamo: $f = a_{1} a_{2}  \dots a_{n}$  (tutto attaccato, senza virgole o punti) per dire che:
@@ -25,11 +26,13 @@ in $S_{n}$, $n$ indica il numero di elementi di $X$
 >f(1)=a_{1}, f(2)=a_{2},\dots,f(n) = a_{n}
 >$$
 
-es: $S_{3} = \{ 123,132,213,231,312,321 \}$ 
-dove:
+esempio:
+$$
+S_{3} = \{ 123,132,213,231,312,321 \}
+$$
+ovvero, l'insieme di tutte le possibili permutazioni di 3 elementi. ogni elemento rappresenta una funzione, per esempio:
 * $123$ vuol dire che $f(1)=1, f(2)=2, f(3)=3$
 * $213$ vuol dire che $f(1) = 2, f(2) = 1, f(3) = 3$
-* e cosi via 
 
 >[!note] OSS.
 > **composizione**:
@@ -53,13 +56,13 @@ $n=7, f=5132647$ allora $f^{-1} = 2436157$
 
 > [!note] OSS.
 > considerando l'esempio sopra, più semplicemente data $f$, per ricavare $f^{-1}$ il procedimento e' il seguente:
-> - comincia subito a costruire $f^{-1} =$
 > - il 1o elemento di $f^{-1}$ ha indice 1, quindi bisogna inserire il numero dell'indice in $f$, in cui si trova 1, ovvero 2
 > - il 2o elemento di $f^{-1}$ ha indice 2, quindi come prima, 2 in $f$ si trova all'indice 4, quindi inserisco 4
 > - ecc... fino ad n
 
 >[!note] DEF. 
-> gli elementi di $S_{n}$ si dicono **permutazioni**
+> gli elementi di $S_{n}$ si dicono **permutazioni**.
+> il numero di permutazioni possibili in $[n]$ e' $n!$
 
 > [!note] DEF.
 > siano $A,B$ insiemi, $f: A\to B$ e siano $X \subseteq A$ e $Y \subseteq B$

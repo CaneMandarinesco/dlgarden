@@ -5,4 +5,5 @@
 
 * [[complessita' spaziale e temporale]]
 * [[lezioni 1 a 5]]
+* [[lezione 6]]
 

@@ -29,6 +29,9 @@ while i < len(x):
 
 ### es 3. puo' x essere convertito in float?
 ```python
+x = input
+
+# 1a versione
 i = 0
 while i < len(x) and ( (x[i] in '0123456789') or (x[i] == "." and numero_punti == 0)):
 	if x[i] == ".":
@@ -40,9 +43,22 @@ if i == len(x):
 else:
 	x=0
 
+# 2a versione
+i = 0
+while i < len(x) and ( (x[i] >= '0' and x[i] <= '9') or (x[i] == '.' and numero_punti == 0) ):
+    if x[i] == '.':
+        numero_punti += 1
+    i += 1
+
 ```
 
-### es 4. sostituire spazi con `_`
+### es 4. x precede y?
+il codice originale mi pare rotto e non si capisce cosa deve fare secondo me. quindi riporto una mia versione del programma, fatta come esercizio.
+
+### es 5. sostituire spazi con `_`
+> [!warning] attenzion!
+> le stringhe sono immutabili! non e' consentito modificare un carattere di una stringa
+
 ```python
 x = 'programmazione python e c'
 y = ''
@@ -54,14 +70,71 @@ for c in x:
 	else:
 		y = y+c
 ```
-questo codice viene seguito in tempo **quadratico**, perche' ad ogni iterazione di `c in x`, quando scriviamo `y+carattere` viene creata una copia di y, operazione che in base alla lunghezza di n, puo' essere molto costosa.
+questo codice viene seguito in tempo **quadratico**, perche' ad ogni iterazione di `c in x`, quando scriviamo `y+carattere` viene **creata una copia** di y, operazione che in base alla lunghezza di n, puo' essere molto costosa.
 
-### es 5. palindromo
+### es 6. palindromo
+
 ```python
-b = ''
-for c in a:
-	b = c+b
-
-return a == b
+def palindromo( a ):
+    b = ''
+    for c in a:
+        b = c+b
+    return a == b
+    
+print(palindromo("ciao")) # False, ovviamente ciao non e' palindroma
+print(palindromo("radar")) # True
+print(palindromo("rAdar")) # False
 ```
+
 come nell'esercizio sopra, anche questa e' **quadratica**: $o(n^2)$ 
+
+### es 7. palindromo con indici negativi
+```python
+def palindromo( a ):
+    i, n = 0, len(a)
+    
+    while i < n//2:
+        if a[i] != a[-i-1]: # per esempio per i=0, allora comparo il primo elemento con l'ultimo
+            return False
+        i += 1
+    return True
+
+print(palindromo('radar'))    
+print(palindromo('rAdar')) 
+```
+ha complessità temporale **lineare**: $n$, perché' non sto più eseguendo una copia di una stringa, per poi fare un confronto tra le due, ma sto piuttosto comparando $n$ volte (al caso peggiore) i caratteri 
+### es 8. slicing e palindromo con slicing
+operazione per estrarre una serie di caratteri da una stringa.
+```python
+a = '0123456789'
+
+a[2:5] # dall'elemento in 2 fino all'elemento in 5 escluso
+# output: 234
+
+a[1:8:2] # dall'elemento in 1 fino all'8, a salti di 2
+# output: 1357
+
+a[8:1] # errore
+# output: non ritorna niente
+a[8:1:-1] # dall'elemento in 8 fino al 1o a salti di -1 (andando in dietro)
+# output: 8765432 (1 escluso!)
+a[1:8:-1] # errrore
+# output: non ritorna niente
+
+a[:4:2] # fino a 4 a salti di 2
+# output: 02 (4 escluso!)
+
+a[1::2] # da 1 alla fine a salti di 2
+# output: 13579
+
+a[::-1] # dall'inizio alla fine a salti di -1
+# output: 9876543210
+```
+
+```python
+def palindromo(a):
+	return a == a[::-1]
+```
+quest'ultima implementazione ha complessità' temporale lineare: $n$, perché' stiamo con `a[::-1]` stiamo copiando $n$ caratteri da `a`.
+
+
