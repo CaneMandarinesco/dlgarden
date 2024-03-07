@@ -131,11 +131,11 @@ tutti questi tentativi di creare dei computer non furono dei completi successi p
 * TX-0: primo computer a transistor
 * **transistor**: utilizzano i transistor e implementa il concetto di **bus**
 ![[Pasted image 20240305210339.png]]
-grazie al bus, ogni componente può dialogare con gli altri, utilizzando una linea comune. questo porta vari vantaggi:
-* se dobbiamo aggiungere un dispositivo di I/O, possiamo aggiungerlo semplicemente collegandolo sulla linea comune
+
+grazie al bus, ogni componente può dialogare con gli altri, utilizzando una linea comune. questo porta vari vantaggi: se dobbiamo aggiungere un dispositivo di I/O, possiamo aggiungerlo semplicemente collegandolo sulla linea comune  
 ciò introduce il **problema del cortocircuito**: come posso collegare vari elementi insieme e **riconoscere chi sta mandando i segnali**? chi e' che ascolta e che parla? se due oggetti parlano allo stesso momento avviene un cortocircuito. (problema del sincronismo)
 ### terza generazione
-circuiti integrati: permettono di inserire in un chip decine di transistor aumentando velocità del processore e abbattendone i costi
+***circuiti integrati***: permettono di inserire in un chip decine di transistor aumentando velocità del processore e abbattendone i costi
 i processori nuovi cominciano a supportare le stesse funzioni dei processori vecchi: nasce l'idea di ***famiglia di computer***.
 nascono i primi computer in grado di emularne altri, nasce la **multiprogrammazione** (ovvero tenere piu programmi in memoria)
 

@@ -68,6 +68,9 @@ T = n^2
 $$
 > non importano quali siano i valori dei coefficienti, in generale per qualsiasi coefficiente, $n^2 > n$ (basta confrontare i grafici delle due funzioni)
 
+>[!note ] OSS.
+> quindi se una funzione $f(x)$ ha per esempio tempo $O(n)$ vuol dire (usando la definizione di $O(n)$) che $f(x) \leq O(n)$, quindi $f$ non e' mai più veloce di $O(m)$
+
 analizziamo un po' di funzioni:
 
 ```python
