@@ -12,7 +12,7 @@
 * [[architettura medievale]]
 - [[programmazione dei calcolatori]] (python/c, prof. G. Rossi)
 * [[analisi 1]] (prof. R. Tauraso)
-- ~~[[matematica discreta]] (prof. F. Brenti) ~~
+- ~~[[matematica discreta]] (prof. F. Brenti)~~
 - ~~logica e reti logiche  (prof. F. Pasquale)~~
 
 ## link vari

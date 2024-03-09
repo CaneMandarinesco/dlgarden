@@ -75,8 +75,11 @@ Sia $A^{1,2,3}$ una retta/piano/spazio contenente per definizione dei punti e $V
 
 ### somma di due vettori
 $$
-\forall v' = \vec{\mathrm{OP'}}, v'' = \vec{\mathrm{OP''}} \text{ in } V_{0} \to \exists ! v= \vec{\mathrm{OP}} \text{ in } V_{0}$$
+\forall v' = \vec{\mathrm{OP'}}, v'' = \vec{\mathrm{OP''}} \text{ in } V_{0} \to \exists ! v= \vec{\mathrm{OP}} \text{ in } V_{0}
+$$
 dove questo $\vec{\mathrm{OP}}$ e' un punto che si trova al vertice opposto ad $O$ nel parallelogramma costruito usando $O, \vec{\mathrm{OP'}} \text{ e }\vec{\mathrm{OP''}}$
+
+
 
 
 
