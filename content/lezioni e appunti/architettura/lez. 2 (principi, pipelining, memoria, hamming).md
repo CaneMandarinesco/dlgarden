@@ -130,13 +130,17 @@ ordinamento dei byte nelle parola:
 * Big Endian: da sinistra a destra
 * Little Endian: da destra a sinistra
 
-## codici di correzione errore
+## codici di correzione errore (hamming)
 sono dei codici che si usano per sapere dove e' avvenuto un errore:
 * un parola di codice 
 (???)
 * codice di **hamming**
 abbiamo dei bit di controllo (in una parola), che rappresentano delle posizioni
 (da approfondire)
+
+### codice di hamming
+
+il valore dei bit di controllo mi dice dove e' avvenuto un cambiamento nella parola, cosi da correggere l'errore.
 
 ## memorie cache
 memoria all'interno della cpu, velocita' prossima a quella dei registri.
