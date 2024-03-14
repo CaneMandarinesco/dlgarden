@@ -57,7 +57,7 @@ grazie alle porte e' possibile combinarle per creare una **memoria da 1 bit**, e
 ciascun registro puo' contenere un valore che varia fino ad un certo limite.
 
 ### livello 1: micro-architettura
-e' presente una memoria locale, formata da un gruppo di registri (da 8 a 32) e una **ALU** (Arithmetic Logic Unit), capace di effettuare semplici operazioni aritmetica. i registri connessi alla ALU tramite un **percorso dati** che permette di selezionare su quali registri effettuare le operazioni e dove immagazzinare il risultato.  
+e' presente una memoria locale, formata da un gruppo di registri (da 8 a 32) e una **ALU** (Arithmetic Logic Unit), capace di effettuare semplici operazioni aritmetica. i registri sono connessi alla ALU tramite un **percorso dati** che permette di selezionare su quali registri effettuare le operazioni e dove immagazzinare il risultato.  
 queste operazioni talvolta sono controllate da un programma chiamato **micro-programma**, oppure sono controllate dall'hardware.  
 se il controllo avviene via software, allora il **microprogramma** e' un interprete per il livello 2.
 
@@ -70,7 +70,7 @@ Puo' condividere alcune istruzioni con il livello 2 (e' lecito), abbiamo una div
 per questo motivo, tale livello e' detto **ibrido**
 
 ### livello 4 (linguaggio assemblativo)
-e' un punto di spaccatura.
+e' un punto di spaccatura. troviamo programmi traduttori (assemblatori)
 
 proprietà dei livelli inferiori a 3:
 * non concepiti per essere usati dal programmatore medio
@@ -95,17 +95,15 @@ per riassumere: ciascun livello di un computer rappresenta una diversa astrazion
 
 si definisce infine come ***architettura***: l'insieme delle caratteristiche di un livello i quali utenti possono vedere, come il quantitativo di memoria usata.
 #### invenzione microprogrammazione
-nel 1951 nasce la prima macchina con interprete, che eseguiva a livello ISA
+nel 1951 nasce la prima macchina con **interprete che eseguiva il livello ISA** (***microprogramma***) riducendo cosi l'hardware necessario per eseguire istruzioni piu' complesse.
 #### invenzione sistema operativo
-nel 1960 nasce un computere con un softare sempre attivo che gestisce l'hardware. l'idea nasce dal fatto che eseguire e eseguire il debug di codice fortran ai tempi era molto complicato (si utilizzavano schede perforate, le macchine erano costose quindi si usava prenotare un computer e inoltre il debug era complicato dato che l'unico output erano delle luci). il sistema operativo leggeva ed eseguiva automaticamente le schede perforate, automatizzando parte del lavoro del programmatore.
+nel 1960 nasce un computer con un software sempre attivo che gestisce l'hardware (**sistema operativo**). l'idea nasce dal fatto che eseguire e eseguire il debug di codice fortran ai tempi era molto complicato (si utilizzavano schede perforate, le macchine erano costose quindi si usava prenotare un computer e inoltre il debug era complicato dato che l'unico output erano delle luci). il sistema operativo leggeva ed eseguiva automaticamente le schede perforate, automatizzando parte del lavoro del programmatore.
 con il passare del tempo il sistema operativo diventa sempre piu' complicato fino a diventare un livello a se stante, inoltre nascono anche macchinismi per la condivisione di tempo della macchina (cosi che piu' programmatori potessero utilizzare lo stesso computer)
 #### migrazione verso il microcodice
-nel 1970 il microcodice si arricchisce con istruzioni e tecniche
+nel 1970 il microprogramma si arricchisce con istruzioni e tecniche. abbiamo varie istruzioni di basso livello che controllano direttamente il microprocessore. prima queste erano eseguite direttamente sull'hardware, ma adesso il software puo' simulare l'hardware. fa da tramite tra CPU e ISA
 
 #### eliminazione della microprogrammazione
-...
-
-
+viene eliminata la microprogrammazione perche' e' lenta. il microcodice diventa la nuova microprogrammazione
 
 ## pietre miliari (generazioni di computer)
 ### generazione zero
@@ -113,13 +111,15 @@ nel 1970 il microcodice si arricchisce con istruzioni e tecniche
 * macchina **Leibniz**: fa anche moltiplicazioni e divisioni
 * macchina **analitica** di babbage.
 * primi computer a relè (1930)
+* ENIGMA
 tutti questi tentativi di creare dei computer non furono dei completi successi per via delle limitazioni tecnologiche.
-* mark I e COLOSSUS (alan turing) sono i primi computer
+* mark I e COLOSSUS (alan turing), computer a rele'
+non siamo ancora nel pieno dell'elettronica!
 
-### prima generazione
+### prima generazione: elettronica
 * ENIAC, computer a valvole termoioniche, si programmava attraverso migliaia di leve e di cavi. da qui nasce l'interesse per i calcolatori elettronici.
 
-* macchina di **von neumann**, architettura alla base di oggi, costituita da 5 componenti fondamentali:
+* macchina di **von neumann** (un genio pazzo in culo), architettura alla base di oggi, costituita da 5 componenti fondamentali:
 	* memoria
 	* ALU (Airthmetic Logic Unit)
 	* Control Unit
@@ -157,7 +157,7 @@ il numero di transistor raddoppia ogni 18 mesi ($60\% \text{ annuo}$), in modo c
 ### mainframe
 * venivano usati in sistemi bancari, prestazioni incredibili, sicurezza elevata e costi elevatissimi
 
-### storia di intel
+### storia di intel (non da studiare)
 i processori nuovi sono in grado di emulare le funzioni dei vecchi processori, o le integrano.  
 la velocità di clock di un processore non e' indice della velocità del processore! apparentemente potrebbe essere cosi' ma e' errato.  
 esistono architetture che hanno un basso clock ma emettono dati alla stessa velocità di un'altra architettura che ha un alto clock.  
@@ -201,3 +201,17 @@ i microcontrollori sono costruiti in modo da essere economici e allo stesso temp
 
 ### unita' metriche
 le principali unita' metriche sono multipli e potenze di 10, quando ci si riferisce ai dati si utilizza la base 2.
+
+# problemi
+## 1. si spieghino a parole i termini: traduttore, interprete e macchina virtuale
+Un traduttore e' un programma che si occupa di trasformare per esempio un linguaggio proprio del livello L3 in linguaggio per un livello sottostante, per esempio L2. il programma trasformato e un programma fatto e finito, quindi si puo scartare il codice originale del programma. un esempio di traduttore e' un compilatore per c/c++.
+L'interprete invece e' un programma che esegue per esempio in L2 ed esegue codice L3
+
+## 2. qual'e' la differenza tra interpretazione e traduzione
+l'interprete al contrario della traduzione non restituisce una traduzione completa del codice ma piuttosto, prende una istruzione in L1 e la traduce in L0 sul momento. (es. python, microprogramma)
+
+## 3. ha significato che un compilatore generi output per il livello di micro architettura invece che per il livello ISA? pro e contro di tale ipotesi
+??? 
+
+## 4. e' possibile immaginare un computer multi livello in cui i dispositivi e i livelli logico digitali non siano livelli bassi?
+a livello teorico e' possibile. scegliamo un linguaggio L0 e un linguaggio L1 che viene eseguito direttamente su un hardware generico, e ipotizziamo che questo hardware sia costruito in modo da interpretare il linguaggio L1 in L0. a livello pratico "dovrebbe" possible costruire una macchina del genere ma non sarebbe in grado di eseguire il codice L0 perche' non esiste un hardware che esegue il programma L0
