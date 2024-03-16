@@ -1,4 +1,4 @@
-cosa useremo:
+ cosa useremo:
 * [quartz](https://quartz.jzhao.xyz/): il software che genera il sito web per noi
 * account [github](https://github.com/): piattaforma per caricare online i file del sito web
 * [git](https://git-scm.com/): per gestire i file, e caricarli online
@@ -64,13 +64,104 @@ ora andando sul tuo browser, caricando l'indirizzo: http://localhost:8080/ potra
 per prima cosa bisogna devi creare un **repository** su [github](https://github.com):
 * cerca il tasto "crea nuovo repository"
 * dagli un nome
-* impostalo come *privato*
+* consiglio di impostarlo come *privato*
 * clicca su "crea repository"
 
-ora bisogna dire a *git* dove si trova su internet il tuo repository:
+### impostare l'indirizzo remoto di git
+ora bisogna dire a *git* dove si trova su internet il tuo repository, quindi mentre ti trovi nella cartella `quartz` esegui:
 ```bash
 git remote set-url origin REMOTE-URL
 ```
 dove `REMOTE-URL` va sostituito con **l'url** che porta alla pagina del tuo repository su github
 
-ora bisogna dire a github che il tuo repository deve essere caricato come se fosse un sito web:
+opzionalmente, per avere quartz sempre aggiornato, puoi eseguire anche:
+```bash
+git remote add upstream https://github.com/jackyzha0/quartz.git
+```
+per dire a git di sincronizzare i file di quartz con quelli che si trovano sul repository online di quartz.  
+
+### delploy.yml
+ora dobbiamo creare il file che dice a github di costruire il sito e di rilasciarlo ogni volta che aggiorniamo il sito.  creiamo quindi il file `quartz/.github/workflows/deploy.yml` e metteteci questa roba all'interno facendo copia e incolla:
+
+```yaml
+name: Deploy Quartz site to GitHub Pages
+ 
+on:
+  push:
+    branches:
+      - v4
+ 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+ 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+ 
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Fetch all history for git info
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.14
+      - name: Install Dependencies
+        run: npm ci
+      - name: Build Quartz
+        run: npx quartz build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: public
+ 
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+```
+
+### impostare github
+ora dal vostro repository su github andate sulla tab `Settings`. sul lato sinistro, nella sidebar, clicca su `Pages` e sotto a `source` clicca il tasto e seleziona `GitHub Actions` e applica i cambiamenti.
+
+### caricare i file online!
+per caricare i file online occorre usare i comandi base di git:
+```bash
+# per cambiare il branch da main a v4
+git checkout v4
+
+# aggiungi i file nuovi
+git add *
+# crea il commit con un messaggio
+git commit -m "messaggio"
+# carica online
+git push origin
+```
+
+e fatto! dopo qualche secondo il sito e' aggiornato e sara' navigabile al link che si trova nella sezione `Releases`.
+
+### credenziali di accesso
+>[!warning] attenzion!
+> se git vi chiede di inserire delle credenziali per eseguire il push dei cambiamenti vuol dire che bisogna creare le credenziali! infatti non e' possibile utilizzare la propria password per motivi di sicurezza ma bisogna generare un token.
+
+su github vai alle impostazioni relative al tuo utente (con il quale hai creato il repository) e nella sidebar a sinistra clicca su `Developer Settings` e poi `Personal access tokens` e infine `Tokens (classic)`.   per generare il token clicca su `generate new token (classic)` e nella pagina che spuntate tutte le spunte tranne:
+* copilot
+* audit_log
+* admin:enterprise
+* write:discussion
+* delete_repo
+* notifications
+* admin:public_key
+
+ora potete utilizzare il token generato per eseguire l'accesso dalla shell.
+

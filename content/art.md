@@ -10,6 +10,9 @@
 * MURUBURZUM - Ozone Dehumanizer
 * Architects - Seeing Red
 * S.U.N.S.H.I.N.E. - Rancore
+* Soul of a Supertramp - Mezzo
+* Fuoco Sacro - Corve
+* I Nomi del Diaviolo - kid fottuto yugi
 
 # film che vi consiglio :)
 * eternal sunshine of the spotless mind (ci sta jim carrey, mio padre)
@@ -17,7 +20,10 @@
 * edward mani di forbice
 * il castello errante di howl
 * the prestige
-* io e annie (woody allen mio padre)
+
+storie d'amore bellissime di woody allen:
+* io e annie
+* manatthan
 # fumetti che vi consiglio
 * bunanotte punpun
 * chainsaw man

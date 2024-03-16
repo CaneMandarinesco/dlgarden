@@ -1,7 +1,7 @@
 ## gerarchie di memorie
 alla base della piramide troviamo i **registri**.
 nella piramide:
-* dalla cima verso il basso, **il tempo di accesso e il costo decrementa**
+* dalla cima verso il basso, **il tempo di accesso e il costo per unita' decrementa**
 * al contrario, **cresce la capacita'**
 
 > la dimensione della memoria e' inversamente proporzionale al tempo di acceso e direttamente al costo.
@@ -9,42 +9,67 @@ nella piramide:
 > i nastri magnetici sono grandi ma lenti ( e economici )
 
 ### dischi magnetici
-sono fatti da piatti di alluminio che attraverso la **isteresi magnetica** (???) possiamo modificare i bit incisi su di esso.  
+sono fatti da piatti di alluminio che attraverso la **isteresi magnetica** possiamo modificare i bit incisi su di esso. (ogni bit e' lungo 1-2 nanometri)  
 poi abbiamo la **testina** che fa ruotare il disco e un **solenoide** rileva lo stato di magnetizzazione.  
-le tracce del disco sono divisi in **settori** (di **grandezza fissa**), e tra ogni settore c'e' uno spazio (**gap**), ogni traccia contiene un preambolo e serve ad allineare le testine e contiene un **CCE** (puo' essere hamming).  
+le tracce del disco sono divisi in **settori** (di **grandezza fissa**, 512 byte), e tra ogni settore c'e' uno spazio (**gap**).  
+ogni traccia contiene un **preambolo** e serve ad allineare le testine e contiene un **CCE** (puo' essere hamming o reed-solomon).  
+
+> quindi la capacita' effettiva di un disco magnetico la si puo' conoscere dopo che e' stato formattato, per via della presenza dei gap che non contengono dati.
+
 un controllore del disco (disk controller) collega il disco al bus.  
 i dischi per definire la grandezza dei settori, i gap ecc... ha bisogno di essere formattato.
 
-> il **floppy disk** e' un disco magnetico
+> il **floppy disk** e' un disco magnetico. lo inventa l'ibm per motivi aziendali ma poi diventa perfetto per distribuire software per i personal computer.
 
+un disco magnetico puo' avere piu dischi (generalmente 6), ognuno con ogni sua testina di lettura/scrittura.
 #### hard disk 
-l'hard disk magnetico ha 3 tempi:
+l'hard disk magnetico (???) ha 3 tempi:
 * tempo medio di seek (per raggiungere la locazione desiderata): $5$ ai $10 ms$
 * tempo rotazionale (il tempo del motore per muoversi/**inerzia**): $3$ a $6ms$
 * tempo di trasferimento, dipende da:
 	* densita' lineare
 	* velocita' di rotazione
 	* con una velocita di trasferimento di 150mb/s se il settore e' di 512 byte ci vogliono 3,5 micro secondi
-
+inoltre essendo la velocita' di rotazione sempre la stessa, piu' si va verso l'esterno del disco e piu' i dati saranno piu' lenti da leggere. questo problema e' arginato dividendo i dischi in zone.
 #### IDE
-i dischi IDE sono i primi dischi magnetici. i primi avevano una velocita' di trasferimento di $4MB /s$, poi si e' riusciti ad arrivare a $16MB /s$.
+i dischi IDE sono i primi dischi magnetici. i primi avevano una velocita' di trasferimento di $4MB /s$, poi si e' riusciti ad arrivare a $16MB /s$. il sistema operativo ci puo' accedere grazie al BIOS(Basic Input Output System).  
+versioni successive di IDE:
+* EIDE
+* ATA-3
+* ATAPI-4
+* ecc...
 
-... EIDE ... ATAPI-4 / 5 / 6 / 7
+con ATAPI-7 viene introdotta l'interfaccia **serial ATA** permette di trasferire 1 bit alla volta su un connettore a 7 pin con alimentazione a $0.5V$ (prima erano 80 pin a $5V$) per una velocita' minima di 150MB/s.  
 
 #### SCSI Disks (Small Computer System Interface)
-diventa standard ANSI per collegare dispositivi (HD, CD-ROM, Scanner, nastri)
+diventa standard ANSI per collegare dispositivi (HD, CD-ROM, Scanner, nastri).  
+sono piu' veloci dei dischi IDE nonostante cilindri, tracce e settori siano organizzati nello stesso modo.  
+un cavo scasi ha 50 contatti:
+* 25 di terra accopiati con altri 25 per eliminare il rumore elettrico.
+* 8 sono per i dati
+* 1 per la parita
+* 9 per il controllo
+* 2 per alimentazione
 
-### RAID
+le periferiche collegate tramite SCSI possono funzionare come iniziatari o destinatari di comunicazione, quindi si possono collegare piu dispositivi insieme (al contrario di IDE)
+
+### RAID (Redaundant Array Of Inexpensive Disks)
+come in CISC vs RISC, qui la controparte e' SLED (Single Large Expensive Disk).  
+il RAID e' un server che contiene al suo interno tanti dischi che grazie ad un controllore appaiono come unico (SLED) al computer che vi accede.   
+esistono diversi modi di organizzare questi dischi: esistono 5 livelli (+ altri minori)
 #### RAID livello 0
-i dati sono suddivisi su `k` settori e memorizzati in dischi diversi con modalità **round-robin**. in questo modo un blocco di dati puo' essere letto con 4 letture parallele. questo schema funziona su grandi quantita' di dati al contrario su pochi dati non e' vantaggioso.
-#### RAID livello 1
-evoluzione del livello 0
+i dati sono suddivisi su `k` settori (ovvero **strip**) e memorizzati in dischi diversi con modalità **round-robin**. in questo modo un blocco di dati puo' essere letto con 4 letture parallele. questo schema funziona su grandi quantita' di dati al contrario su pochi dati non e' vantaggioso. ovviamente il controllore del raid gestisce la richiesta dei dati e va a richiedere in parallelo le strip dai dischi.  
+i sistemi operativi non traggono vantaggio da questo metodo perche' generalmente leggono i dati in piccole quantita' (pochi settori insieme) quindi non si puo' sfruttare il parallelismo.
+#### RAID livello 1 (il vero RAID)
+evoluzione del livello 0. se abbiamo 4 dischi viene effettuata la duplicazione di questi su altri 4 dischi aggiuntivi.  
+quando scriviamo il controller raid scrive 2 volte ma quando leggo, avendo a disposizione due copie posso leggere in parallelo!  
+e se un disco si rompe ho a disposizione l'altro!
 #### RAID livello 2
-usa le parole binarie o byte per decomporre le informazioni sui vari dischi .
-* troughtput alto perche' ho molte operazioni in parallelo
+divido i byte in nibble (4 bit) e aggiungo il codice di Hamming, quindi ho 7 bit di dati dove i bit 1, 2 e 4 sono di parita'.  
+i bit vengono divisi tra i dischi cosi se si rompe un disco grazie alla parita' posso ricostruirlo tutto quanto per intero. pero' e' molto dispendioso perche' bisogna calcolare sempre il codice di hamming.  
+i dischi per essere letti devono essere sincronizzati sulle stesse posizioni! 
 #### RAID livello 3
-versione semplificata del 2 che usa.
-disco di parita' (contiene i bit di parita del codice di hamming)
+versione semplificata del 2 che usa un disco per immagazzinare la  parita' (contiene i bit di parita' del codice di hamming) cosi se si rompe un disco posso ricostruirlo
 #### RAID livello 4 e 5 (oppure S)
 lavorano con strisce e non richiedono dischi sincronizzati
 
@@ -52,13 +77,26 @@ lavorano con strisce e non richiedono dischi sincronizzati
 basati su una memoria flash non volatile. si usurano nel tempo a causa dell'usura dei transistor e possono quindi perdere capacita' di memorizzazione. alte prestazioni fino a 3 volte un disco magnetico, più tolleranti alle vibrazioni in quanto non presentano parti meccaniche
 
 ### CD-ROM (Compat Disk Read Only Memory)
+
+> hanno una vita stimata di 100 anni!
+
 dischi fatti di policarbonato con uno strato di alluminio riflettente e ricoperto da una vernice resistente. questi materiali si possono degradare col calore. nel substrato di policarbonato si possono creare delle depressioni (**pit**) tra aree non incise (**land**). esiste un valore di variazione tra **pit** e **land**.
 
 #### memorizzazione
-sono memorizzate usando un preambolo, poi un settore e infine il CCE
+i dati sono memorizzati usando un preambolo (16 byte) contenente:
+* una sequenza decimale da 12 byte che permette al lettore di riconoscere l'inizio di un settore
+* 3 byte per riconoscere il numero del settore ( cosi posso cercare il dato che voglio)
+* 1 byte per il modo: con o senza ECC (Error Correction Code)
 
 #### settori
-due modalità: 1 (*con errore*) e 2 (*senza errore*, potrebbe non avere senso correggerlo, come formati audio/video).  
+due modalità: 1 (*con errore*) e 2 (*senza errore*, potrebbe non avere senso correggerlo, come formati audio/video). 
+
+non era possibili fin da subito immagazzinare video e audio insieme in un CD-ROM, c'e' stato bisogno di un "aggiornamento".
+
+per usare lo stesso cd-rom su diversi computer c'era bisogno di creare un filesystem universale, quindi i produttori di pc si riuniscono e fanno High Sierra, composto da 3 livelli:
+1. nomi file di 8 caratteri e eventualmente 3 caratteri per l'estensione (in stile MS-DOS), solo MAIUSCOLE, numeri e underscore. directory annidate per un massimo di 8 livelli
+2. nomi file di 32 caratteri
+3. file non contigui in memoria
 
 #### CD-R (registrabili)
 contengono uno *strato di pigmento* che permette di **scrivere i pit**. contengono una scalanatura che permette di guidare il laser in fase di scrittura. durante la scrittura il raggio laser colpisce il pigmento rompendo un **legame** molecolare che **non si puo' ripristinare**

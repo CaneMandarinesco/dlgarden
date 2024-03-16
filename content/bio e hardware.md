@@ -8,7 +8,7 @@
 ## hardware
 ### laptop
 * **T480s** (comprato su ebay a 190 eur.)
-* **EndeavourOS** con Hyprland
+* **EndeavourOS** con Hyprland/KDE Plasma 6
 * **intel i5-8350U**, processore caruccio che non mi da problemi su arch
 * **16gb** ram / **256gb** ssd
 ### desktop

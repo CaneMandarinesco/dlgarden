@@ -1,4 +1,4 @@
-## processore
+ ## processore
 e' il cervello del computer e contiene:
 * unita' di controllo (**CU**), preleva dati dalla memoria e ne analizza il tipo
 * unita aritmetica e logica (**ALU**), esegue operazioni come l'addizione e l' `AND`
@@ -49,7 +49,7 @@ dal *x486* le CPU (quindi compreso Intel) contengono un sottoinsieme delle istru
 * le istruzioni devono essere semplici da decodificare (regolari, lunghezza predefinita, numero ridotto di variabili e campi).  
 * le istruzioni `LOAD` e `STORE` sono le uniche che devono fare riferimento alla **memoria** (tempi di accesso elevati), le altre devono operare sui **registri**
 * le CPU dovrebbero contenere un *numero elevato di registri* (sempre a causa della lentezza della memoria), cosi dopo il fetch di una word, questa puo' essere tenuta in un registro
-## parallelismo
+### parallelismo a livello del processore
 dato che non si può aumentare il clock oltre un **certo limite** dovuto alle leggi della fisica, i progettisti guardano al **parallelismo** per incrementare le performance, con due tipi di parallelismo:
 * al livello di istruzione (un processore gestisce piu flussi di lavoro contemporaneamente)
 * a livello di processore (piu' processori insieme)
@@ -63,8 +63,10 @@ esempio di pipelining a 5 stage:
 4. esegui
 5. metti i risultati nei registri (compreso lo stato del processore)
 
+senza aspettare che il ciclo di stage finisca, se il primo stage non sta facendo niente gli posso dare gia' un'altra istruzione!
 ### banda del processore
 il pipelining permette di bilanciare la **latenza** (durata esecuzione di una istruzione) con la **banda del processore** (quanti MIPS/*Millions of Instructions Per Second* la CPU emette).  
+![[Pasted image 20240316221600.png]]
 
 > una CPU senza pipeline che opera ad un clock $T \text{ ns}$ ed emette una istruzione per ciclo ha una banda di $10^3/ \text{T MIPS}$
 
@@ -79,7 +81,7 @@ mentre la ***banda*** e':
 $$
 p \cdot 10^3 \text{/ MIPS}
 $$
-### ### architetture superscalari
+### architetture superscalari
 se una pipeline funziona allora possiamo metterne di piu', come nell' **intel x486** ma,tutta via:
 * non tutte le istruzioni possono essere svolte in parallelo 
 * e' necessario troppo hardware per le varie unita
@@ -90,30 +92,30 @@ si adotta un approccio diverso: il processore dispone di una pipeline con piu' u
 
 per far si che questo tipo di implementazione abbia senso, la velocità in emissione di `S3` deve essere piu' alta dello stadio `S4`. in `S4` possiamo trovare piu' ALU duplicate.
 
+--- 
 ### parallelismo a livello di cpu
 possiamo ottenere un fattore di miglioramento che va da 5 a 10. se vogliamo incrementare drasticamente la performance del sistema possiamo arrivare ad un incremento di 50, 100 o piu. abbiamo 3 differenti approcci:
-* computer con parallelismo sui dati
+* computer con parallelismo sui dati / array computer
 * multiprocessori
 * multicomputer
 
-## classificazione flynn
+#### classificazione flynn
 | flusso di istruzioni | flusso di dati | nome                  | esempio                         |
 | -------------------- | -------------- | --------------------- | ------------------------------- |
 | Singolo              | Singolo        | SISD / array computer | modello Von Neumann             |
 | Singolo              | Multiplo       | SIMD                  | Supercomputer vettoriali        |
 | Multiplo             | Singolo        | MISD                  | non sono note                   |
 | Multiplo             | Multiplo       | MIMD                  | multiprocessori e multicomputer |
-### tassonomia dei calcolatori paralleli
-...
+
 ### computer con parallelismo sui dati
-#### processori SIMD (Single Instruction-stream Multiple Data-stream) / array computer
+#### processori SIMD (Single Instruction-stream Multiple Data-stream) / array computer.  
 i processori SIMD sono costituiti da un vasto numero di processori identici, che eseguono la stessa sequenza di istruzioni su dati differenti, esempio: GPU.  
 > vengono usati tanti sommatori quanti sono gli elementi del vettore
 #### processori vettoriali
 esegue la stessa sequenza di operazioni su coppie di dati ma le addizioni sono svolte da un unico sommatore nella pipeline.  
 > viene usato un solo sommatore e un unico **registro vettoriale** (dove i dati possono essere caricati da un unica istruzione)
 
-il risultato di queste operazioni e' un vettore che viene immagazzinato in un registro vettoriale.  
+il risultato di queste operazioni e' un vettore che viene immagazzinato in un **registro vettoriale**.  
 
 > entrambe le architetture lavorano su array di dati, per il programmatore non c'e' differenza.
 

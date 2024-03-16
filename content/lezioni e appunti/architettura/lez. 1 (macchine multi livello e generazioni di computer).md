@@ -184,12 +184,12 @@ nel corso della storia intel aggiunse le istruzioni **MMX** (MultiMedia eXtensio
 > con l'aumentare del numero di transistor aumenta il consumo elettrico e insieme all'aumento della frequenza di clock aumenta il calore da dissipare
 
 ## arm
-nasce dalla acorn, che si ispira al progetto RISC, da qui il nome Acorn RISC Machine (ARM), in seguito Advanced RISC Machine.  
+nasce dalla acorn, che si ispira al progetto RISC, da qui il nome  Acorn RISC Machine (ARM), in seguito Advanced RISC Machine.  
 collaborano con apple e mettono il loro processore nell'Apple Newton.  
 successivamente collbaorano con Digital Equipment Corporation per creare una versione di ARM piu' efficiente per dispositivi mobili realizzando StrongARM (1 Watt) con due cache da 16kb per immagazzinare istruzioni e dati.
 nasce poi ARM7 (1994) utilizzato ancora oggi
 
-## avr
+## avr (extra)
 utilizzata in arduino, sono dei microcontrollori, si dividono in 3 classi:
 ![[Pasted image 20240305221926.png]]
 abbiamo tre tipi di memoria:

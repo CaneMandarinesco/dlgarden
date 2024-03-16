@@ -1,11 +1,12 @@
 >[!note] 🌼🌼
 > il sito e' in continuo work-in-progress, quindi ci potrebbero essere dei [typo](https://en.wikipedia.org/wiki/Typographical_error), link vuoti, pagine vuote, cose strane e non so che altro.
 
-- se vuoi sapere qualcosa su di me, ecco la mia [[bio]]
+- se vuoi sapere qualcosa su di me, ecco la mia [[bio e hardware]]
 - il mio [[diario]]
 - [[art]]
-- [[config]]
-- ~~[[come fare un sito come questo]]~~
+- [[config hyprland]]
+- [[emulatore gbdem (appunti vari)]]
+- [[come fare un sito come questo]]
 - ~~[[modding router TIM]]~~
 # appunti
 * [[geometria e algebra]]
