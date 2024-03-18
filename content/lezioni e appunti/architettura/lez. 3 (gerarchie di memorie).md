@@ -80,7 +80,8 @@ basati su una memoria flash non volatile. si usurano nel tempo a causa dell'usur
 
 > hanno una vita stimata di 100 anni!
 
-dischi fatti di policarbonato con uno strato di alluminio riflettente e ricoperto da una vernice resistente. questi materiali si possono degradare col calore. nel substrato di policarbonato si possono creare delle depressioni (**pit**) tra aree non incise (**land**). esiste un valore di variazione tra **pit** e **land**.
+dischi fatti di policarbonato con uno strato di alluminio riflettente e ricoperto da una vernice resistente. questi materiali si possono degradare col calore. nel substrato di policarbonato si possono creare delle depressioni (**pit**) tra aree non incise (**land**). esiste un valore di variazione tra **pit** e **land**.  
+quindi vengono lette delle **scalanature**
 
 #### memorizzazione
 i dati sono memorizzati usando un preambolo (16 byte) contenente:
@@ -89,17 +90,27 @@ i dati sono memorizzati usando un preambolo (16 byte) contenente:
 * 1 byte per il modo: con o senza ECC (Error Correction Code)
 
 #### settori
-due modalità: 1 (*con errore*) e 2 (*senza errore*, potrebbe non avere senso correggerlo, come formati audio/video). 
+due modalità: 1 (*con errore*) e 2 (*senza errore*, potrebbe non avere senso correggerlo, come formati audio/video dove un errore ogni tanto non e' un problema). 
 
-non era possibili fin da subito immagazzinare video e audio insieme in un CD-ROM, c'e' stato bisogno di un "aggiornamento".
+non era possibile fin da subito immagazzinare video e audio sulla stessa traccia in un CD-ROM, c'e' stato bisogno di un "aggiornamento".
 
+#### extra
 per usare lo stesso cd-rom su diversi computer c'era bisogno di creare un filesystem universale, quindi i produttori di pc si riuniscono e fanno High Sierra, composto da 3 livelli:
 1. nomi file di 8 caratteri e eventualmente 3 caratteri per l'estensione (in stile MS-DOS), solo MAIUSCOLE, numeri e underscore. directory annidate per un massimo di 8 livelli
 2. nomi file di 32 caratteri
 3. file non contigui in memoria
 
 #### CD-R (registrabili)
-contengono uno *strato di pigmento* che permette di **scrivere i pit**. contengono una scalanatura che permette di guidare il laser in fase di scrittura. durante la scrittura il raggio laser colpisce il pigmento rompendo un **legame** molecolare che **non si puo' ripristinare**
+contengono:
+* *strato di pigmento* che permette di **scrivere i pit**. contengono 
+* una scanalatura che permette di guidare il laser in fase di scrittura. 
+
+durante la scrittura il raggio laser colpisce il pigmento rompendo un **legame** molecolare (viene riscaldata la superficie) che **non si puo' ripristinare**. nonostante siano utilizzati materiali e tecniche diverse rispetto al CD-ROM (dove troviamo veri e propri solchi nell'incisione), un lettore CD-ROM e' in grado di interpretare le variazioni del riflesso del laser anche su un CD-R.
+
+### CD-ROM-XA (extra)
+viene poi introdotta con il CD-ROM-XA la scrittura incrementale, si possono aggiungere i dati nel tempo.  
+problema: i CD-ROM avevano un unico VTOC (Volume Table of Contents, "indice del disco") che non si poteva aggiornare con le scritture successive (quindi se si scriveva qualcosa, i dati non comparivano nell'indice (????)).  
+come soluzione si decide di assegnare ad ogni traccia il suo VTOC, ma ogni traccia doveva essere scritta in modo contiguo quindi se l'hardisk impiegava troppo tempo a cercare i dati si potevano creare degli errori.  soluzione:  creare un file detto immagine della grandezza di 650MB che raggruppa in maniera contigua tutti i file da scrivere. (pero' leggere 650mb potrebbe essere faticoso per alcuni hardisk che entrano in "panico" per via del surriscaldamento).
 
 #### CD-RW (riscrivibili)
 al posto del pigmento troviamo una lega che ha due stati stabili: cristallino e amorfo, dove il laser puo' avere 3 diverse intensita:
@@ -108,7 +119,5 @@ al posto del pigmento troviamo una lega che ha due stati stabili: cristallino e 
 
 #### DVD (Digital Versatile Disk)
 sono progettati in modo simile ai CD, ma possono contenere piu' dati, e puo' essere inciso su entrambi i lati ...
-
-#### dispositivi interni al  computer...
 
 

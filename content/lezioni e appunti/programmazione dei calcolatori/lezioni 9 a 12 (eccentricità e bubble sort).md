@@ -37,4 +37,17 @@ while i < len(E):
 # complessita spaziale: Theta(n), la dimensione di E
 ```
 
+e altri vari esempi che stanno su github...
+
+* `list.append(x)` in python e' l'equivalente di: `a[len(a):] = [x]`
+	* $O(1)$
+* `list.extend(x)` e' l'equivalente di: `a[len(a):] = iterabile`
+	* $O(len(x))$
+* `list.copy` equivale a `a[:]`
+* `string.join(iterable)` concatena due stringhe $\Theta (n)$
+* `[a] * n` restituisce una lista con dentro n volte a.
+	* `[' '] * 3 = [' ', ' ', ' ']`
+	* `['1', '2'] * 3 = ['1', '2','1', '2', '1', '2']`
+
+## bubble sort
 ...
