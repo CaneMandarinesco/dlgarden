@@ -114,10 +114,28 @@ come soluzione si decide di assegnare ad ogni traccia il suo VTOC, ma ogni tracc
 
 #### CD-RW (riscrivibili)
 al posto del pigmento troviamo una lega che ha due stati stabili: cristallino e amorfo, dove il laser puo' avere 3 diverse intensita:
-* alta potenza, la lega
+* alta potenza: la lega viene portata allo stato amorfo (bassa riflettenza, **pit**)
+* media potenza: la lega viene portata allo stato cristallino (alta riflettenza, stato naturale, **land**)
+* bassa potenza: legge le variazioni nel riflesso
+
+costano una fracca.  
+
+> i cd-r sono ottimi per i backup perche' una volta scritti non possono essere modificati (e costano meno dei CD-RW)
 
 
 #### DVD (Digital Versatile Disk)
-sono progettati in modo simile ai CD, ma possono contenere piu' dati, e puo' essere inciso su entrambi i lati ...
+progettati in modo simile ai CD ma variano le specifiche tecniche del laser (si usa un laser rosso), dei pit ecc...  
+abbiamo una serie di miglioramenti che ci porta a poter immagazzinare fino a 4,7GB.  
+il passaggio al laser rosso implica che i lettori ora devono avere 2 laser diversi.  dato che forse 4,7GB non bastano hanno definito 4 formati:
+* singolo lato, singolo strato
+* singolo lato doppio strato (8,5GB)
+* doppio lato singolo strato (9,4GB)
+* doppio lato doppio strato (17gb)
+tutti questi formati nascono da vari conflitti tra le aziende che decisero di implementarli tutti.  
+I DVD nascono principalmente per il mercato cinematografico
 
-
+### blu-ray (extra)
+i blu-ray sono cd che usano un laser blu che:
+* ha una lunghezza d'onda piu' piccola
+* piu' preciso nella messa a fuoco
+quindi permette di avere pit e land piu piccoli e di arrivare a una capienza di 25GB

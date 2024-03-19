@@ -11,6 +11,11 @@ https://gbdev.io/pandocs/Power_Up_Sequence
 la VRAM puo' essere usata come normale RAM.
 
 ## grafica
+
+### VBLANK
+e' importante non modificare la VRAM del gameboy durante il periodo di V-BLANKING, cio' causa la comparsa di una riga sullo schermo e di danni allo schermo su alcuni modelli
+
+### tile e tilemap
 manipolare la grafica pixel per pixel sarebbe costoso, invece la cpu gestisce gruppi di pixel chiamati tiles (8x8). e un tile e' in grado di assegnare dei colori ai sui pixel (4 colori).  
 una palette consiste in un array di colori (4 nel gameboy)  
 il gameboy ha 3 layer: background, window e objects con la possibilità di andare oltre questa astrazione.  
@@ -40,7 +45,14 @@ inoltre contiene:
 anche se alcune di queste informazioni, anche se errate non invalidano la rom stranamente, dato che queste erano usate da Nintendo dato che l'header descrive l'hardware della cartuccia.  
 ed e' proprio per questo motivo che per un emulatore e' importante analizzare l'header.
 
-nella versione hardware del gameboy, dentro alla cpu troviamo la boot ROM che contiene le istruzioni eseguite all'accensione (compreso il logo nintendo) e controlla che le checksum e il logo nintendo nella cartuccia siano corretti.
+nella versione hardware del gameboy, dentro alla cpu troviamo la boot ROM che contiene le istruzioni eseguite all'accensione (compreso il logo nintendo) e controlla che le checksum e il logo nintendo nella cartuccia siano corretti.  
+
+per scrivere correttamente queste informazioni ricordiamoci di dire all'assemblatore che la `ROM0` inizia all'indirizzo `$150` e dobbiamo riempire con degli 0 gli spazi nella memoria che `rgbfix` andra' a scrivere:
+```asm
+SECTION "hello", ROM0[$150]
+	jp main
+	ds $150-@, 0
+```
 
 ## operazioni e flags
 * inc
@@ -64,7 +76,7 @@ cp sottrae il suo operatore `x` da `a` e aggiorna le flag di conseguenza, quindi
 * return
 
 jump semplicemente imposta `PC` al suo argomento. guardiamo l'esempio:
-```rgbasm
+```asm
     ld de, Tiles; Tiles corrisponde al primo byte dei dati sui tilesets
     ld hl, $9000; iniziamo a copiare in questo indirizzo
     ld bc, TilesEnd - Tiles; quanti dati dobbiamo copiare
