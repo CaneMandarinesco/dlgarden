@@ -71,7 +71,7 @@ cp sottrae il suo operatore `x` da `a` e aggiorna le flag di conseguenza, quindi
 
 ## jumps
 * jump
-* jump relative
+* jump relative (relative 128 byte massimo di salto dall'indirizzo dell'istruzione corrente)
 * call
 * return
 

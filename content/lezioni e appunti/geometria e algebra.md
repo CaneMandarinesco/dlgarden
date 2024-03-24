@@ -1,3 +1,6 @@
 * [[lez. 1 (retta, piano e spazio; vettori)]]
 * [[lez. 2 (somma e molt. scalare di vettori, combinazioni lineari)]]
 * [[lez. 3 (equazioni vettoriali)]]
+* [[lez. 4 (terne)]]
+* [[lez. 5 (campi, classi di resto, campo K)]]
+* [[lez. 6]]

@@ -2,5 +2,6 @@
 * [[lez. 2 (principi, pipelining, memoria, hamming)]]
 * [[lez. 3 (gerarchie di memorie)]]
 * [[lez. 4 (memoria, input output, unicode)]]
+* [[lez. 5]]
 ---
 * [[microarchitettura]]

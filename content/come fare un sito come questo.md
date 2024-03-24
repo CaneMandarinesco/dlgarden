@@ -81,7 +81,7 @@ git remote add upstream https://github.com/jackyzha0/quartz.git
 per dire a git di sincronizzare i file di quartz con quelli che si trovano sul repository online di quartz.  
 
 ### delploy.yml
-ora dobbiamo creare il file che dice a github di costruire il sito e di rilasciarlo ogni volta che aggiorniamo il sito.  creiamo quindi il file `quartz/.github/workflows/deploy.yml` e metteteci questa roba all'interno facendo copia e incolla:
+ora dobbiamo creare il file che dice a github di costruire il sito e di rilasciarlo ogni volta che aggiorniamo i file.  creiamo quindi il file `quartz/.github/workflows/deploy.yml` e metteteci questa roba all'interno facendo copia e incolla:
 
 ```yaml
 name: Deploy Quartz site to GitHub Pages

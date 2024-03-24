@@ -5,9 +5,9 @@
 - il mio [[diario]]
 - [[art]]
 - [[config hyprland]]
-- [[emulatore gbdem (appunti vari)]]
 - [[come fare un sito come questo]]
 - ~~[[modding router TIM]]~~
+- ~~[[emulatore gbdem (appunti vari)]]~~
 # appunti
 * [[geometria e algebra]]
 * [[architettura medievale]]

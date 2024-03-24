@@ -112,14 +112,17 @@ viene eliminata la microprogrammazione perche' e' lenta. il microcodice diventa 
 * macchina **analitica** di babbage.
 * primi computer a relè (1930)
 * ENIGMA
+* COLOSSUS: primo computer digitale
+
 tutti questi tentativi di creare dei computer non furono dei completi successi per via delle limitazioni tecnologiche.
-* mark I e COLOSSUS (alan turing), computer a rele'
+
+* mark I (alan turing), computer a rele'
 non siamo ancora nel pieno dell'elettronica!
 
-### prima generazione: elettronica
+### prima generazione: valvole
 * ENIAC, computer a valvole termoioniche, si programmava attraverso migliaia di leve e di cavi. da qui nasce l'interesse per i calcolatori elettronici.
 
-* macchina di **von neumann** (un genio pazzo in culo), architettura alla base di oggi, costituita da 5 componenti fondamentali:
+* macchina di **von neumann** (implementata nel EDSAC) (neumann e' un genio pazzo in culo), architettura alla base di oggi, costituita da 5 componenti fondamentali:
 	* memoria
 	* ALU (Airthmetic Logic Unit)
 	* Control Unit
@@ -127,8 +130,8 @@ non siamo ancora nel pieno dell'elettronica!
 	* Output
 * in questo periodo i calcolatori cominciano ad approdare sul mercato
 
-### seconda generazione
-* TX-0: primo computer a transistor
+### seconda generazione: elettronica
+* TX-0: primo computer a transistor e con un bus (Omnibus)
 * **transistor**: utilizzano i transistor e implementa il concetto di **bus**
 ![[Pasted image 20240305210339.png]]
 
@@ -137,7 +140,7 @@ ciò introduce il **problema del cortocircuito**: come posso collegare vari elem
 ### terza generazione
 ***circuiti integrati***: permettono di inserire in un chip decine di transistor aumentando velocità del processore e abbattendone i costi
 i processori nuovi cominciano a supportare le stesse funzioni dei processori vecchi: nasce l'idea di ***famiglia di computer***.
-nascono i primi computer in grado di emularne altri, nasce la **multiprogrammazione** (ovvero tenere piu programmi in memoria)
+nascono i primi computer in grado di emularne altri, nasce la **multiprogrammazione** (ovvero tenere piu programmi in memoria, per esempio mentre attendo l'input, intanto eseguo qualcosa).
 
 ### quarta generazione (VLSI)
 very large scale integration (VLSI), si possono inserire milioni di transistor in un singolo chip.

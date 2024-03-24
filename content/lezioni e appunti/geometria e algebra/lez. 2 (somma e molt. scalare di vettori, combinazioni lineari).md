@@ -73,9 +73,11 @@ $$
 nel caso sono allineati: dimostrare come esercizio.
 
 ## moltiplicazione scalare
+#formula_errata:
 $$
 \forall v = \vec{\mathrm{OP}} \in V_{0}^n, \forall t \in \mathbb{R} \; \exists! t \cdot v = t \cdot \vec{\mathrm{OP}} \in V_{0}^n
 $$
+giusto:
 dove: $t \cdot \vec{\mathrm{OP}} = \vec{\mathrm{OP}_{t}}$ e $P_{t} \in A^n$  
 ovvero: *per ogni vettore esiste un solo numero* $t$ che moltiplicato a $\vec{OP}$ ci da $\vec{OP_{t}}$  
 abbiamo vari casi, le cui proprietà valgono se $\vec{\mathrm{OP}} \neq  \vec{\mathrm{OO}}$:  
