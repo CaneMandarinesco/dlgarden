@@ -1,4 +1,4 @@
-0## grafi orientati
+## grafi orientati
 un grafo si indica orientato si indica cosi:
 $$
 \vec{ \Gamma } = (V,A)

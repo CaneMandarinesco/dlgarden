@@ -130,25 +130,28 @@ non siamo ancora nel pieno dell'elettronica!
 	* Output
 * in questo periodo i calcolatori cominciano ad approdare sul mercato
 
-### seconda generazione: elettronica
+### seconda generazione: elettronica, 1955-1965
 * TX-0: primo computer a transistor e con un bus (Omnibus)
 * **transistor**: utilizzano i transistor e implementa il concetto di **bus**
 ![[Pasted image 20240305210339.png]]
 
 grazie al bus, ogni componente può dialogare con gli altri, utilizzando una linea comune. questo porta vari vantaggi: se dobbiamo aggiungere un dispositivo di I/O, possiamo aggiungerlo semplicemente collegandolo sulla linea comune  
 ciò introduce il **problema del cortocircuito**: come posso collegare vari elementi insieme e **riconoscere chi sta mandando i segnali**? chi e' che ascolta e che parla? se due oggetti parlano allo stesso momento avviene un cortocircuito. (problema del sincronismo)
-### terza generazione
+### terza generazione 1965-1980
 ***circuiti integrati***: permettono di inserire in un chip decine di transistor aumentando velocità del processore e abbattendone i costi
 i processori nuovi cominciano a supportare le stesse funzioni dei processori vecchi: nasce l'idea di ***famiglia di computer***.
 nascono i primi computer in grado di emularne altri, nasce la **multiprogrammazione** (ovvero tenere piu programmi in memoria, per esempio mentre attendo l'input, intanto eseguo qualcosa).
-
 ### quarta generazione (VLSI)
 very large scale integration (VLSI), si possono inserire milioni di transistor in un singolo chip.
 nascono le prime cpu intel (8080/8088/80386), e grazie all'abbattimento dei costi: i personal computer (computer casalinghi)
-* macintosh
-
+* apple 1 e 2
+* pc ibm: vendite spropositate rispetto ai competitor
+nascono i computer portatili e si sperimenta l'architettura RISC.  
 ### quinta generazione
 computer integrati in elettrodomestici, orologi, carte di credito ecc... a basso consumo
+* grid pad
+* apple newton
+* PDA
 
 ### legge di Moore
 il numero di transistor raddoppia ogni 18 mesi ($60\% \text{ annuo}$), in modo costante. a un certo punto ci si e' arrestati per problemi di natura energetica e dissipazione del calore.

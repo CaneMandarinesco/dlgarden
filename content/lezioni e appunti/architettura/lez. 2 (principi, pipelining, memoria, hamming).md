@@ -14,6 +14,8 @@ una CPU di *von Neumann* contiene:
 * ALU; ha due registri di input: `A` e `B`, ed uno in output che deve essere poi spostato in un registro della cpu
 * bus di collegamento (con immagine)
 
+le operazioni di una cpu possono essere del tipo: registro-registro o registro-memoria\overline {A \cdot B}
+
 esempio di flusso di lavoro di una ALU (workflow)
 ![[Pasted image 20240312180210.png]]
 
@@ -42,13 +44,16 @@ in **CISC** (Complex Instruction Set Computer) la CPU e' in grado di comprendere
 nasce dal tentativo di  progettare cpu VLSI **senza interpretazione**, e sono progettati senza doverli rendere retro-compatibili.  come risultato abbiamo poche istruzioni disponibili (circa 50, contro le 200 dei competitor CISC).
 quindi abbiamo l'architettura **RISC** (Reduced Instruction Set Computer), poche istruzioni, semplici e veloci. (e' necessario solo un ciclo nel datapath ???)
 
-nasce un dibattito tra CISC (intel, IBM) e RISC, dato che **una** istruzione $X$ in CISC poteva essere *emulata* da $n$ istruzioni $Y$ in RISC riuscendo cosi ad eguagliare il tempo della istruzione $X$ o addirittura a diminuirlo.
+nasce un dibattito tra CISC (intel, IBM) e RISC, dato che **una** istruzione $X$ in CISC poteva essere *emulata* da $n$ istruzioni $Y$ in RISC riuscendo cosi ad eguagliare il tempo della istruzione $X$ o addirittura a diminuirlo.   
+perche' RISC non sostituisce CISC? nasce l'ibrdio tra i due:
 #### ibrido (CISC e RISC)
 dal *x486* le CPU (quindi compreso Intel) contengono un sottoinsieme delle istruzioni RISC piu' comuni che possono essere eseguite con un solo ciclo nel datapath, mentre quelle piu' complesse vengono interpretate dall'architettura CISC.
 ### principi di progettazione
 * le istruzioni devono essere semplici da decodificare (regolari, lunghezza predefinita, numero ridotto di variabili e campi).  
 * le istruzioni `LOAD` e `STORE` sono le uniche che devono fare riferimento alla **memoria** (tempi di accesso elevati), le altre devono operare sui **registri**
 * le CPU dovrebbero contenere un *numero elevato di registri* (sempre a causa della lentezza della memoria), cosi dopo il fetch di una word, questa puo' essere tenuta in un registro
+* le istruzioni devono essere eseguite direttamente sull'hardware
+* massimizzare la frequenza di emissione di istruzioni
 ### parallelismo a livello del processore
 dato che non si può aumentare il clock oltre un **certo limite** dovuto alle leggi della fisica, i progettisti guardano al **parallelismo** per incrementare le performance, con due tipi di parallelismo:
 * al livello di istruzione (un processore gestisce piu flussi di lavoro contemporaneamente)
@@ -145,12 +150,13 @@ metodi per trasformare le basi:
 * metodo semplificato: **base 10 -> base 2** (nel metodo basta chiederci: il numero e' pari o dispari?).  
 * metodo semplificato: **basi potenza l'una dell'altra** (es. 2 e 8)
 
+> 1 byte = 8 bit
 ## indirizzi di memoria
 una memoria e' organizzata in **celle** (parole/word, `8-bit` nello standard), dove ogni cella contiene lo stesso quantitativo di informazioni in byte, e rappresenta quindi l'unita' di memoria piu piccola indirizzabile, i byte possono essere raggruppati in **parole**.
 ordinamento dei byte nelle parola:
 * **Big Endian**: da sinistra a destra
 * **Little Endian**: da destra a sinistra
-nella conversione di stringe misti a interi ci possono essere vari problemi nell'interpretazione delle cifre: 
+nella conversione di stringhe misti a interi ci possono essere vari problemi nell'interpretazione delle cifre: 
 ![[Pasted image 20240312192726.png]]
 
 modi per organizzare una memoria a 96 bit.
@@ -197,8 +203,7 @@ ci sono vari modi per progettare una cache:
 * unificata o divisa in due (istruzioni/dati separati)(architettura **Harvard**)? 
 
 ---
-
-
 ## banco di memoria
 * chip di memoria
 * chip di controllo
+
